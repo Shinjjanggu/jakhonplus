@@ -3,7 +3,6 @@
 ========================
 
 ![리소스 팩 썸네일](/sample/nya1.png)
-![테스트](/assets/jp/coursecourse0.png)
 
 냥따봉
 
