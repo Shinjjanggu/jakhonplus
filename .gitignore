@@ -1,0 +1,15 @@
+.vscode/
+*.spec
+__pycache__
+*.py[co]
+
+dev-resources/
+
+data/assets-original
+data/build/
+data/temp/
+data/translation/templates
+assets/*
+!assets/.gitkeep 
+resourcepack.json
+majsoul-plus-korean.exe 
