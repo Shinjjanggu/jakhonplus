@@ -8,8 +8,8 @@
 // @icon         https://shinjjanggu.github.io/jakhonplus/sample/nya1.png
 // @supportURL   https://github.com/Shinjjanggu/MajakPlusKorean/issues
 // @homepageURL  https://github.com/Shinjjanggu/MajakPlusKorean/
-// @downloadURL  https://file.update.sh/mpk/majsoul-plus-korean.user.js
-// @updateURL    https://file.update.sh/mpk/majsoul-plus-korean.user.js
+// @downloadURL  https://shinjjanggu.github.io/jakhonplus/jakhonhangle_jp.user.js
+// @updateURL    https://shinjjanggu.github.io/jakhonplus/jakhonhangle_jp.user.js
 // @include      https://game.mahjongsoul.com/*
 // @grant        unsafeWindow
 // @grant        GM_getResourceText
