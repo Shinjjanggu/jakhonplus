@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         작혼 한글패치 (일본서버용)
+// @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.1
+// @version      0.0.3
 // @description  Apply majsoul-plus-korean using UserScript!
 // @author       YF-DEV, KANE88
 // @license      MIT
