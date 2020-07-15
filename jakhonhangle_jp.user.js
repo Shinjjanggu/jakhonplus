@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.3
+// @version      0.0.4
 // @description  Apply majsoul-plus-korean using UserScript!
-// @author       YF-DEV, KANE88
+// @author       YF-DEV, SHINJJANGGU
 // @license      MIT
 // @icon         https://shinjjanggu.github.io/jakhonplus/sample/nya1.png
 // @supportURL   https://github.com/Shinjjanggu/MajakPlusKorean/issues
