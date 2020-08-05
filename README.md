@@ -26,7 +26,7 @@
 
 따봉
 
-#### 4.셀프빌드
+#### 4.셀프빌드 (점검하고 작동이 안될때)
 
 0.github에서 파일을 다운로드합니다.
 translation_source 폴더는 data로 이름을 바꿔서 korean폴더 안으로 옮겨줘야 합니다.. (resourcepack\korean\data\)
