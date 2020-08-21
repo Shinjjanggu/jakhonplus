@@ -16,9 +16,6 @@
     "bitmapfont/jp/jp_jiye.fnt",
     "docs/spot/yiji/100004_jp.bytes",
     "docs/xinshouyindao_jp.json",
-    "res/atlas/jp/myres/activity_yijidagong.atlas",
-    "res/atlas/jp/myres/activity_yijidagong.png",
-    "res/atlas/jp/myres/activity_yijidagong1.png",
     "jp/course/course0.png",
     "jp/course/course1.png",
     "jp/course/course2.png",
@@ -160,6 +157,9 @@
     "scene/Assets/Resource/table/tablemid/chang.png",
     "scene/Assets/Resource/table/tablemid/feng.png",
     "scene/Assets/Resource/table/tablemid/left.png",
+    "res/atlas/jp/myres/activity_yijidagong.atlas",
+    "res/atlas/jp/myres/activity_yijidagong.png",
+    "res/atlas/jp/myres/activity_yijidagong1.png",
     "uiconfig/ui_jp.json"
   ]
 }
