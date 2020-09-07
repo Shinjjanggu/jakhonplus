@@ -28,7 +28,8 @@ both_ui/config|0|7|0|1|3,モード,모드
 both_ui/config|0|7|0|1|4,（再起動で適用）,（재시작 시 적용）
 both_ui/config|0|7|0|2|0|0|3,中文(简体),중국어(간체)
 both_ui/config|0|7|0|2|1|0|3,中文(繁體),중국어(번체)
-both_ui/config|0|7|0|2|4,（再起動で適用）,（재시작 시 적용）
+both_ui/config|0|7|0|2|2|0|3,English,영어
+both_ui/config|0|7|0|2|5,（再起動で適用）,（재시작 시 적용）
 both_ui/config|0|7|1|0|0,対局,대국
 both_ui/config|0|7|1|0|1,打牌,타패
 both_ui/config|0|7|1|0|2|0|3,ワンクリック,1번 클릭
@@ -46,13 +47,13 @@ both_ui/config|0|7|3|0|2|1,シリアルコード,시리얼 코드
 both_ui/config|0|7|3|0|3|1,役種一覧,마작의 역
 both_ui/config|0|7|3|0|4|0|1,利用規約,이용약관
 both_ui/config|0|7|3|0|4|1|1,特定商取引法,特定商取引法
-both_ui/config|0|7|3|0|4|2|1,資金決済法,資金決済法
+both_ui/config|0|7|3|0|4|2|1,資金決済法,자금결제법
 both_ui/config|0|7|3|0|4|3|1,プライバシーポリシー,개인정보보호정책
 both_ui/config|0|7|3|0|5|0|1,Contact Us,Contact Us
 both_ui/config|0|7|3|0|5|1|1,TERMS OF SERVICE,TERMS OF SERVICE
 both_ui/config|0|7|3|0|5|2|1,PRIVACY POLICY,PRIVACY POLICY
 both_ui/config|0|7|3|0|6|1,お問い合わせ,문의
-both_ui/config|0|7|3|0|7|0|1,ソフトウェア利用許諾契約,ソフトウェア利用許諾계약
+both_ui/config|0|7|3|0|7|0|1,ソフトウェア利用許諾契約,소프트웨어 이용허락계약
 both_ui/config|0|7|3|2|0,アカウント設定,계정 설정
 both_ui/config|0|7|3|2|2|1|0|0,未認証,未認証
 both_ui/config|0|7|3|2|2|1|1,（タップで連携設定できます）,（클릭하여 연동설정을 할 수 있습니다）
@@ -66,15 +67,15 @@ both_ui/config|0|7|3|2|3|2|3,解除绑定,解除绑定
 both_ui/config|0|7|3|3|0,アカウント設定,계정 설정
 both_ui/config|0|7|3|3|2|1|0|0,連携,연동
 both_ui/config|0|7|3|3|2|1|0|1,連携されていません,연동되어 있지 않습니다.
-both_ui/config|0|7|3|3|2|2|1,（クリックで連携解除）,（クリックで連携解除）
+both_ui/config|0|7|3|3|2|2|1,（クリックで連携解除）,（클릭하여 연동 해제）
 both_ui/config|0|8|0|0,その他,그 밖에
 both_ui/config|0|8|1|0,VOICE,VOICE
 both_ui/config|0|8|2|0,打牌タイプ,타패 타입
 both_ui/config|0|8|3|0,一般,일반
 both_ui/dmm_buy_pop|0|3|0,はい,예
 both_ui/dmm_buy_pop|0|4|0,いいえ,아니오
-both_ui/dmm_kefu|0|2,サポート窓口：https://mahjongsoul.com/feedback,サポート窓口：https://mahjongsoul.com/feedback
-both_ui/dmm_kefu|0|3,お問い合わせ,お問い合わせ
+both_ui/dmm_kefu|0|2,サポート窓口：https://mahjongsoul.com/feedback,고객센터：https://mahjongsoul.com/feedback
+both_ui/dmm_kefu|0|3,お問い合わせ,문의
 both_ui/getreward|0|3,閉じる,닫기
 both_ui/gettitle|0|2,称号リストに入れました,칭호목록에 삽입했습니다.
 both_ui/gitfcode|0|2,シリアルコード,시리얼 코드
@@ -82,11 +83,11 @@ both_ui/gitfcode|0|3,シリアルコードを入力してください,시리얼 
 both_ui/gitfcode|0|5|0,はい,예
 both_ui/infolite|0|2|0,はい,예
 both_ui/infolite_title|0|2|0,はい,예
-both_ui/invite|0|1|0|0,5分間通知しない,5分間通知しない
+both_ui/invite|0|1|0|0,5分間通知しない,5분간 연락 없음
 both_ui/invite|0|2|0|0,いいえ,아니오
 both_ui/invite|0|3|0|0,参加,참가
-both_ui/invite|0|4,友人対戦への招待,친구対戦への招待
-both_ui/invite|0|8,3分後に拒否します,3分後に拒否します
+both_ui/invite|0|4,友人対戦への招待,친선전 초대
+both_ui/invite|0|8,3分後に拒否します,3분 후 거부
 both_ui/itemdetail|0|6|0,使用,사용
 both_ui/itemdetail|0|7|0,入手方法：,입수방법：
 both_ui/itemdetail|0|7|2|1|0|0,画面移動,화면전환
@@ -159,7 +160,7 @@ both_ui/otherplayerinfo|0|2|6|1|6|0|2,役達成回数,역 완성 횟수
 both_ui/otherplayerinfo|0|2|6|1|7|0|2,ローカル役達成回数,로컬 역 완성 횟수
 both_ui/otherplayerinfo|0|3|1,コメントがありません,코멘트가 없습니다.
 both_ui/otherplayerinfo|0|3|3|0|0,送信,송신
-both_ui/otherplayerinfo|0|3|4,プレイヤーはコメント機能を友人のみ有効にしています。,플레이어は코멘트機能を친구のみ有効にしています。
+both_ui/otherplayerinfo|0|3|4,プレイヤーはコメント機能を友人のみ有効にしています。,해당 플레이어는 코멘트를 친구만 활성화 중입니다.
 both_ui/otherplayerinfo|0|3|6|1|4|0|0,最近,최근
 both_ui/otherplayerinfo|0|3|6|1|4|0|2,全部,전부
 both_ui/otherplayerinfo|0|3|8|2,挨拶がありません,인사말이 없습니다.
@@ -229,7 +230,7 @@ both_ui/otherplayerinfo_en|0|2|6|1|6|0|2,役達成回数,역 완성 횟수
 both_ui/otherplayerinfo_en|0|2|6|1|7|0|2,ローカル役達成回数,로컬 역 완성 횟수
 both_ui/otherplayerinfo_en|0|3|1,コメントがありません,코멘트가 없습니다.
 both_ui/otherplayerinfo_en|0|3|3|0|0,送信,송신
-both_ui/otherplayerinfo_en|0|3|4,プレイヤーはコメント機能を友人のみ有効にしています。,플레이어は코멘트機能を친구のみ有効にしています。
+both_ui/otherplayerinfo_en|0|3|4,プレイヤーはコメント機能を友人のみ有効にしています。,해당 플레이어는 코멘트를 친구만 활성화 중입니다.
 both_ui/otherplayerinfo_en|0|3|6|1|4|0|0,最近,최근
 both_ui/otherplayerinfo_en|0|3|6|1|4|0|2,全部,전부
 both_ui/otherplayerinfo_en|0|3|8|2,挨拶がありません,인사말이 없습니다.
@@ -239,10 +240,10 @@ both_ui/otherplayerinfo_en|0|6|0,3人戦,3인전
 both_ui/otherplayerinfo_en|0|7|0,コメント,코멘트
 both_ui/popwindow|0|4|0,確認,확인
 both_ui/popwindow|1|2|0,確認,확인
-both_ui/report_nickname|0|2,不適切な書き込みを発見した際は、カスタムサポートにご報告いただきますようお願いします,不適切な書き込みを発見した際は、カスタムサポートにご報告いただきますようお願いします
+both_ui/report_nickname|0|2,不適切な書き込みを発見した際は、カスタムサポートにご報告いただきますようお願いします,부적절한 텍스트를 발견했을 때는 고객센터에 신고해주시길 바랍니다.
 both_ui/report_nickname|0|3|0,報告,報告
 both_ui/report_nickname|0|4|0,いいえ,아니오
-both_ui/report_nickname|0|5,プレイヤー名を報告,플레이어명を報告
+both_ui/report_nickname|0|5,プレイヤー名を報告,플레이어명 보고
 both_ui/report_success|0|2,雀士様からのご報告を承りました。ゲーム環境維持にご協力いただき、誠にありがとうございます。,작사様からのご報告を承りました。ゲーム環境維持にご協力いただき、誠にありがとうございます。
 both_ui/report_success|0|3|0,閉じる,닫기
 both_ui/report_success|0|4,報告完了,報告完了
@@ -276,14 +277,14 @@ both_ui/unbind_phone|0|6|0,解除绑定,解除绑定
 both_ui/unbind_phone|0|9,注意！解除手机绑定以后该账号将永久冻结，无法登录和使用，请确认以后再进行操作！该操作不可撤销！,注意！解除手机绑定以后该账号将永久冻结，无法登录和사용，请确认以后再进行操作！该操作不可撤销！
 both_ui/unbind_yostar_mail|0|2,連携解除,연동해제
 both_ui/unbind_yostar_mail|0|5|0,認証コード送信,인증코드 발송
-both_ui/unbind_yostar_mail|0|6|0,解除,解除
+both_ui/unbind_yostar_mail|0|6|0,解除,해제
 common/android_change|0|2|0,好的，走起,好的，走起
 common/android_change|0|3|0,再等等,잠시 기다리세요.
 common/android_change|0|4,好消息！好消息！,好消息！好消息！
 common/android_change|0|5,雀魂全新安卓App已在官网开放下载\\n        *更流畅的体验\\n        *更低的耗电\\n        *更少的流量\\n        *更好的全面屏适配,雀魂全新安卓App已在官网开放下载\\n        *更流畅的体验\\n        *更低的耗电\\n        *更少的流量\\n        *更好的全面屏适配
 common/android_change|0|6,是否立即前往官网下载？,是否立即前往官网下载？
 common/anotherlogin|0|2|0,確認,확인
-common/anotherlogin|0|3,他の場所でログインされました,他の場所で로그인されました
+common/anotherlogin|0|3,他の場所でログインされました,중복 로그인 감지. 다른 장소에서 로그인하였습니다.
 common/bind_phone0|0|2,绑定手机,绑定手机
 common/bind_phone0|0|7|0,发送验证码,发送验证码
 common/bind_phone0|0|8,手机号码：,手机号码：
@@ -307,7 +308,7 @@ common/bind_phone2|0|5,手机号码：,手机号码：
 common/bind_phone2|0|5|0,1,1
 common/bind_phone2|0|6|0,创建,创建
 common/bind_phone2|0|7|0,取消,취소
-common/canot_create_phone_account|0|2,信息,信息
+common/canot_create_phone_account|0|2,信息,정보
 common/canot_create_phone_account|0|3|0,了解了,了解了
 common/canot_create_phone_account|0|4,该手机号已经创建过通行证，无法为本账号创建通行证，仅作为手机实名信息使用。,该手机号已经创建过通行证，无法为本账号创建通行证，仅作为手机实名信息사용。
 common/canot_create_phone_account|0|5,您无法使用该手机号来登录或找回账号。,您无法사용该手机号来登录或找回账号。
@@ -320,28 +321,29 @@ common/create_phone_account|0|4,是否使用该手机号创建一个通行证?\\
 common/create_phone_account|0|5|0,不用了,不用了
 common/create_phone_account_success|0|2,成功,성공
 common/create_phone_account_success|0|3|0,好的,好的
-common/create_phone_account_success|0|4,创建手机号通行证成功。,创建手机号通行证성공。
-common/disconnect|1|2,接続が切断されました。再接続しています,接続が切断されました。再接続しています
+common/create_phone_account_success|0|4,创建手机号通行证成功。,휴대전화 인증에 성공
+common/create_phone_account_success|0|5,(密码与账号/邮箱通行证的密码一致),(密码与账号/邮箱通行证的密码一致)
+common/disconnect|1|2,接続が切断されました。再接続しています,연결이 끊어져 재접속중입니다.
 common/disconnect|1|4|0,再起動,재시작
 common/errorinfo|1|4|1,再起動,재시작
 common/guajichenfa|0|2|0,確認,확인
 common/hangup_logout|0|2|0,確認,확인
-common/hangup_logout|0|3,長時間無操作のため、接続が切断されました。,長時間無操作のため、接続が切断されました。
+common/hangup_logout|0|3,長時間無操作のため、接続が切断されました。,장시간 조작이 없어 접속을 종료하였습니다.
 common/loading|5|1,/,/
 common/preventaddiction|0|0,-,-
 common/preventaddiction|0|1,-,-
 common/preventaddiction|1|0,累計オンライン時間,누적 접속시간
 common/reconnect|2,対戦中の対局があります,대전 중인 대국이 있습니다
-common/reconnect|3|0,再接続,再接続
-common/shimingrenzheng|0|0|2,本人確認,本人確認
-common/shimingrenzheng|0|1|1,本人確認,本人確認
+common/reconnect|3|0,再接続,재접속
+common/shimingrenzheng|0|0|2,本人確認,본인인증
+common/shimingrenzheng|0|1|1,本人確認,본인인증
 common/shimingrenzheng|0|2,-,-
 common/shimingrenzheng|0|3,-,-
 common/shimingrenzheng|0|4,-,-
 common/shimingrenzheng|0|5,-,-
 common/shimingrenzheng|0|6,-,-
 common/shimingrenzheng|0|7,-,-
-common/user_xieyi|0|0|2,ソフトウェア利用許諾契約,ソフトウェア利用許諾계약
+common/user_xieyi|0|0|2,ソフトウェア利用許諾契約,소프트웨어 이용허락계약
 common/user_xieyi|0|1|1,同意する,동의한다
 common/user_xieyi|0|3|1,前のページ,이전 페이지
 common/user_xieyi|0|4|1,次のページ,다음 페이지
@@ -353,24 +355,25 @@ entrance/change_language|0|2|0,確認,확인
 entrance/change_language|0|3|0,いいえ,아니오
 entrance/change_language|0|4|0|3,中文(简体),중국어(간체)
 entrance/change_language|0|4|1|3,中文(繁體),중국어(번체)
+entrance/change_language|0|4|2|3,English,영어
 entrance/chooseserver|0|2,选择服务器,选择服务器
 entrance/chooseserver|0|4,输入服务器地址：,输入服务器地址：
 entrance/chooseserver|0|5,47.245.59.187:7891,47.245.59.187:7891
 entrance/choose_language|0|0,更改语言:,更改语言:
 entrance/choose_language|2,当前语言：简体中文,当前语言：简体中文
-entrance/choose_route|0|0|2,サーバーを選択してください,サーバーを選択してください
+entrance/choose_route|0|0|2,サーバーを選択してください,서버를 선택해주세요.
 entrance/entrance|1|2|0|3|2,パスワード,비밀번호
-entrance/entrance|1|2|0|4|0,登録,登録
-entrance/entrance|1|2|0|5|0,パスワードを忘れた,비밀번호を忘れた
+entrance/entrance|1|2|0|4|0,登録,등록
+entrance/entrance|1|2|0|5|0,パスワードを忘れた,비밀번호 분실
 entrance/entrance|1|2|1|1|3,次回から自動でログインする,다음부터 자동 로그인
 entrance/entrance|1|2|2|0,他のサービスIDでログイン,다른 연동된 ID로 로그인
 entrance/entrance|1|2|3|1|3,次回から自動でログインする,다음부터 자동 로그인
-entrance/entrance|1|3,Chromeの使用をおすすめします,Chromeの사용をおすすめします
+entrance/entrance|1|3,Chromeの使用をおすすめします,Chrome을 사용하시는 걸 추천합니다.
 entrance/entrance|1|4|1,ログイン中,로그인 중
 entrance/entrance|1|4|3|1,ログアウト,로그아웃
 entrance/entrance|1|5|1,ホーム画面に追加,메인 화면에 추가
 entrance/entrance|2|0|0|2,Yostar ログイン,Yostar 로그인
-entrance/entrance|2|0|2|2,使用不可,사용不可
+entrance/entrance|2|0|2|2,使用不可,사용불가
 entrance/entrance|2|0|4|2,コードを受け取る,인증코드 발송
 entrance/entrance|2|0|5|3|0,《雀魂利用規約》,《작혼 이용약관》
 entrance/entrance|2|0|5|3|1,、,、
@@ -384,10 +387,10 @@ entrance/entrance|2|0|7,※メールアドレスを入力してください,※�
 entrance/entrance|2|0|8,※メールアドレスに送信されるコードを入力してください,※이메일 주ㅅ에 발송된 코드를 입력해주세요
 entrance/entrance|4|1|0,简体中文,간체중문
 entrance/error_info|0|0|2|0,確認,확인
-entrance/ios_webview_update|0|1,新しいバージョンの更新があります。公式サイトでダウンロードしてください,新しいバージョンの갱신があります。公式サイトでダウンロードしてください
+entrance/ios_webview_update|0|1,新しいバージョンの更新があります。公式サイトでダウンロードしてください,새로운 버전이 업데이트되었습니다. 공식 사이트에서 다운로드해주세요.
 entrance/mail_regist|0|0|1,登録,등록
 entrance/mail_regist|0|0|2|0,SNSアカウントで登録,SNS계정으로 가입
-entrance/mail_regist|0|0|9|3,雀魂ソフトウェア利用許諾契約,雀魂ソフトウェア利用許諾계약
+entrance/mail_regist|0|0|9|3,雀魂ソフトウェア利用許諾契約,작혼 소프트웨어 이용약관
 entrance/mail_regist|0|0|10|5,、,、
 entrance/mail_regist|0|0|11|0,認証コード送信,인증코드 발송
 entrance/mail_regist|1|1|1,サーバー接続中,서버 접속중
@@ -400,8 +403,8 @@ entrance/remind|0|3,合理安排时间，享受健康生活,合理安排时间�
 entrance/remind|1,区区 立直棒 就送给你了,区区 立直棒 就送给你了
 entrance/remind|2,——--,——--
 entrance/remind|3,满贯,满贯
-entrance/remind|4,跳满,跳满
-entrance/remind|5,倍满,倍满
+entrance/remind|4,跳满,하네만
+entrance/remind|5,倍满,배만
 entrance/remind|6,役满,역만
 entrance/remind|7,2/10,2/10
 entrance/reset_password|0|0|1|0|0,送信,송신
@@ -414,28 +417,28 @@ lobby/activity|0|3|2,メールがありません,우편이 없습니다.
 lobby/activity|0|4|2,開催中のイベントがありません,진행 중인 이벤트가 없습니다.
 lobby/activitys/activitybase|0|0|1|1|3,コイン,코인
 lobby/activitys/activitybase|0|0|1|1|4,復活コイン,부활 코인
-lobby/activitys/activitybase|0|0|1|1|9,受取済,수령완료
-lobby/activitys/activity_duanwu_rank|0|0|4,受取済,수령완료
+lobby/activitys/activitybase|0|0|1|1|9,交換済,교환완료
+lobby/activitys/activity_duanwu_rank|0|0|4,交換済,교환완료
 lobby/activitys/activity_duanwu_rank|0|4,现在还没有人上榜哦！冲鸭！,现在还没有人上榜哦！冲鸭！
 lobby/activitys/activity_exchange|0|0|1|1|5|0|0,交換,교환
-lobby/activitys/activity_exchange|0|0|1|1|8,受取済,수령완료
+lobby/activitys/activity_exchange|0|0|1|1|8,交換済,교환완료
 lobby/activitys/activity_exchange_zhongxia|0|0|1|1|5|0|0,交換,교환
-lobby/activitys/activity_exchange_zhongxia|0|0|1|1|8,受取済,수령완료
+lobby/activitys/activity_exchange_zhongxia|0|0|1|1|8,交換済,교환완료
 lobby/activitys/activity_guoqing|0|0|12|0|1|1,/,/
 lobby/activitys/activity_jiuji|0|0,復活コイン,부활 코인
 lobby/activitys/activity_jiuji|0|1|1|3,コイン,코인
 lobby/activitys/activity_jiuji|0|1|1|4,復活コイン,부활 코인
 lobby/activitys/activity_jiuji|0|1|1|6,枚,개
-lobby/activitys/activity_jiuji|0|1|1|10,受取済,수령완료
+lobby/activitys/activity_jiuji|0|1|1|10,交換済,교환완료
 lobby/activitys/activity_task|0|0|1|1|3,コイン,코인
-lobby/activitys/activity_task|0|0|1|1|8,受取済,수령완료
+lobby/activitys/activity_task|0|0|1|1|8,交換済,교환완료
 lobby/activitys/activity_task_newyear|0|0|1|1|3,对局中每次达成特定番型都可获得红灯笼,对局中每次达成特定番型都可获得红灯笼
 lobby/activitys/activity_task_newyear|0|0|1|1|4,收集,收集
 lobby/activitys/activity_task_newyear|0|0|1|1|4|0,红灯笼,红灯笼
 lobby/activitys/activity_task_newyear|0|0|1|1|6|0,红灯笼×1,红灯笼×1
 lobby/activitys/activity_task_newyear|0|0|1|1|6|2,立直、门前清自摸和、平和、一杯口,立直、门前清自摸和、핑후、一杯口
 lobby/activitys/activity_task_newyear|0|0|1|1|7|0,红灯笼×2,红灯笼×2
-lobby/activitys/activity_task_newyear|0|0|1|1|7|2,七对子,七对子
+lobby/activitys/activity_task_newyear|0|0|1|1|7|2,七对子,치또이
 lobby/activitys/activity_task_newyear|0|0|1|1|8|0,红灯笼×4,红灯笼×4
 lobby/activitys/activity_task_newyear|0|0|1|1|8|2,两立直、二杯口,两立直、二杯口
 lobby/activitys/activity_task_newyear|0|0|1|1|9|0,红灯笼×8,红灯笼×8
@@ -480,13 +483,15 @@ lobby/activitys/activity_task_zhongxia|0|0|3|1|11|2,立直、门前清自摸和�
 lobby/activitys/activity_task_zhongxia|0|0|3|1|12|0,红灯笼×1,红灯笼×1
 lobby/activitys/activity_task_zhongxia|0|0|3|1|12|2,立直、门前清自摸和、平和、一杯口,立直、门前清自摸和、핑후、一杯口
 lobby/activitys/activity_tongbi_exchange|0|0|1|1|5|0|0,交換,교환
-lobby/activitys/activity_tongbi_exchange|0|0|1|1|8,受取済,수령완료
+lobby/activitys/activity_tongbi_exchange|0|0|1|1|8,交換済,교환완료
 lobby/activitys/activity_wuyi_exchange|0|0|1|1|5|0|0,交換,교환
-lobby/activitys/activity_wuyi_exchange|0|0|1|1|8,受取済,수령완료
-lobby/activitys/activity_wuyi_task|0|0|1|1|8,受取済,수령완료
+lobby/activitys/activity_wuyi_exchange|0|0|1|1|8,交換済,교환완료
+lobby/activitys/activity_wuyi_task|0|0|1|1|8,交換済,교환완료
+lobby/activitys/activity_xiari_exchange|0|0|1|1|6|0|0,交換,교환
+lobby/activitys/activity_xiari_exchange|0|0|1|1|8,交換済,교환완료
 lobby/activitys/activity_xuanshang|0|0,一日一個更新されます,1일 1회 갱신
-lobby/activitys/activity_yijidagong|0|4,コイン入手量,코인입수量
-lobby/activitys/activity_yijidagong|0|13|0|1,+,+
+lobby/activitys/activity_yijidagong|0|5,コイン入手量,코인 입수량
+lobby/activitys/activity_yijidagong|0|14|0|1,+,+
 lobby/activitys/guoqing_popout|0|4|1,受け取る,수령
 lobby/activitys/guoqing_popout|0|5|1,確認,확인
 lobby/activitys/sign|3|2|0,999999,999999
@@ -524,16 +529,16 @@ lobby/add_room|0|6|7|1,8,8
 lobby/add_room|0|6|8|1,9,9
 lobby/add_room|0|6|9|1,C,C
 lobby/add_room|0|6|10|1,0,0
-lobby/ageconfirm|0|0|2,年齢認証,나이認証
-lobby/ageconfirm|0|0|4,毎月の購入上限は,毎月の구입上限は
-lobby/ageconfirm|0|0|5,円になります,円になります
+lobby/ageconfirm|0|0|2,年齢認証,나이인증
+lobby/ageconfirm|0|0|4,毎月の購入上限は,매월 구입 상한은
+lobby/ageconfirm|0|0|5,円になります,엔입니다
 lobby/ageconfirm|0|0|6,20000,20000
 lobby/ageconfirm|0|0|7|0,確認,확인
-lobby/agepending|0|0|0|2,年齢認証,나이認証
+lobby/agepending|0|0|0|2,年齢認証,나이인증
 lobby/agepending|0|0|0|3,あなたの年齢によって一ヶ月に購入できる金額がきまっています。,당신의 나이에 따라 한 달에 구입할 수 있는 금액이 정해집니다.
 lobby/agepending|0|0|0|4,必ず正しい生年月を入力してください。,꼭 정직하게 대답해주세요.
 lobby/agepending|0|0|0|5,(*あとから生年月の変更はできません。),(*설정한 생년월일은 변경할 수 없습니다.)
-lobby/agepending|0|0|0|6,毎月の購入上限額,毎月の구입上限額
+lobby/agepending|0|0|0|6,毎月の購入上限額,매월 구입 상한액
 lobby/agepending|0|0|0|7,16才未満:,16세 미만:
 lobby/agepending|0|0|0|8,16才以上20才未満:,16세 이상 20세 미만:
 lobby/agepending|0|0|0|9,20才以上:,20세 이상:
@@ -563,14 +568,14 @@ lobby/agepending_chs|0|0|4,请选择月份,请选择月份
 lobby/agepending_chs|0|0|5,请选择年份,请选择年份
 lobby/agepending_chs|0|1|1|2|0|0|1,2001,2001
 lobby/agepending_chs|0|1|2|2|0|0|1,2001,2001
-lobby/agesuccess|0|0|2,年齢認証,나이認証
+lobby/agesuccess|0|0|2,年齢認証,나이인증
 lobby/agesuccess|0|0|3,認証完了しました。,인증을 완료했습니다.
 lobby/agesuccess|0|0|4|0,確認,확인
 lobby/agesuccess_chs|0|3|0,确定,确定
-lobby/agexiane|0|0|2,年齢認証,나이認証
+lobby/agexiane|0|0|2,年齢認証,나이인증
 lobby/agexiane|0|0|3,20000,20000
 lobby/agexiane|0|0|4,円,엔
-lobby/agexiane|0|0|5,毎月の購入上限額:,毎月の구입上限額:
+lobby/agexiane|0|0|5,毎月の購入上限額:,이번 달 구입 상한액:
 lobby/agexiane|0|0|6,20000,20000
 lobby/agexiane|0|0|7,円,엔
 lobby/agexiane|0|0|8,今月の合計購入額:,이달의 합계 구입액:
@@ -580,30 +585,30 @@ lobby/bag|0|0|1|1,装飾品,장식품
 lobby/bag|0|0|2|1,贈り物,선물
 lobby/bag|0|0|3|1,アイテム,아이템
 lobby/bag|0|1|3|0,奉納,봉납
-lobby/bag|0|1|6|0|0,選択クリア,選択クリア
+lobby/bag|0|1|6|0|0,選択クリア,선택 취소
 lobby/bag|0|1|6|1|0,戻る,이전
 lobby/bag|0|1|6|2|0,奉納,봉납
-lobby/bag|0|1|6|3,奉納する贈り物を選択してください,봉납する선물を選択してください
-lobby/bag|0|1|7,不要な贈り物を奉納すると星のかけらを獲得,不要な선물を봉납すると별 가루を獲得
+lobby/bag|0|1|6|3,奉納する贈り物を選択してください,봉납하려는 선물을 선택해주세요.
+lobby/bag|0|1|7,不要な贈り物を奉納すると星のかけらを獲得,필요없는 선물을 봉납하면 별 가루를 획득할 수 있습니다.
 lobby/bag|0|3|0|0|0|0|3|2|0,契約を結ぶ,계약성립
 lobby/bag|0|3|2|0,全商品,全商品
 lobby/bag|0|3|3,使用可能な装飾品がありません,사용 가능한 장식품이 없습니다.
 lobby/bag|1|0,倉庫,창고
 lobby/chang_nickname|0|2,名前変更,이름변경
-lobby/chang_nickname|0|3|1,プレイヤー名（1-7文字）,플레이어명（1-7文字）
-lobby/chang_nickname|0|3|4,使用不可,사용不可
+lobby/chang_nickname|0|3|1,プレイヤー名（1-7文字）,플레이어명（1-7 글자）
+lobby/chang_nickname|0|3|4,使用不可,사용불가
 lobby/chang_nickname|0|3|6|0,必要,必要
 lobby/chang_nickname|0|3|7,Cannot contain empty spaces and special characters,Cannot contain empty spaces and special characters
-lobby/chang_nickname|0|4|0,30日に一回のみ変更可能,30日に一回のみ変更可能
-lobby/chang_nickname|0|4|1,残り,残り
-lobby/chang_nickname|0|4|3,日,日
+lobby/chang_nickname|0|4|0,30日に一回のみ変更可能,30일에 1회 변경가능
+lobby/chang_nickname|0|4|1,残り,잔여
+lobby/chang_nickname|0|4|3,日,일
 lobby/checkhuiyu|0|2,輝石詳細,휘석 상세
 lobby/checkhuiyu|0|3,有償:,유료:
 lobby/checkhuiyu|0|5,無償:,무료:
 lobby/checkhuiyu|0|7,合計:,합계:
 lobby/checkhuiyu|0|10|0,はい,예
 lobby/checkhuiyu|0|11|0,購入,구입
-lobby/checkpifuquan|0|2,着せ替え券詳細,코스튬권상세
+lobby/checkpifuquan|0|2,着せ替え券詳細,코스튬권 상세
 lobby/checkpifuquan|0|3,有償:,유료:
 lobby/checkpifuquan|0|5,無償:,무료:
 lobby/checkpifuquan|0|7,合計:,합계:
@@ -658,7 +663,7 @@ lobby/diamond_less|0|2,輝石が足りません,휘석이 부족합니다
 lobby/diamond_less|0|4|0,購入,구입
 lobby/diamond_less|0|5|0,いいえ,아니오
 lobby/diamond_less|0|6,輝石が足りません。購入しますか？,휘석이 부족합니다. 구입하시겠습니까?
-lobby/force_update|0|2,アップデート内容を検出しました、再接続を行ってください。,アップデート内容を検出しました、再接続を行ってください。
+lobby/force_update|0|2,アップデート内容を検出しました、再接続を行ってください。,업데이트 내용이 확인되었습니다. 다시 접속해주세요.
 lobby/force_update|0|3|0,はい,예
 lobby/friend|0|1|0,友人,친구
 lobby/friend|1|1|0|0,友人リスト,친구목록
@@ -753,7 +758,7 @@ lobby/match_room|2|1|4|0,閉じます,닫기
 lobby/match_room|3|0|2,牌譜IDを入力してください,패보 ID를 입력해주세요
 lobby/match_room|3|0|3|0,確認,확인
 lobby/match_room|3|0|6|1,匿名シェア,익명공유
-lobby/match_room|4|0|2,条件に合いません,条件に合いません
+lobby/match_room|4|0|2,条件に合いません,조건에 맞지 않습니다.
 lobby/match_room|4|0|3,参加資格がありません,참가자격이 없습니다.
 lobby/match_room|4|0|4|0,閉じます,닫기
 lobby/match_shilian|0|1,试炼之道,试炼之道
@@ -788,9 +793,9 @@ lobby/match_ticket|0|6,拥有铜币,拥有铜币
 lobby/match_ticket|0|6|0,9999,9999
 lobby/match_ticket|0|7,试炼券可以通过活动获取,试炼券可以通过活动获取
 lobby/nickname|0|2,プレイヤー名を入力してください,플레이어명를 입력해주세요
-lobby/nickname|0|4,プレイヤー名（1-7文字）,플레이어명（1-7文字）
-lobby/nickname|0|6,使用可能,사용可能
-lobby/nickname|0|7,使用不可,사용不可
+lobby/nickname|0|4,プレイヤー名（1-7文字）,플레이어명（1-7 글자）
+lobby/nickname|0|6,使用可能,사용가능
+lobby/nickname|0|7,使用不可,사용불가
 lobby/nickname|0|8|1,確認,확인
 lobby/nickname|0|9,Cannot contain empty spaces and special characters,Cannot contain empty spaces and special characters
 lobby/nickname|0|10|1,ゲーム終了,게임 종료
@@ -815,10 +820,10 @@ lobby/number_input|0|6|8|1,9,9
 lobby/number_input|0|6|9|1,C,C
 lobby/number_input|0|6|10|1,0,0
 lobby/ob|0|0,対戦データがありません,대전 데이터가 없습니다.
-lobby/ob|0|6|0,友人がいる対戦のみ表示,친구がいる対戦のみ表示
+lobby/ob|0|6|0,友人がいる対戦のみ表示,친구만 표시
 lobby/ob|0|7|1,更新,갱신
 lobby/ob|1|0,観戦,관전
-lobby/openbox|1|3,好きな贈り物をお選びください,好きな선물をお選びください
+lobby/openbox|1|3,好きな贈り物をお選びください,선물을 선택해주세요.
 lobby/openbox|1|5|0,はい,예
 lobby/page_sign_chs|1|1|1,確認,확인
 lobby/page_sign_chs|1|2|1,参拝,참배
@@ -856,31 +861,18 @@ lobby/paipu|2|6|1,匿名シェア,익명공유
 lobby/paipu|3|1|2,ブックマーク,즐겨찾기
 lobby/paipu|3|1|3|0,保存,저장
 lobby/paipu|3|1|5,コメントが長すぎます,코멘트가 너무 깁니다.
-lobby/payment/buy_yueka_chs|0|3,选择支付方式,选择支付方式
-lobby/payment/buy_yueka_chs|0|4,商品名称：,상품명칭：
-lobby/payment/buy_yueka_chs|0|5,6800辉玉,6800辉玉
-lobby/payment/buy_yueka_chs|0|6,商品说明：,상품설명：
-lobby/payment/buy_yueka_chs|0|7,132123213123\\n1231231231\\n123123123\\n12312313123,132123213123\\n1231231231\\n123123123\\n12312313123
-lobby/payment/buy_yueka_chs|0|8,应付金额：,미지급금：
-lobby/payment/buy_yueka_chs|0|9,680.00元,680.00元
-lobby/payment/buy_yueka_chs|0|10,支付疑问请加 QQ：951307369,支付疑问请加 QQ：951307369
-lobby/payment/buy_yueka_chs|0|11|0|0|1,微信,微信
-lobby/payment/buy_yueka_chs|0|11|1|0|1,支付宝,支付宝
-lobby/payment/buy_yueka_chs|0|11|2|0|1,支付宝扫码,支付宝扫码
+lobby/payment/buy_yueka_chs|0|3,支払方法を選択してください,결제 방법을 선택해주세요.
+lobby/payment/buy_yueka_chs|0|4,商品名：,상품명：
+lobby/payment/buy_yueka_chs|0|6,説明,설명
+lobby/payment/buy_yueka_chs|0|8,価格：,가격 : 
 lobby/payment/buy_yueka_en|0|3,支払方法を選択してください,결제 방법을 선택해주세요.
 lobby/payment/buy_yueka_en|0|4,商品名：,상품명：
-lobby/payment/buy_yueka_en|0|6,説明,説明
+lobby/payment/buy_yueka_en|0|6,説明,설명
 lobby/payment/buy_yueka_en|0|8,価格：,가격：
 lobby/payment/buy_yueka_en|0|10,契約ポイント:,계약 포인트:
-lobby/payment/choose_method_chs|0|3,选择支付方式,选择支付方式
-lobby/payment/choose_method_chs|0|4,商品名称：,상품명칭：
-lobby/payment/choose_method_chs|0|5,6800辉玉,6800辉玉
-lobby/payment/choose_method_chs|0|6,应付金额：,미지급금：
-lobby/payment/choose_method_chs|0|7,680.00元,680.00元
-lobby/payment/choose_method_chs|0|8,支付疑问请加 QQ：951307369,支付疑问请加 QQ：951307369
-lobby/payment/choose_method_chs|0|9|0|0|1,微信,微信
-lobby/payment/choose_method_chs|0|9|1|0|1,支付宝,支付宝
-lobby/payment/choose_method_chs|0|9|2|0|1,支付宝扫码,支付宝扫码
+lobby/payment/choose_method_chs|0|3,支払方法を選択してください,결제 방법을 선택해주세요.
+lobby/payment/choose_method_chs|0|4,商品名：,상품명：
+lobby/payment/choose_method_chs|0|6,価格：,가격 : 
 lobby/payment/choose_method_chs_t|0|3,支払方法を選択してください,결제 방법을 선택해주세요.
 lobby/payment/choose_method_chs_t|0|4,商品名：,상품명：
 lobby/payment/choose_method_chs_t|0|6,価格：,가격 : 
@@ -888,30 +880,30 @@ lobby/payment/choose_method_en|0|3,支払方法を選択してください,결�
 lobby/payment/choose_method_en|0|4,商品名：,상품명 : 
 lobby/payment/choose_method_en|0|6,価格：,가격 : 
 lobby/payment/choose_method_en|0|8,契約ポイント:,계약 포인트:
-lobby/payment/creditcard|0|2,クレジットカード,クレジットカード
-lobby/payment/creditcard|0|3|1,カード番号,カード番号
-lobby/payment/creditcard|0|3|3,14～16桁の半角数字をハイフンやスペースをいれずに入力してください,14～16桁の半角数字をハイフンやスペースをいれずに入力してください
-lobby/payment/creditcard|0|4|0,有効期限,有効期限
+lobby/payment/creditcard|0|2,クレジットカード,신용카드
+lobby/payment/creditcard|0|3|1,カード番号,카드번호
+lobby/payment/creditcard|0|3|3,14～16桁の半角数字をハイフンやスペースをいれずに入力してください,14～16자리 반각숫자를 특수문자나 띄어쓰기 없이 입력해주세요.
+lobby/payment/creditcard|0|4|0,有効期限,유효기간
 lobby/payment/creditcard|0|4|1|0,月,월
 lobby/payment/creditcard|0|4|2|0,年,년
-lobby/payment/creditcard|0|4|3,月をお選びください,月をお選びください
-lobby/payment/creditcard|0|4|4,年をお選びください,年をお選びください
+lobby/payment/creditcard|0|4|3,月をお選びください,월을 선택해주세요.
+lobby/payment/creditcard|0|4|4,年をお選びください,나이를 선택해주세요
 lobby/payment/creditcard|0|5|0,セキュリティコード,시큐리티 코드
-lobby/payment/creditcard|0|5|3,セキュリティコードは3桁(一部4桁))の数字です。,セキュリティコードは3桁(一部4桁))の数字です。
-lobby/payment/creditcard|0|6|1,確認＆支払い,確認＆支払い
+lobby/payment/creditcard|0|5|3,セキュリティコードは3桁(一部4桁))の数字です。,시큐리티 코드는 3자리(일부 4자리)로 이루어져 있습니다.
+lobby/payment/creditcard|0|6|1,確認＆支払い,확인 및 결제
 lobby/payment/creditcard|2|0|3|1,確認,확인
 lobby/payment/creditcard|2|0|4,セキュリティコード,시큐리티 코드
-lobby/payment/creditcard|2|0|5,"Discover,MasterCard,Visaカードの場合、背面署名欄右上に3文字印字されている","Discover,MasterCard,Visaカードの場合、背面署名欄右上に3文字印字されている"
-lobby/payment/creditcard|2|0|6,American Expressカードの場合、背面署名欄右上に3文字印字されている,American Expressカードの場合、背面署名欄右上に3文字印字されている
+lobby/payment/creditcard|2|0|5,"Discover,MasterCard,Visaカードの場合、背面署名欄右上に3文字印字されている","Discover,MasterCard,Visa카드의 경우 뒷면 서명란 우측에 세자리입니다."
+lobby/payment/creditcard|2|0|6,American Expressカードの場合、背面署名欄右上に3文字印字されている,American Express 카드의 경우 후명 서명란 우측 상단의 3자리입니다.
 lobby/payment/wxcode|0|5,商品名称：,상품명칭 : 
 lobby/payment/wxcode|0|5|0,6800辉玉,6800辉玉
 lobby/payment/wxcode|0|6,应付金额：,미지급금 : 
 lobby/payment/wxcode|0|6|0,680.00元,680.00元
 lobby/payment/wxcode|0|7,请打开,请打开
 lobby/payment/wxcode|0|8,“扫一扫”扫描二维码完成支付,“扫一扫”扫描二维码完成支付
-lobby/payment/wxcode|0|9,支付宝,支付宝
+lobby/payment/wxcode|0|9,支付宝,알리페이
 lobby/payment/wxcode|0|10|0|0,关闭,关闭
-lobby/pifuquan_less|0|2,着せ替え券が足りません,코스튬권が足りません
+lobby/pifuquan_less|0|2,着せ替え券が足りません,코스튬권이 부족합니다
 lobby/pifuquan_less|0|4|0,購入,구입
 lobby/pifuquan_less|0|5|0,いいえ,아니오
 lobby/pifuquan_less|0|6,着せ替え券が足りません。購入しますか？,코스튬권이 부족합니다. 구입하시겠습니까?
@@ -1058,7 +1050,7 @@ lobby/playerinfo_en|1|5|7|1|6|0|2,役達成回数,역 완성 횟수
 lobby/playerinfo_en|1|5|7|1|7|0|2,ローカル役達成回数,로컬 역 완성 횟수
 lobby/pop_buy_multi|0|6|0,購入,구입
 lobby/pop_buy_multi|0|7|0,価格,가격
-lobby/pop_buy_multi|0|8|0,残り,残り
+lobby/pop_buy_multi|0|8|0,残り,잔여
 lobby/pop_buy_multi|0|9,毎月更新されます,매월 갱신됩니다
 lobby/pop_buy_multi|0|10|0,価格,가격
 lobby/pop_buy_single|0|6|0,購入,구입
@@ -1067,28 +1059,31 @@ lobby/rank|0|2|0|0|4,pt,pt
 lobby/rank|0|4|1|7,pt,pt
 lobby/rank|0|5|0|0,4人戦,4인전
 lobby/rank|0|5|1|0,3人戦,3인전
-lobby/recharge|0|0,商店,商店
+lobby/recharge|0|0,商店,상점
 lobby/recharge|1|0|0|0,雑貨,잡화
 lobby/recharge|1|0|1|0,願いの小屋,소원의 소옥
 lobby/recharge|1|0|2|0,星の小屋,별의 소옥
 lobby/recharge|1|0|3|0,お祈り小屋,기도의 소옥
 lobby/recharge|1|0|4|0,祈願,기원
 lobby/recharge|1|2|0|1,称号効果,칭호 효과
-lobby/recharge|1|2|6|0,現在,現在
+lobby/recharge|1|2|6|0,現在,현재
 lobby/recharge|1|2|8|0,受け取る,수령
 lobby/recharge|1|2|9|0|1,契約効果,계약효과
 lobby/recharge|2|0|6|0,購入,구입
 lobby/recharge|2|0|7|0,価格,가격
 lobby/shilian/shilian|2|2,試練の道,시련의 길
 lobby/shilian/shilian|3|0|2|0|3,報酬:,보상:
+lobby/shilian/shilian|3|0|2|0|4,残り対局数:,남은 대국 수 :
 lobby/shilian/shilian|3|0|2|1|3,報酬:,보상:
 lobby/shilian/shilian|3|0|2|1|4,残り対局数:,남은 대국 수:
+lobby/shilian/shilian|3|2|4|1,今週の報酬,주간 보상
+lobby/shilian/shilian|3|3|6,未完成の課題を選択し完成させます。ほかの部分をクリックで取り消します。,달성하지 못한 퀘스트를 선택하면 완료로 변경할 수 있습니다. 다른 곳을 클릭하여 취소할 수 있습니다.
 lobby/shilian/shilian|4|2,Tap to continue,터치하여 계속
 lobby/shilian/shilian_level_info|0|2,試練階級について,시련등급에 대해
 lobby/shilian/shilian_rank|0|1,試練ランキング,시련 랭킹
 lobby/shilian/shilian_rank|0|5|1,友人ランキング,친구랭킹
 lobby/shilian/shilian_reward|0|2,試練階級報酬受取,시련등급 달성 보상
-lobby/shilian/shilian_reward|0|4|0|0|2|1|4,受取済,수령완료
+lobby/shilian/shilian_reward|0|4|0|0|2|1|4,交換済,교환완료
 lobby/shop|0|0|0|0,洋服屋,코스튬
 lobby/shop|0|0|1|0,福袋小屋,복의 소옥
 lobby/shop|0|0|2|0,星の小屋,별의 소옥
@@ -1104,19 +1099,19 @@ lobby/shop|0|2|0|0|6|2|0,購入,구입
 lobby/shop|0|2|3,完売しました。,매진되었습니다.
 lobby/shop|1|0,雑貨屋,잡화점
 lobby/shop_lobby_yulan|1|2|2|0,購入,구입
-lobby/shop_pack_detail|0|5|0,未所持商品の合計価格:,未所持商品の合計価格:
-lobby/shop_pack_detail|0|6|0,割引率:,割引率:
+lobby/shop_pack_detail|0|5|0,未所持商品の合計価格:,소지하지 않은 물품의 가격 :
+lobby/shop_pack_detail|0|6|0,割引率:,할인율:
 lobby/shop_pack_detail|0|7|0,合計価格:,총 가격:
 lobby/shop_pack_detail|0|8|0,購入,구입
-lobby/shop_pack_detail|0|9,当パックに含まれる商品,当パックに含まれる商品
+lobby/shop_pack_detail|0|9,当パックに含まれる商品,이 묶음에 포함되어 있는 상품
 lobby/shop_skin_yulan|2|0|2|0,購入,구입
-lobby/sign|1|2,毎日お祈り,毎日기원
-lobby/sign|1|3|4|0,第,第
-lobby/sign|1|3|4|1,日,日
-lobby/sign|1|4|4|0,第,第
-lobby/sign|1|4|4|1,日,日
+lobby/sign|1|2,毎日お祈り,매일 기원
+lobby/sign|1|3|4|0,第,제
+lobby/sign|1|3|4|1,日,일
+lobby/sign|1|4|4|0,第,제
+lobby/sign|1|4|4|1,日,일
 lobby/sign|1|5|0,受け取る,수령
-lobby/sign|1|5|2,受取済,수령완료
+lobby/sign|1|5|2,交換済,교환완료
 lobby/sushe_select|0|1|0|0,雀士,작사
 lobby/sushe_select|0|1|1|0,装飾品,장식품
 lobby/sushe_select|0|2|1|0|1,1,1
@@ -1159,21 +1154,23 @@ lobby/treasure|0|1|5|0,1回祈願,1회 기원
 lobby/treasure|0|5|0,内容一覧,구성 목록
 lobby/treasure|0|6|2|0,信仰交換,신앙 교환
 lobby/treasure|1|0,祈願,기원
-lobby/treasure|3|4,交換したいアイテムを選択してください,교환したい아이템を選択してください
+lobby/treasure|3|4,交換したいアイテムを選択してください,교환하고 싶은 아이템을 선택해주세요
 lobby/treasure|4|2|2|0|0,每次寻觅都可以获得1点,每次寻觅都可以获得1点
 lobby/treasure|4|2|2|0|1,(信仰)，同时有可能获得全新的雀士及各种装扮,(信仰)，同时有可能获得全新的雀士及各种装扮
-lobby/treasure|4|2|2|0|2,雀士概率：5%,작사概率：5%
+lobby/treasure|4|2|2|0|2,雀士概率：5%,작사 확률：5%
 lobby/treasure|4|2|2|0|2|0,重复获取的雀士将转换为许愿石,重复获取的작사将转换为许愿石
-lobby/treasure|4|2|2|0|3,装扮概率：15%,装扮概率：15%
+lobby/treasure|4|2|2|0|3,装扮概率：15%,장식품 등장 확률 :15％
 lobby/treasure|4|2|2|0|3|0,重复获取的装扮将转换为星之石,重复获取的装扮将转换为星之石
 lobby/treasure|4|2|2|0|4,礼物概率：80%,礼物概率：80%
 lobby/treasure|4|2|2|0|5,使用辉玉10连寻觅，至少会获得一个紫色礼物,使用辉玉10连寻觅，至少会获得一个紫色礼物
 lobby/treasure|4|2|2|1|0,每次寻觅都可以获得1点,每次寻觅都可以获得1点
 lobby/treasure|4|2|2|1|1,(信仰)，同时有可能获得全新的雀士及各种装扮,(信仰)，同时有可能获得全新的雀士及各种装扮
-lobby/treasure|4|2|2|1|2,雀士概率：5%,작사概率：5%
+lobby/treasure|4|2|2|1|2,雀士概率：5%,작사 확률：5%
 lobby/treasure|4|2|2|1|2|0,重复获取的雀士将转换为许愿石,重复获取的작사将转换为许愿石
-lobby/treasure|4|2|2|1|4,装扮概率：15%,装扮概率：15%
+lobby/treasure|4|2|2|1|3,(UP雀士占59%、其他雀士占41%),(UP雀士占59%、其他雀士占41%)
+lobby/treasure|4|2|2|1|4,装扮概率：15%,장식품 등장 확률 :15％
 lobby/treasure|4|2|2|1|4|0,重复获取的装扮将转换为星之石,重复获取的装扮将转换为星之石
+lobby/treasure|4|2|2|1|5,(UP装扮占49%、其他装扮占51%),(UP裝扮占49%、其他裝扮占51%)
 lobby/treasure|4|2|2|1|6,礼物概率：80%,礼物概率：80%
 lobby/treasure|4|2|2|1|7,使用辉玉10连寻觅，至少会获得一个紫色礼物,使用辉玉10连寻觅，至少会获得一个紫色礼物
 lobby/treasure|4|2|2|2|0,"Each time you summon, you can get 1","Each time you summon, you can get 1"
@@ -1199,34 +1196,36 @@ lobby/treasure|4|2|2|4|0,1回祈願するたびに1点,1회 기원시 1개의
 lobby/treasure|4|2|2|4|1,（信仰）が入手できます。,（신앙）을 입수할 수 있습니다.
 lobby/treasure|4|2|2|4|2,雀士キャラクター提供確率:5％,작사 캐릭터 등장 확률:5％
 lobby/treasure|4|2|2|4|2|0,再度入手した雀士キャラクターは願いの石に変換されます。,중복 작사캐릭터는 소원의 돌로 변환됩니다.
-lobby/treasure|4|2|2|4|3,装飾品提供確率:15％,장식품提供確率:15％
+lobby/treasure|4|2|2|4|3,装飾品提供確率:15％,장식품 등장 확률 :15％
 lobby/treasure|4|2|2|4|3|0,再度入手した装飾品は星の石に変換されます。,중복 장식품은 별의 돌로 변환됩니다.
-lobby/treasure|4|2|2|4|4,緑色の贈り物入手確率:24％　青色の贈り物入手確率:51％　紫色の贈り物入手確率:5％,緑色の선물입수確率:24％　青色の선물입수確率:51％　紫色の선물입수確率:5％
+lobby/treasure|4|2|2|4|4,緑色の贈り物入手確率:24％　青色の贈り物入手確率:51％　紫色の贈り物入手確率:5％,녹색 선물 획득 확률:24％　청색 선물 획득 확률:51％　자색 선물 획득 확률:5％
 lobby/treasure|4|2|2|4|5,輝石で「10回祈願」すると、紫色の贈り物を必ず1個以上獲得できます。,휘석으로 「10회 기원」시、반드시 자색 선물을 1개 이상 획득합니다.
 lobby/treasure|4|2|2|5|0,1回祈願するたびに1点,1회 기원시 1개의
 lobby/treasure|4|2|2|5|1,（信仰）が入手できます。,（신앙）을 입수할 수 있습니다.
 lobby/treasure|4|2|2|5|2,雀士キャラクター提供確率:5％,작사 캐릭터 등장 확률:5％
-lobby/treasure|4|2|2|5|3,ピックアップ雀士提供確率：全雀士の59％,ピックアップ작사提供確率：全작사の59％
+lobby/treasure|4|2|2|5|3,ピックアップ雀士提供確率：全雀士の59％,픽업 작사 획득 확률：전체 작사의 59％
 lobby/treasure|4|2|2|5|4,再度入手した雀士は願い石に変換されます。,중복 작사는 소원의 돌로 변환됩니다.
-lobby/treasure|4|2|2|5|5,装飾品提供確率：15%,장식품提供確率：15%
-lobby/treasure|4|2|2|5|6,ピックアップ装飾品提供確率：全装飾品の49%,ピックアップ装飾品提供確率：全装飾品の49%
+lobby/treasure|4|2|2|5|5,装飾品提供確率：15%,장식품 등장 확률 :15％
+lobby/treasure|4|2|2|5|6,ピックアップ装飾品提供確率：全装飾品の49%,픽업 장식품 획득 확률：전체 장식품의 49%
 lobby/treasure|4|2|2|5|7,再度入手した装飾品は星の石に変換されます。,중복 장식품은 별의 돌로 변환됩니다.
-lobby/treasure|4|2|2|5|8,緑色の贈り物入手確率:24％　青色の贈り物入手確率:51％　紫色の贈り物入手確率:5％,緑色の선물입수確率:24％　青色の선물입수確率:51％　紫色の선물입수確率:5％
+lobby/treasure|4|2|2|5|8,緑色の贈り物入手確率:24％　青色の贈り物入手確率:51％　紫色の贈り物入手確率:5％,녹색 선물 획득 확률:24％　청색 선물 획득 확률:51％　자색 선물 획득 확률:5％
 lobby/treasure|4|2|2|5|9,輝石で「10回祈願」すると、紫色の贈り物を必ず1個以上獲得できます。,휘석으로 「10회 기원」시、반드시 자색 선물을 1개 이상 획득합니다.
 lobby/treasure|4|2|2|6|0,每次尋覓都可以獲得1點,每次尋覓都可以獲得1點
 lobby/treasure|4|2|2|6|1,(信仰)，同時有可能獲得全新的雀士及各種裝扮,(信仰)，同時有可能獲得全新的雀士及各種裝扮
-lobby/treasure|4|2|2|6|2,雀士概率：5%,작사概率：5%
+lobby/treasure|4|2|2|6|2,雀士概率：5%,작사 확률：5%
 lobby/treasure|4|2|2|6|2|0,重複獲取的雀士將轉換為許願石,重複獲取的작사將轉換為許願石
-lobby/treasure|4|2|2|6|3,裝扮概率：15%,裝扮概率：15%
+lobby/treasure|4|2|2|6|3,裝扮概率：15%,장식품 확률：15%
 lobby/treasure|4|2|2|6|3|0,重複獲取的裝扮將轉換為星之石,重複獲取的裝扮將轉換為星之石
 lobby/treasure|4|2|2|6|4,禮物概率：80%,禮物概率：80%
 lobby/treasure|4|2|2|6|5,使用輝玉10連尋覓，至少會獲得一個紫色禮物,사용輝玉10連尋覓，至少會獲得一個紫色禮物
 lobby/treasure|4|2|2|7|0,每次尋覓都可以獲得1點,每次尋覓都可以獲得1點
 lobby/treasure|4|2|2|7|1,(信仰)，同時有可能獲得全新的雀士及各種裝扮,(信仰)，同時有可能獲得全新的雀士及各種裝扮
-lobby/treasure|4|2|2|7|2,雀士概率：5%,작사概率：5%
+lobby/treasure|4|2|2|7|2,雀士概率：5%,작사 확률：5%
 lobby/treasure|4|2|2|7|2|0,重複獲取的雀士將轉換為許願石,重複獲取的작사將轉換為許願石
-lobby/treasure|4|2|2|7|4,裝扮概率：15%,裝扮概率：15%
+lobby/treasure|4|2|2|7|3,(UP雀士占59%、其他雀士占41%),(UP雀士占59%、其他雀士占41%)
+lobby/treasure|4|2|2|7|4,裝扮概率：15%,장식품 확률：15%
 lobby/treasure|4|2|2|7|4|0,重複獲取的裝扮將轉換為星之石,重複獲取的裝扮將轉換為星之石
+lobby/treasure|4|2|2|7|5,(UP裝扮占49%、其他裝扮占51%),(UP裝扮占49%、其他裝扮占51%)
 lobby/treasure|4|2|2|7|6,禮物概率：80%,禮物概率：80%
 lobby/treasure|4|2|2|7|7,使用輝玉10連尋覓，至少會獲得一個紫色禮物,사용輝玉10連尋覓，至少會獲得一個紫色禮物
 lobby/treasure|4|3|1|2|0|0|0,キャラクター紹介,캐릭터소개
@@ -1241,7 +1240,7 @@ lobby/treasure|4|3|1|2|0|2|0|0,ボイスサンプル：,보이스샘플：
 lobby/treasure|4|3|1|2|0|2|1|0,サンプル1：,샘플1：
 lobby/treasure|4|3|1|2|0|2|2|0,サンプル2：,샘플2：
 lobby/treasure|4|3|1|2|0|2|3|0,サンプル3：,샘플3：
-lobby/treasure|5|0|2,お祈りの輝石が足りません,기원の휘석が足りません
+lobby/treasure|5|0|2,お祈りの輝石が足りません,기원의 휘석이 부족합니다
 lobby/treasure|5|0|11|0,はい,예
 lobby/treasure|5|0|12|0,いいえ,아니오
 lobby/treasure|5|0|13,以下数量の輝石で,이하 수량의 휘석으로
@@ -1288,7 +1287,7 @@ lobby/waitingroom|0|6|5|1,装飾品変更,장식품 변경
 lobby/waitingroom|1|2,リンクをコピーして、友人に送りましょう,링크를 복사해 친구에게 보냅니다
 lobby/waitingroom|1|5|0,コピー,복사
 lobby/waitingroom|2|1|2|0|2|1|0,招待,招待
-lobby/waitingroom|2|1|2|0|3,招待済み,招待済み
+lobby/waitingroom|2|1|2|0|3,招待済み,초대완료
 lobby/waitingroom|2|1|2|0|5,対戦中,대전 중
 lobby/waitingroom|2|1|4,招待できる友人がいません,초대할 수 있는 친구가 없습니다.
 lobby/waitingroom|3|1|1|0|0,雀士,작사
@@ -1317,14 +1316,16 @@ mj/desktopInfo|12|5|3,ツモ切り,패 버림
 mj/desktopInfo|12|5|4,切,패
 mj/desktopInfo|13|5,スタンプ,이모티콘
 mj/gameend|0|6,終局,종국
-mj/gameend|0|7|2,称号リストに加えました,칭호목록に加えました
+mj/gameend|0|7|2,称号リストに加えました,칭호목록에 추가되었습니다.
 mj/gameend|0|8|2,確認,확인
 mj/gameend|0|9|2,退出,나가기
 mj/gameend|0|10|2,対局に戻る,대국으로 복귀
 mj/gamestop|1|2,ポーズ中,일시정지 중
 mj/hangup_warn|1|2,席を外しているため、自動ツモ切りに切り替えています,"자리비움으로 인해, 자동 패버림이 활성화되었습니다"
 mj/hangup_warn|1|3|0,再開,재개
-mj/info_md5|0|2|0,雀魂は完全ランダムでの対局の生成を保証します。対局開始時にはすでに牌山の牌順が固定されており、対局状況に応じて牌山や配牌が変更されることはありません。この声明を証明するために、雀魂ではMD5ハッシュ検証システムを導入しています。\\nMD5は、公用の標準的なアルゴリズムで、暗号化や復号化に広く用いられています。一定のアルゴリズムを通して、入力されたデータ（牌山の牌順）をハッシュ値に変換します。MD5には以下の特徴を兼ね備えています。\\n 1，生成されたMD5ハッシュで元の入力内容を解析することは出来ません。対局開始時に与えられたMD5ハッシュが解析され事前に牌山が解析されることはありません。 \\n 2，一つの入力内容に対し、生成されるMD5ハッシュは一つのみとなります。また、牌山の牌順は少しでも異なれば、生成されるMD5ハッシュは全く異なります。\\n上記により、牌山が改ざんされることはないということを保証します。\\n MD5ハッシュ検証ステップ\\n1.対局中、プレイヤーは画面左上の四角の枠内に表示されるドラ表示牌をクリックすると、その対局の牌山が生成したMD5ハッシュを確認できます。MD5ハッシュは配牌するごとに生成されます。\\n 2.対局終了後、プレイヤーは「牌譜」内で対局中のものと同じかどうかを局単位で参照することができます。これにより対局中に与えられたMD5ハッシュが間違っていなかったかを検証します。\\n 3.慣例的な呼び名を参考に、牌は全て符号化されています。それぞれ萬字はm、筒子はp、索子はs、字牌はzを使って表されます。したがって、一萬は1m、九筒は9p、五索は5sとなります。東南西北白發中はそれぞれ1z、2z、3z、4z、5z、6z、7zとなります。特殊な牌である赤の五萬は0m、赤の五筒は0p、赤の五索は0sと表されます。これにより、文字列を用いて牌山の牌順を表すことができます、これが「牌山コード」といいます。仮に牌山の牌順が八筒・七索・東風・赤五萬だった場合、文字列で表すと8p7s1z0mとなります。\\n4.任意のMD5ハッシュ計算ツールを使用し、「牌山コード」を入力し、変換（ハッシュ化）してください。このとき、バイト長は16Byte、全部で32文字のハッシュ値になるようにしてください。変換後、表示されたMD5ハッシュと対局中に記録したMD5ハッシュが同じであるかを確認してください。同じであれば、対局が進行していたとき牌山の牌順は固定されており、後から改ざんされたものではないと証明することができます。一打でも改ざんされていれば、牌譜での配牌が異なったり、あるいはMD5ハッシュが合わなくなるからです。\\n 「雀魂」をいつも応援していただきましてありがとうございます。プレイヤーの皆様が「雀魂」を通して麻雀を楽しみながら、ますます上達なさいますよう願っております。,雀魂は完全ランダムでの대국の生成を保証します。대국開始時にはすでに牌山の牌順が固定されており、대국状況に応じて牌山や配牌が変更されることはありません。この声明を証明するために、雀魂ではMD5ハッシュ検証システムを導入しています。\\nMD5は、公用の標準的なアルゴリズムで、暗号化や復号化に広く用いられています。一定のアルゴリズムを通して、入力されたデータ（牌山の牌順）をハッシュ値に変換します。MD5には以下の特徴を兼ね備えています。\\n 1，生成されたMD5ハッシュで元の入力内容を解析することは出来ません。대국開始時に与えられたMD5ハッシュが解析され事前に牌山が解析されることはありません。 \\n 2，一つの入力内容に対し、生成されるMD5ハッシュは一つのみとなります。また、牌山の牌順は少しでも異なれば、生成されるMD5ハッシュは全く異なります。\\n上記により、牌山が改ざんされることはないということを保証します。\\n MD5ハッシュ検証ステップ\\n1.대국中、플레이어は画面左上の四角の枠内に表示される도라表示牌をクリックすると、その대국の牌山が生成したMD5ハッシュを確認できます。MD5ハッシュは配牌するごとに生成されます。\\n 2.대국종료後、플레이어は「牌譜」内で대국中のものと同じかどうかを局単位で参照することができます。これにより대국中に与えられたMD5ハッシュが間違っていなかったかを検証します。\\n 3.慣例的な呼び名を参考に、牌は全て符号化されています。それぞれ萬字はm、筒子はp、索子はs、字牌はzを使って表されます。したがって、一萬は1m、九筒は9p、五索は5sとなります。東南西北白發中はそれぞれ1z、2z、3z、4z、5z、6z、7zとなります。特殊な牌である赤の五萬は0m、赤の五筒は0p、赤の五索は0sと表されます。これにより、文字列を用いて牌山の牌順を表すことができます、これが「牌山コード」といいます。仮に牌山の牌順が八筒・七索・東風・赤五萬だった場合、文字列で表すと8p7s1z0mとなります。\\n4.任意のMD5ハッシュ計算ツールを사용し、「牌山コード」を入力し、変換（ハッシュ化）してください。このとき、バイト長は16Byte、全部で32文字のハッシュ値になるようにしてください。変換後、表示されたMD5ハッシュと대국中に記録したMD5ハッシュが同じであるかを確認してください。同じであれば、대국が進行していたとき牌山の牌順は固定されており、後から改ざんされたものではないと証明することができます。一打でも改ざんされていれば、牌譜での配牌が異なったり、あるいはMD5ハッシュが合わなくなるからです。\\n 「雀魂」をいつも応援していただきましてありがとうございます。플레이어の皆様が「雀魂」を通して麻雀を楽しみながら、ますます上達なさいますよう願っております。
+mj/huleshow|3|13|3,確認,확인
+mj/info_md5|0|2|0,雀魂は完全ランダムでの対局の生成を保証します。対局開始時にはすでに牌山の牌順が固定されており、対局状況に応じて牌山や配牌が変更されることはありません。この声明を証明するために、雀魂ではMD5ハッシュ検証システムを導入しています。\\nMD5は、公用の標準的なアルゴリズムで、暗号化や復号化に広く用いられています。一定のアルゴリズムを通して、入力されたデータ（牌山の牌順）をハッシュ値に変換します。MD5には以下の特徴を兼ね備えています。\\n 1，生成されたMD5ハッシュで元の入力内容を解析することは出来ません。対局開始時に与えられたMD5ハッシュが解析され事前に牌山が解析されることはありません。 \\n 2，一つの入力内容に対し、生成されるMD5ハッシュは一つのみとなります。また、牌山の牌順は少しでも異なれば、生成されるMD5ハッシュは全く異なります。\\n上記により、牌山が改ざんされることはないということを保証します。\\n MD5ハッシュ検証ステップ\\n1.対局中、プレイヤーは画面左上の四角の枠内に表示されるドラ表示牌をクリックすると、その対局の牌山が生成したMD5ハッシュを確認できます。MD5ハッシュは配牌するごとに生成されます。\\n 2.対局終了後、プレイヤーは「牌譜」内で対局中のものと同じかどうかを局単位で参照することができます。これにより対局中に与えられたMD5ハッシュが間違っていなかったかを検証します。\\n 3.慣例的な呼び名を参考に、牌は全て符号化されています。それぞれ萬字はm、筒子はp、索子はs、字牌はzを使って表されます。したがって、一萬は1m、九筒は9p、五索は5sとなります。東南西北白發中はそれぞれ1z、2z、3z、4z、5z、6z、7zとなります。特殊な牌である赤の五萬は0m、赤の五筒は0p、赤の五索は0sと表されます。これにより、文字列を用いて牌山の牌順を表すことができます、これが「牌山コード」といいます。仮に牌山の牌順が八筒・七索・東風・赤五萬だった場合、文字列で表すと8p7s1z0mとなります。\\n4.任意のMD5ハッシュ計算ツールを使用し、「牌山コード」を入力し、変換（ハッシュ化）してください。このとき、バイト長は16Byte、全部で32文字のハッシュ値になるようにしてください。変換後、表示されたMD5ハッシュと対局中に記録したMD5ハッシュが同じであるかを確認してください。同じであれば、対局が進行していたとき牌山の牌順は固定されており、後から改ざんされたものではないと証明することができます。一打でも改ざんされていれば、牌譜での配牌が異なったり、あるいはMD5ハッシュが合わなくなるからです。\\n 「雀魂」をいつも応援していただきましてありがとうございます。プレイヤーの皆様が「雀魂」を通して麻雀を楽しみながら、ますます上達なさいますよう願っております。,雀魂は完全ランダムでの대국の生成を保証します。대국開始時にはすでに牌山の牌順が固定されており、대국状況に応じて牌山や配牌が変更されることはありません。この声明を証明するために、雀魂ではMD5ハッシュ検証システムを導入しています。\\nMD5は、公用の標準的なアルゴリズムで、暗号化や復号化に広く用いられています。一定のアルゴリズムを通して、入力されたデータ（牌山の牌順）をハッシュ値に変換します。MD5には以下の特徴を兼ね備えています。\\n 1，生成されたMD5ハッシュで元の入力内容を解析することは出来ません。대국開始時に与えられたMD5ハッシュが解析され事前に牌山が解析されることはありません。 \\n 2，一つの入力内容に対し、生成されるMD5ハッシュは一つのみとなります。また、牌山の牌順は少しでも異なれば、生成されるMD5ハッシュは全く異なります。\\n上記により、牌山が改ざんされることはないということを保証します。\\n MD5ハッシュ検証ステップ\\n1.대국中、플레이어は画面左上の四角の枠内に表示される도라表示牌をクリックすると、その대국の牌山が生成したMD5ハッシュを確認できます。MD5ハッシュは配牌するごとに生成されます。\\n 2.대국종료後、플레이어は「牌譜」内で대국中のものと同じかどうかを局単位で参照することができます。これにより대국中に与えられたMD5ハッシュが間違っていなかったかを検証します。\\n 3.慣例的な呼び名を参考に、牌は全て符号化상태입니다.。それぞれ萬字はm、筒子はp、索子はs、字牌はzを使って表されます。したがって、一萬は1m、九筒は9p、五索は5sとなります。東南西北白發中はそれぞれ1z、2z、3z、4z、5z、6z、7zとなります。特殊な牌である赤の五萬は0m、赤の五筒は0p、赤の五索は0sと表されます。これにより、文字列を用いて牌山の牌順を表すことができます、これが「牌山コード」といいます。仮に牌山の牌順が八筒・七索・東風・赤五萬だった場合、文字列で表すと8p7s1z0mとなります。\\n4.任意のMD5ハッシュ計算ツールを사용し、「牌山コード」を入力し、変換（ハッシュ化）してください。このとき、バイト長は16Byte、全部で32文字のハッシュ値になるようにしてください。変換後、表示されたMD5ハッシュと대국中に記録したMD5ハッシュが同じであるかを確認してください。同じであれば、대국が進行していたとき牌山の牌順は固定されており、後から改ざんされたものではないと証明することができます。一打でも改ざんされていれば、牌譜での配牌が異なったり、あるいはMD5ハッシュが合わなくなるからです。\\n 「雀魂」をいつも応援していただきましてありがとうございます。플레이어の皆様が「雀魂」を通して麻雀を楽しみながら、ますます上達なさいますよう願っております。
+mj/liuju|1|3,確認,확인
 mj/live_broadcast|0|1,観戦,관전
 mj/live_broadcast|0|2|0|0,手牌表示,손패표시
 mj/live_broadcast|0|3|0|0,放銃牌表示,론패표시
@@ -1374,7 +1375,7 @@ mj/tingpai|0|2|13|1|0,振り聴,후리텐
 mj/tingpai|0|2|14|1|0,振り聴,후리텐
 mj/vote|0|2,対戦終了,대전 종료
 mj/vote|0|3,対戦終了の投票を開始しますか？,대전종료 투표를 시작하시겠습니까?
-mj/vote|0|4,（対戦に参加している全員が賛成する場合、対戦が終了します）,（対戦に참가している全員が찬성する場合、対戦が종료します）
+mj/vote|0|4,（対戦に参加している全員が賛成する場合、対戦が終了します）,（대전에 참가 중인 전원이 찬성할 경우 대전이 종료됩니다.）
 mj/vote|0|5|0,確認,확인
 mj/vote|0|6|0,いいえ,아니오
 mj/vote_cd|0|2,対戦終了,대전 종료
@@ -1383,7 +1384,7 @@ mj/vote_cd|0|5|0,確認,확인
 mj/vote_progress|0|2,対戦終了,대전 종료
 mj/vote_progress|0|3|0,賛成,찬성
 mj/vote_progress|0|4|0,反対,반대
-mj/win|1|6|0|1,流局満貫,유국만관
-mj/win|1|15|3,確認,확인
-mj/win|1|19|0,累計イベントPT:,누계 이벤트PT: 
-mj/win|1|19|3,排名点数：,랭킹점수：
+mj/win|1|7|0|1,流局満貫,유국만관
+mj/win|1|16|3,確認,확인
+mj/win|1|20|0,累計イベントPT:,누적 이벤트PT: 
+mj/win|1|20|3,排名点数：,랭킹점수：
