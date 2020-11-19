@@ -27,15 +27,30 @@ start_timestring 
 typestring 
 need_popoutuint32 	
 zonestring 
-�
-task
-uniqueid
-iduint32 
-activity_iduint32 
-dayuint32 
-base_task_iduint32 
-	reward_iduint32 
-reward_countuint32 �
+�
+activity_buff
+groupactivity_id
+activity_iduint32 
+target_activity_iduint32 
+
+buff_leveluint32 
+	buff_typeuint32 
+upgrad_resource_iduint32 "
+upgrade_resource_countuint32 
+argsuint32 x
+chest_up
+groupactivity_id
+activity_iduint32 
+chest_iduint32 
+imgstring 
+up_itemsuint32 }
+
+daily_sign
+groupactivity_id
+activity_iduint32 
+	reward_iduint32 
+reward_countuint32 
+dayuint32 �
 exchange
 uniqueid
 iduint32 
@@ -47,21 +62,25 @@ consume_iduint32 
 consume_countuint32 
 exchange_limitint32 
 item_limit_iduint32 
-item_limit_countuint32 	x
-chest_up
-groupactivity_id
-activity_iduint32 
-chest_iduint32 
-imgstring 
-up_itemsuint32 �
-	game_task
+item_limit_countuint32 	�
+	flip_info
+uniqueid
+iduint32 
+
+flip_countuint32 
+init_task_liststring 
+
+start_timestring 
+end_timestring �
+	flip_task
 uniqueid
 iduint32 
 activity_iduint32 
-base_task_iduint32 
-	reward_iduint32 
-reward_countuint32 
-limit_iduint32 �
+base_task_iduint32 
+rewardstring 
+matrix_xuint32 
+matrix_yuint32 
+	is_rewarduint32 �
 
 game_point
 uniqueid
@@ -72,7 +91,35 @@ game_point
 res_iduint32 
 	res_countuint32 
 
-unlock_dayuint32 �
+unlock_dayuint32 �
+	game_task
+uniqueid
+iduint32 
+activity_iduint32 
+base_task_iduint32 
+	reward_iduint32 
+reward_countuint32 
+limit_iduint32 �
+period_task
+uniqueid
+iduint32 
+activity_iduint32 
+base_task_iduint32 
+rewardstring 
+intervaluint32 Y
+random_task_info
+uniqueactivity_id
+activity_iduint32 
+pool_iduint32 �
+random_task_pool
+grouppool_id
+pool_iduint32 
+task_iduint32 
+activity_iduint32 
+base_task_iduint32 
+	reward_iduint32 
+reward_countuint32 
+weightuint32 �
 rank
 groupactivity_id
 activity_iduint32 
@@ -83,32 +130,15 @@ unlock_dayuint32 �
 groupid
 iduint32 
 lower_rank_bounduint32 
-rewardstring �
-	flip_task
-uniqueid
-iduint32 
-activity_iduint32 
-base_task_iduint32 
-rewardstring 
-matrix_xuint32 
-matrix_yuint32 
-	is_rewarduint32 �
-	flip_info
-uniqueid
-iduint32 
+rewardstring �
+richman_event
+uniqueevent_id
+event_iduint32 
+activity_iduint32 
 
-flip_countuint32 
-init_task_liststring 
-
-start_timestring 
-end_timestring }
-
-daily_sign
-groupactivity_id
-activity_iduint32 
-	reward_iduint32 
-reward_countuint32 
-dayuint32 �
+event_typeuint32 
+weightuint32 
+paramuint32 �
 richman_info
 uniqueactivity_id
 activity_iduint32 
@@ -127,7 +157,14 @@ finish_expuint32 
 item_worth_pooluint32 
 min_avg_worthuint32 
 max_avg_worthuint32 
-chest_pool_sequint32 �
+chest_pool_sequint32 �
+richman_level
+groupactivity_id
+activity_iduint32 
+namestring 
+iduint32 
+expuint32 
+buffuint32 �
 richman_map
 groupmap_id
 map_iduint32 
@@ -140,57 +177,20 @@ piece_faceuint32 
 paramuint32 
 
 bonus_typeuint32 
-worthuint32 	�
-richman_level
-groupactivity_id
-activity_iduint32 
-namestring 
-iduint32 
-expuint32 
-buffuint32 �
-richman_event
-uniqueevent_id
-event_iduint32 
-activity_iduint32 
-
-event_typeuint32 
-weightuint32 
-paramuint32 �
-period_task
-uniqueid
-iduint32 
-activity_iduint32 
-base_task_iduint32 
-rewardstring 
-intervaluint32 �
-random_task_pool
-grouppool_id
-pool_iduint32 
-task_iduint32 
-activity_iduint32 
-base_task_iduint32 
-	reward_iduint32 
-reward_countuint32 
-weightuint32 Y
-random_task_info
-uniqueactivity_id
-activity_iduint32 
-pool_iduint32 X
+worthuint32 	X
 richman_reward_seq
 groupid
 iduint32 
 countuint32 
-rewardstring �
-activity_buff
-groupactivity_id
-activity_iduint32 
-target_activity_iduint32 
-
-buff_leveluint32 
-	buff_typeuint32 
-upgrad_resource_iduint32 "
-upgrade_resource_countuint32 
-argsuint32 �
+rewardstring �
+task
+uniqueid
+iduint32 
+activity_iduint32 
+dayuint32 
+base_task_iduint32 
+	reward_iduint32 
+reward_countuint32 �
 	animation�
 	animation
 uniqueid
@@ -263,13 +263,7 @@ name_chs_tstring 
 	ticket_iduint32 
 faith_iduint32 
 zoneuint32 
-sortuint32 
-pool
-groupid
-pool_seq
-groupid
-	item_pool
-groupid�
+sortuint32 �
 
 chest_shop
 uniqueid
@@ -286,18 +280,29 @@ name_chs_tstring 
 need_amountuint32 
 
 check_activityuint32 
-sortuint32 u
+sortuint32 
+	item_pool
+groupid
+
+item_price
+groupgroup_id
+pool
+groupid
+pool_seq
+groupidu
 preview
 groupchest_id
 chest_iduint32 
 item_iduint32 
 typestring 
-check_activityuint32 
-up
-groupup_id
+check_activityuint32 s
+replace_pool
+groupid
+iduint32 
+resource_iduint32 
 
-item_price
-groupgroup_id�
+is_replaceuint32 
+	add_countuint32 �
 
 replace_up
 uniqueid
@@ -306,14 +311,9 @@ replace_up
 countuint32 
 activity_iduint32 
 count_iduint32 
-typeuint32 s
-replace_pool
-groupid
-iduint32 
-resource_iduint32 
-
-is_replaceuint32 
-	add_countuint32 x
+typeuint32 
+up
+groupup_idx
 composem
 characompose
 uniqueid
@@ -326,7 +326,21 @@ is_replaceuint32 
 kvid
 idstring 
 	int_valueint32 �	
-desktop�
+desktop�
+chest
+uniqueid
+iduint32 
+exp_stepuint32 
+name_chsstring 
+
+name_chs_tstring 
+name_jpstring 
+name_enstring 
+iconstring 
+reward_pooluint32 
+select_countuint32 	
+repeateduint32 
+�
 	matchmode
 uniqueid
 iduint32 
@@ -371,39 +385,23 @@ friendshipint32  
 chest_exp_adduint32 "
 level_matchuint32 #
 level_match_rangeuint32 $
-level_match_maxuint32 %�
-chest
-uniqueid
-iduint32 
-exp_stepuint32 
-name_chsstring 
-
-name_chs_tstring 
-name_jpstring 
-name_enstring 
-iconstring 
-reward_pooluint32 
-select_countuint32 	
-repeateduint32 
-<
+level_match_maxuint32 %<
 settings	
 kvkey
 keystring 
 	int_valueint32 �
-events�
-soscoin
+events�
+	base_task
 uniqueid
-iduint32 
-level_limituint32 
-level3_limituint32 
+iduint32 
+desc_chsstring 
 
-gold_limituint32 
-gold_numuint32 
-desc_chsstring 
-
-desc_chs_tstring 
-desc_jpstring 
-desc_enstring 	�
+desc_chs_tstring 
+desc_jpstring 
+desc_enstring 
+typeuint32 
+targetuint32 
+param!uint32 �
 
 dailyevent
 uniqueid
@@ -421,39 +419,22 @@ desc_chs_tstring 
 
 targetuint32 
 paramuint32 
-level_limit uint32 �
-	base_task
+level_limit uint32 �
+soscoin
 uniqueid
-iduint32 
-desc_chsstring 
+iduint32 
+level_limituint32 
+level3_limituint32 
 
-desc_chs_tstring 
-desc_jpstring 
-desc_enstring 
-typeuint32 
-targetuint32 
-param!uint32 �
+gold_limituint32 
+gold_numuint32 
+desc_chsstring 
+
+desc_chs_tstring 
+desc_jpstring 
+desc_enstring 	�
 exchange�
 exchange
-uniqueid
-iduint32 
-source_currencyuint32 
-source_valueint32 
-target_currencyuint32 
-target_valueint32 
-iconstring 
-name_chsstring 
-name_jpstring 
-name_enstring 	
-
-name_chs_tstring 
-
-desc_chsstring 
-
-desc_chs_tstring 
-desc_jpstring 
-desc_enstring �
-searchexchange
 uniqueid
 iduint32 
 source_currencyuint32 
@@ -485,6 +466,25 @@ desc_chs_tstring 
 name_chs_tstring 
 name_jpstring 	
 name_enstring 
+
+desc_chsstring 
+
+desc_chs_tstring 
+desc_jpstring 
+desc_enstring �
+searchexchange
+uniqueid
+iduint32 
+source_currencyuint32 
+source_valueint32 
+target_currencyuint32 
+target_valueint32 
+iconstring 
+name_chsstring 
+name_jpstring 
+name_enstring 	
+
+name_chs_tstring 
 
 desc_chsstring 
 
@@ -578,75 +578,7 @@ desc_chs_tstring
 word3string 
 word4string 
 word5string � 
-item_definition�
-currency
-uniqueid
-iduint32 
-name_chsstring 
-
-name_chs_tstring 
-name_jpstring 
-name_enstring 
-desc_chsstring 
-
-desc_chs_tstring 
-desc_jpstring 
-desc_enstring 	
-iconstring 
-�
-item
-uniqueid
-iduint32 
-name_chsstring 
-name_jpstring 
-name_enstring 
-
-name_chs_tstring 
-desc_chsstring 
-desc_jpstring 
-desc_enstring 
-
-desc_chs_tstring 	
-iconstring 
-
-icon_transparentstring 
-categoryuint32 
-typeuint32 
-	is_uniqueuint32 
-	max_stackuint32 
-accessstring 
-
-accessinfouint32 
-funcstring 
-iargsuint32 
-sargsstring 
-can_selluint32 
-sell_reward_iduint32 
-sell_reward_countuint32 
-item_expirestring 
-expire_desc_chsstring 
-expire_desc_jpstring 
-expire_desc_enstring 
-expire_desc_chs_tstring �
-title
-uniqueid
-iduint32 
-name_chsstring 
-
-name_chs_tstring 
-name_jpstring 
-name_enstring 
-desc_chsstring 
-
-desc_chs_tstring 
-desc_jpstring 
-desc_enstring 	
-iconstring 
-
-	icon_itemstring 
-priorityuint32 
-unlock_typeuint32 
-unlock_paramuint32 �	
+item_definition�	
 	character
 uniqueid
 iduint32 
@@ -702,14 +634,63 @@ desc_chs_tstring +
 desc_item_jpstring .
 desc_enstring /
 desc_item_enstring 0
-skin_libuint32 1
-view
+skin_libuint32 1�
+currency
 uniqueid
 iduint32 
-res_namestring 
-audio_iduint32 
-character_iduint32 
-sargsstring �	
+name_chsstring 
+
+name_chs_tstring 
+name_jpstring 
+name_enstring 
+desc_chsstring 
+
+desc_chs_tstring 
+desc_jpstring 
+desc_enstring 	
+iconstring 
+�
+item
+uniqueid
+iduint32 
+name_chsstring 
+name_jpstring 
+name_enstring 
+
+name_chs_tstring 
+desc_chsstring 
+desc_jpstring 
+desc_enstring 
+
+desc_chs_tstring 	
+iconstring 
+
+icon_transparentstring 
+categoryuint32 
+typeuint32 
+	is_uniqueuint32 
+	max_stackuint32 
+accessstring 
+
+accessinfouint32 
+funcstring 
+iargsuint32 
+sargsstring 
+can_selluint32 
+sell_reward_iduint32 
+sell_reward_countuint32 
+item_expirestring 
+expire_desc_chsstring 
+expire_desc_jpstring 
+expire_desc_enstring 
+expire_desc_chs_tstring Z
+item_manual_pool
+groupid
+iduint32 
+res_iduint32 
+	res_countuint32 
+item_recovery
+groupid�	
 skin
 uniqueid
 iduint32 
@@ -773,20 +754,39 @@ face_widthuint32 +
 offset_yint32 0
 multy_heightint32 1
 multy_widthint32 2
-effective_timestring 3
-item_recovery
-groupidZ
-item_manual_pool
-groupid
-iduint32 
-res_iduint32 
-	res_countuint32 X
+effective_timestring 3X
 source_limit
 groupid
 iduint32 
 item_iduint32 
 
-item_limituint32 �
+item_limituint32 �
+title
+uniqueid
+iduint32 
+name_chsstring 
+
+name_chs_tstring 
+name_jpstring 
+name_enstring 
+desc_chsstring 
+
+desc_chs_tstring 
+desc_jpstring 
+desc_enstring 	
+iconstring 
+
+	icon_itemstring 
+priorityuint32 
+unlock_typeuint32 
+unlock_paramuint32 
+view
+uniqueid
+iduint32 
+res_namestring 
+audio_iduint32 
+character_iduint32 
+sargsstring �
 leaderboard�
 leaderboard
 uniqueid
@@ -798,7 +798,16 @@ start_timestring 
 refresh_cduint32 
 	max_countuint32 
 	show_liststring �
-level_definition�
+level_definition�
+	character
+uniquelevel
+leveluint32 
+expuint32 
+unlock_saysuint32 
+unlock_desc_chsstring 
+unlock_desc_chs_tstring 
+unlock_desc_jpstring 
+unlock_desc_enstring �
 level_definition
 uniqueid
 iduint32 
@@ -823,16 +832,7 @@ name_chs_tstring 
 can_upgradeuint32 
 can_getpointuint32 
 rankpt1int32 
-rankpt2int32 �
-	character
-uniquelevel
-leveluint32 
-expuint32 
-unlock_saysuint32 
-unlock_desc_chsstring 
-unlock_desc_chs_tstring 
-unlock_desc_jpstring 
-unlock_desc_enstring �
+rankpt2int32 �
 trail
 uniqueid
 iduint32 
@@ -844,7 +844,17 @@ trail_iconuint32 
 
 trail_fireint32 
 mail�
-mall�
+mall�
+channel_config
+uniqueid
+iduint32 
+currency_platformsstring 
+free_jade_idsstring 
+paid_jade_idsstring 
+free_voucher_idsstring 
+paid_voucher_idsstring 
+goods_iduint32 
+namestring �
 goods
 uniqueid
 iduint32 
@@ -876,19 +886,7 @@ desc_chs_tstring
 normal_desc_jpstring 
 normal_desc_chs_tstring 
 normal_extend_adduint32 
-typeuint32 �
-product
-grouppayment_platform
-payment_platformuint32 
-goods_iduint32 
-product_typeuint32 
-
-product_idstring 
-currency_codestring 
-currency_priceuint32 
-
-brief_descstring 
-detail_descstring �
+typeuint32 �
 goods_shelves
 groupid
 idstring 
@@ -896,12 +894,7 @@ brief_descstring 
 currency_codestring 
 currency_priceuint32 
 pricestring 
-is_monthcarduint32 _
-zone_params
-groupzone_id
-zone_idstring 
-keystring 
-string_valuestring �
+is_monthcarduint32 �
 month_ticket
 uniqueid
 iduint32 
@@ -932,17 +925,24 @@ desc_chs_tstring 
 desc_detail2_chsstring 
 desc_detail2_enstring 
 desc_detail2_jpstring 
-desc_detail2_chs_tstring �
-channel_config
-uniqueid
-iduint32 
-currency_platformsstring 
-free_jade_idsstring 
-paid_jade_idsstring 
-free_voucher_idsstring 
-paid_voucher_idsstring 
-goods_iduint32 
-namestring �
+desc_detail2_chs_tstring �
+product
+grouppayment_platform
+payment_platformuint32 
+goods_iduint32 
+product_typeuint32 
+
+product_idstring 
+currency_codestring 
+currency_priceuint32 
+
+brief_descstring 
+detail_descstring _
+zone_params
+groupzone_id
+zone_idstring 
+keystring 
+string_valuestring �
 match_shilian�
 shilian
 uniqueid
@@ -984,7 +984,22 @@ back_pointint32
 uniqueid
 iduint32 
 infostring �
-season�
+season�
+level_ticket
+uniqueid
+iduint32 
+leveluint32 
+
+game_countuint32 
+weightuint32 
+taskuint32 
+rewardstring �
+level_ticket_pool
+grouppool_id
+pool_iduint32 
+level_loweruint32 
+level_upperuint32 
+ticket_leveluint32 �
 season
 uniqueid
 iduint32 
@@ -1004,27 +1019,7 @@ match_modeuint32 
 desc_enstring 
 
 desc_chs_tstring 
-desktop_typeuint32 �
-level_ticket
-uniqueid
-iduint32 
-leveluint32 
-
-game_countuint32 
-weightuint32 
-taskuint32 
-rewardstring �
-level_ticket_pool
-grouppool_id
-pool_iduint32 
-level_loweruint32 
-level_upperuint32 
-ticket_leveluint32 \
-ticket_retry
-groupgroup_id
-group_iduint32 
-countuint32 
-costuint32 
+desktop_typeuint32 
 season_reward
 group	season_id
 	season_iduint32 
@@ -1032,30 +1027,13 @@ game_countuint32 
 rank_loweruint32 
 
 rank_upperuint32 
-rewardsstring �
-shops�
-	zhp_goods
-uniqueid
-iduint32 
-iconstring 
-name_chsstring 
-
-name_chs_tstring 
-name_jpstring 
-name_enstring 
-item_iduint32 
-	buy_limitint32 
-currencyuint32 	
-priceuint32 
-
-need_amountuint32 
-show_hasint32 !
-zhp_refresh_group
-uniqueidL
-zhp_refresh_price
-uniqueid
-iduint32 
-refresh_priceuint32 �
+rewardsstring \
+ticket_retry
+groupgroup_id
+group_iduint32 
+countuint32 
+costuint32 �
+shops�
 goods
 uniqueid
 iduint32 
@@ -1091,8 +1069,41 @@ desc_chs_tstring
 iduint32 
 good_iduint32 
 
-good_countuint32 �
-spot�
+good_countuint32 �
+	zhp_goods
+uniqueid
+iduint32 
+iconstring 
+name_chsstring 
+
+name_chs_tstring 
+name_jpstring 
+name_enstring 
+item_iduint32 
+	buy_limitint32 
+currencyuint32 	
+priceuint32 
+
+need_amountuint32 
+show_hasint32 !
+zhp_refresh_group
+uniqueidL
+zhp_refresh_price
+uniqueid
+iduint32 
+refresh_priceuint32 �
+spot�
+rewards
+uniqueid
+iduint32 
+typeuint32 
+content_chsstring 
+content_chs_tstring 
+
+content_jpstring 
+
+content_enstring 
+rewardstring �
 spot
 groupid
 iduint32 
@@ -1119,18 +1130,7 @@ content_jpstring 
 
 content_enstring 
 content_pathstring 
-jiejuuint32 �
-rewards
-uniqueid
-iduint32 
-typeuint32 
-content_chsstring 
-content_chs_tstring 
-
-content_jpstring 
-
-content_enstring 
-rewardstring �
+jiejuuint32 �
 stry
 str
 uniqueid
@@ -24903,7 +24903,7 @@ TiTiTinnpo(@
 哥鸽 " * 
 江姜 " * "�
 
-item_definitioncurrency���辉玉輝玉"휘석*Jade29充满灵力的玉石，可以用来购买各种道具。:6充滿靈力的玉石，可用來購買各種道具。B4여러가지 상품을 구입하는데 사용한다.JCan be used to buy props.RextendRes/items/gold1.png���铜币銅幣"코인*Copper2K魂天神社发行的普通货币，可以用来做各种各样的事情。:H魂天神社發行的普通貨幣，可用來做各種各樣的事情。BD혼천 신사에서 발행한 화폐. 다양한 용도로 쓰인다.J^An ordinary currency issued by the Mahjong Soul Temple. Can be used for a variety of purposes.RextendRes/items/gold0.png��	人民币	人民幣���	服饰券	服飾券"코스튬권*Outfit Voucher2T服饰商店专用货币，可以用来给购买精美服饰送给心仪的角色。:Q服飾商店專用貨幣，可用來給購買精美服飾送給喜歡的角色。B0코스튬의상과 교환하기 위한 아이템J#A currency used to purchase outfitsRextendRes/items/fushiquan_0.png���辉玉輝玉"휘석*Jade29充满灵力的玉石，可以用来购买各种道具。:6充滿靈力的玉石，可用來購買各種道具。B4여러가지 상품을 구입하는데 사용한다.JCan be used to buy props.RextendRes/items/gold1.png"��
+item_definitioncurrency���辉玉輝玉"휘석*Jade29充满灵力的玉石，可以用来购买各种道具。:6充滿靈力的玉石，可用來購買各種道具。B4여러가지 상품을 구입하는데 사용한다.JCan be used to buy props.RextendRes/items/gold1.png���铜币銅幣"코인*Copper2K魂天神社发行的普通货币，可以用来做各种各样的事情。:H魂天神社發行的普通貨幣，可用來做各種各樣的事情。BD혼천 신사에서 발행한 화폐. 다양한 용도로 쓰인다.J^An ordinary currency issued by the Mahjong Soul Temple. Can be used for a variety of purposes.RextendRes/items/gold0.png��	人民币	人民幣���	服饰券	服飾券"코스튬권*Outfit Voucher2T服饰商店专用货币，可以用来给购买精美服饰送给心仪的角色。:Q服飾商店專用貨幣，可用來給購買精美服飾送給喜歡的角色。B0코스튬의상과 교환하기 위한 아이템J#A currency used to purchase outfitsRextendRes/items/fushiquan_0.png���辉玉輝玉"휘석*Jade29充满灵力的玉石，可以用来购买各种道具。:6充滿靈力的玉石，可用來購買各種道具。B4여러가지 상품을 구입하는데 사용한다.JCan be used to buy props.RextendRes/items/gold1.png"��
 item_definitionitemU�	咕咕咕2不存在的RextendRes/items/coin5.jpg`�characompose�   � � a�一大袋钱*一大袋錢2一大袋钱RextendRes/items/coin5.jpg`�addcoin�   � � a�一小袋钱*一小袋錢2一小袋钱RextendRes/items/coin3.jpg`�addcoin�   � � k�	一个玉*	一個玉2当前无法使用J目前無法使用RextendRes/items/jade0.jpg`�   � � ��	试炼券시련 티켓"Trial Ticket*	試煉券2试炼之道入场门票:시련의 길 입장권B%Entrance ticket to the Path of Trial.J試煉之道入場門票RextendRes/items/coin3.jpg`�   � � �ɯ绿宫慧太杯门票緑宮慧太杯チケット"Midorimiya Keita-Cup Ticket*綠宮慧太杯門票2$绿宫慧太杯举办者专用门票:'緑宮慧太杯主催者用チケットB>Entrance ticket used by the organizer of Midorimiya Keita-Cup.J$綠宮慧太杯舉辦者專用門票RextendRes/items/coin3.jpg`�   � � ���寻觅卷轴기원의 두루마리"Summon Scroll*尋覓卷軸22缔结缘分的卷轴。(用来进行一次寻觅):R인연을 맺게 해주는 두루마리. 사용 시 1회 기원을 할 수 있다.BHA scroll bless by the shrine. 
 Use it to perform a free summon for once.J9締結緣分的卷軸，可以用來進行一次尋覓。RextendRes/items/coupon.jpgZextendRes/items/coupon_0.png`�   � � ���	许愿石소원의 돌"Wishing Stone*	許願石2;寄托希望的灵石。(用于在祈愿屋中兑换道具):X희망이 깃든 영석. 소원의 소옥에서 아이템을 교환할 때 사용된다.BRYou can find hope in this enchanted stone. Use it to redeem items in Wishing Shop.J<寄託希望的靈石。可以在祈願屋中兌換道具。RextendRes/items/wishstone.jpgZextendRes/items/wishstone_0.png`�1���   � � ���	星之石
 별의 돌"
@@ -24923,7 +24923,7 @@ Woof woof!J汪汪汪！RextendRes/items/liqi_bone.jpg`p��� � � ���
 장식으로 설정하면 화료 시의 연출을 변경할 수 있다.（이벤트 기간 한정. 이벤트 종료 후 입수할 수 없습니다.）B�Those who witness the golden butterfly could be favored by the witch.(Event limited, will be unobtainable after the end of event)J�目睹到黃金蝶之人，也許是被魔女中意的證據。(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)RextendRes/items/ron_jd.jpg`hp��� � � ���和牌-海浪的馈赠화료연출：도적의 선물"Winning - Ocean's Gift*和牌-海浪的饋贈2�潮汐褪去的时候，总会给海滩留下精心准备的礼物。(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�바닷물이 빠질 때면, 모래밭에 멋진 선물이 있을 거예요.
 장식으로 설정하면 화료 시 연출을 변경할 수 있음.（이벤트 기간 한정. 기간종료 이후 입수할 수 없습니다.）B�When the tide goes out, it always leaves special gifts for the beach.(Event limited, will be unobtainable after the end of event)J�潮汐褪去的時候，總會給海灘留下精心準備的禮物。(當期活動限定，活動結束後將從卡池中下架)(點擊寮舍-裝扮更換)RextendRes/items/ron_hl.jpg`hp��� � � ���立直-蝙蝠桀桀리치연출：박쥐"Riichi - Bat Swarm*立直-蝙蝠桀桀2�立直装扮，“我会夺取你的灵魂！”万圣节前夜，一大波蝙蝠桀桀即将来袭，是要主动迎战，还是藏好你的……手牌？(点击寮舍-装扮更换):�박쥐 대군을 상대하려면, 우선 채찍을 들어야 할 걸!\n장식으로 설정하면 , 리치 시 연출을 변경할 수 있음.BCThe bats are here to claim your soul, or... to peek at your hand...J�立直造型，「我會奪取你的靈魂！」萬聖節前夜，一大波蝙蝠桀桀即將來襲，是要主動迎戰，還是藏好你的……手牌？(點選宿舍-造型更換)R,extendRes/items/effect_liqi_bianfujiejie.jpg`hp��� � � ���立直-非常事态리치연출：비상벨"Riichi - Emergency*立直-緊急事態2�立直装扮，“滴——滴——系统检测到立直危机，请各位玩家紧急应对！”(元旦限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�삐-, 삐-, 리치를 감지했습니다. 작사, 주의하세요!\n장식으로 설정하면 , 리치 시 연출을 변경할 수 있음.Bw"Beep—beep— The system has detected a Riichi crisis! Players, please take immediate actions! This is an emergency!"J�立直造型，「滴——滴——系統檢測到立直危機，請各位玩家緊急對應！」(元旦限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R.extendRes/items/effect_liqi_feichangshitai.jpg`hp��� � � ���立直-魔法少女리치연출：마법"Riichi - Magical Girl*立直-魔法少女2�立直装扮，现在你已和我签订了魔法契约，星星会指引你正确的方向。(元旦限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):f별들이여, 응답하소서.\n장식으로 설정하면 , 리치 시 연출을 변경할 수 있음.B\Now that you have signed a magical pact with me, the stars will guide you to the right path.J�立直造型，現在你已和我簽訂了魔法契約，星星會指引你正確的方向。(元旦限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R*extendRes/items/effect_liqi_mofashaonv.jpg`hp��� � � ���立直-鼠生威"리치연출：하얀쥐의 위엄"Riichi - Rat Power*立直-鼠來寶2�立直装扮，“只要我旋转得够快，就没人能够追上我的酷炫！”(春节限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�따라올테면 따라와봐. \n장식으로 설정하면 , 리치 시 연출을 변경할 수 있음.（봄 축제 이벤트기간에만 획득 가능）BW"If I can spin fast enough, no one can be as cool as me!"(Spring Celebration Exclusive)J�立直造型，「只要我旋轉得夠快，就沒人能夠追上我的酷炫！」(春節限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R)extendRes/items/effect_liqi_20chunjie.jpg`hp��� � � ���立直-星陨리치연출：성운"Riichi - Starfall*立直-星隕2�立直装扮，看啊，那在天上闪耀的莫非就是……(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�봐라, 저 하늘의 빛을.\n장식으로 설정하면 , 리치 시 연출을 변경할 수 있음.（이벤트기간한정。期間종료後は입수できなくなります。）BeLook, what's that twinkling in the sky…(Event limited, will be unobtainable after the end of event)J�立直造型，看啊，那在天上閃耀的莫非就是……(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R#extendRes/items/effect_liqi_szx.jpg`hp��� � � ���立直-血·朗基努斯枪$리치연출：선혈・롱기누스"!Riichi - Blood·Lance of Longinus*立直-血·朗基努斯槍2�立直装扮，朗基努斯枪的血影，一旦拿起将再也无法放下。(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�롱기누스의 창. 한 번 사용한 자는 다신 손에서 놓을 수 없다 한다.
 장식으로 설정하면 , 리치 시 연출을 변경할 수 있음. (이벤트 기간 한정.기간이 종료되면 입수할 수 없습니다.)B�Once picked up, the bloody silhouette of the Lance of Longinus can never be put down.(Event limited, will be unobtainable after the end of event)J�立直造型，朗基努斯槍的血影，一旦拿起將再也無法放下。(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R$extendRes/items/effect_liqi_xhzy.jpg`hp��� � � ���立直-断罪리치연출：단죄"Riichi - Judgement*立直-斷罪2�审判可能会迟到，却从不会缺席。(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�정의란 과연 무엇인가?\\n장식으로 설정하면 리치 시의 연출을 변경할 수 있다.（이벤트 기간 한정. 이벤트 종료 후 입수할 수 없습니다.）BtJustice may be late, but it will always come in the end.(Event limited, will be unobtainable after the end of event)J�審判或許會遲到，卻絕不會缺席。(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R#extendRes/items/effect_liqi_nws.jpg`hp��� � � ���立直-蝶惑리치연출：춤추는 나비"Riichi - Butterfly's Charm*立直-蝶惑2�魔女诱惑的言语像一只只蝴蝶萦绕在你的脑海里，她说……(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�마녀의 말이 머릿속에서 떠나지 않는다. 그녀가 말한 건…\\n장식으로 설정하면 리치 시의 연출을 변경할 수 있다.（이벤트 기간 한정. 이벤트 종료 후 입수할 수 없습니다.）B�The witch's charming words linger in your mind like butterflies. She said…(Event limited, will be unobtainable after the end of event)J�魔女誘惑的言語像一只只蝴蝶縈繞在你的腦海裏，她說……(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R"extendRes/items/effect_liqi_jd.jpg`hp��� � � ���立直-浪之声리치연출：파도소리"Riichi - The Sound of Waves*立直-浪之聲2�听！是海浪立直在礁石上的声音！(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�들리나? 바글바글 거품이 일면 곧 리치가 다가온다.
-장식으로 설정하면 리치 시 연출을 변경할 수 있음.（이벤트 기간 한정. 기간종료 이후 입수할 수 없습니다.）BwListen! That's the sound of waves "Riichi"ing on the rocks!(Event limited, will be unobtainable after the end of event)J�聽！是海浪立直在礁石上的聲音！(當期活動限定，活動結束後將從卡池中下架)(點擊寮舍-裝扮更換)R"extendRes/items/effect_liqi_hl.jpg`hp��� � � ���头像框-豆芽아이콘 프레임－풋사과"Portrait Frame - Sprout*頭像框-豆苗2�头像框装扮。春天种下一颗豆苗苗，等到秋天的时候……咦？我的豆苗苗呢？(点击寮舍-装扮更换):}봄에 심은 씨앗이 싹을 틔우면…네이버?\n장식으로 설정하면 아이콘 프레임을 변경할 수 있다.B$A sprout to become something unknownJ�頭像框造型。春天種下一顆小豆苗，等到秋天的時候……咦？我的小豆苗呢？(點選宿舍-造型更換)R#extendRes/items/headframe_douya.jpg`hp�   � � ���头像框-默认아이콘 프레임"Portrait Frame*頭像框-預設2默认的头像框装扮:기본 아이콘 프레임J預設的大頭貼造型R%extendRes/items/headframe_default.jpg`hp�   � � ���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-07-01 05:00:00�2021年7月1日5時59分まで�"2021년 7월 1일 5시 59분까지�2021年7月1日5時59分まで�2021年7月1日5時59分まで���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-08-01 05:00:00�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-10-01 05:00:00�2021年10月1日5時59分まで�#2021년 10월 1일 5시 59분까지�2021年10月1日5時59分まで�2021年10月1日5時59分まで���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-11-01 05:00:00�2021/10/31 1:59 P.M. (UTC-7)�,2021년 10월 31일 1시 59분까지 (UTC-7)�2021/10/31 1:59 P.M. (UTC-7)�2021/10/31 1:59 P.M. (UTC-7)���头像框-试炼强者$아이콘 프레임-시련의 강자"!Portrait Frame - Expert of Trials*頭像框-試煉強者2-试炼之道上表现出众的强者的证明:?시련의 길에서 우수한 성적을 거둔 강자의 증표B5A certificate of excellent performer on Path of TrialJ-試煉之道上表現出眾的強者的證明R$extendRes/items/headframe_trailC.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���头像框-试炼贤者$아이콘 프레임-시련의 현자"!Portrait Frame - Master of Trials*頭像框-試煉賢者2-试炼之道上表现优异的贤者的证明:B시련의 길에서 유례없는 성적을 거둔 현자의 증표B7A certificate of outstanding performer on Path of TrialJ-試煉之道上表現優異的賢者的證明R$extendRes/items/headframe_trailB.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���头像框-试炼霸者$아이콘 프레임-시련의 패자"$Portrait Frame - Conqueror of Trials*頭像框-試煉霸者2-试炼之道上无与伦比的霸者的证明:@시련의 길 에서 최고의 성적을 거둔 패자의 증표B:A certificate of unparalleled grandmaster on Path of TrialJ-試煉之道上無與倫比的霸者的證明R$extendRes/items/headframe_trailA.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���立直棒-小恶魔蝙蝠소악마의 리치봉"Riichi - Impish Bat*立直棒-小惡魔蝙蝠2o立直棒，“桀桀——当我立直时，这个牌桌都将感受到恐惧。”(点击寮舍-装扮更换):�큭큭큭, 내가 모습을 드러내면 작탁엔 공포만 남을 것이다.\n장식으로 설정하면 , 리치봉을 변경할 수 있음.B(Tremble before my declaration of Riichi.Jo立直棒，「桀桀——當我立直時，這個牌桌都將感受到恐懼。」(點選宿舍-造型更換)R'extendRes/items/liqi_xiaoemofanbian.jpg`p��� � � ���立直棒-魔法棒마법사의 리치봉"Riichi Bet - Magical Wand*立直棒-魔法棒2�立直棒，魔法少女变身专用手杖，放置于牌桌上时，将会和所有对局玩家签订立直契约。(元旦限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�마법소녀가 쓰는 변신 스틱. 남자가 쓰면 매직…….\n장식으로 설정하면 , 리치봉을 변경할 수 있음.B�A wand used by magical girls during their transformation. When placed on the table, it will enter a pact with all players on the table.J�立直棒，魔法少女變身專用法杖，放置於牌桌上時，將會和所有對局玩家簽訂立直契約。(元旦限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R!extendRes/items/liqi_mofabang.jpg`p��� � � ���立直棒-金龙鱼진룽위 리치봉"Riichi Bet - Gold Arowana*立直棒-金龍魚2�立直棒，1:1:1的金龙鱼， 转(fang)发(zhi)后将会有奇迹发生。(春节限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�멋진 황금 생선. 보면 기적이 일어날 수도?\n장식으로 설정하면 , 리치봉을 변경할 수 있음.（봄 축제 이벤트기간에만 획득 가능）Bn100% Gold Arowana Riichi bet, miracle will happen after you retweet (place) it. (Spring Celebration Exclusive)J�立直棒，1:1:1的金龍魚， 轉發後將會有奇蹟發生。(春節限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R"extendRes/items/liqi_jinlongyu.jpg`p��� � � ���立直棒-绯月荆棘$가시돋힌 크림슨 문 리치봉"Riichi Bet - Crimson Thorns*立直棒-緋月荊棘2�立直棒，吸收了亚伯之血而变成通体血红色的短刃。(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�アベルの血を吸い、真紅に鈍く光る短剣\n장식으로 설정하면 , 리치봉을 변경할 수 있음.（이벤트기간한정。期間종료後は입수できなくなります。）B�This dagger has absorbed the blood of Abel and completely turned into crimson.(Event limited, will be unobtainable after the end of event)J�吸收了亞伯之血而變成通體鮮紅色的短刃。(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)RextendRes/items/liqi_xhzy.jpg`p��� � � ���立直棒-乘风破浪파도타기 리치봉"Riichi Bet - Riding the Tide*立直棒-乘風破浪2�踩上我心爱的冲浪板，这个夏天，无惧炎热！(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�가장 좋아하는 보드를 타고 햇빛 아래 테이크 오프다!
+장식으로 설정하면 리치 시 연출을 변경할 수 있음.（이벤트 기간 한정. 기간종료 이후 입수할 수 없습니다.）BwListen! That's the sound of waves "Riichi"ing on the rocks!(Event limited, will be unobtainable after the end of event)J�聽！是海浪立直在礁石上的聲音！(當期活動限定，活動結束後將從卡池中下架)(點擊寮舍-裝扮更換)R"extendRes/items/effect_liqi_hl.jpg`hp��� � � ���头像框-豆芽아이콘 프레임－풋사과"Portrait Frame - Sprout*頭像框-豆苗2�头像框装扮。春天种下一颗豆苗苗，等到秋天的时候……咦？我的豆苗苗呢？(点击寮舍-装扮更换):}봄에 심은 씨앗이 싹을 틔우면…네이버?\n장식으로 설정하면 아이콘 프레임을 변경할 수 있다.B$A sprout to become something unknownJ�頭像框造型。春天種下一顆小豆苗，等到秋天的時候……咦？我的小豆苗呢？(點選宿舍-造型更換)R#extendRes/items/headframe_douya.jpg`hp�   � � ���头像框-默认아이콘 프레임"Portrait Frame*頭像框-預設2默认的头像框装扮:기본 아이콘 프레임J預設的大頭貼造型R%extendRes/items/headframe_default.jpg`hp�   � � ���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-07-01 05:00:00�2021年7月1日5時59分まで�"2021년 7월 1일 5시 59분까지�2021年7月1日5時59分まで�2021年7月1日5時59分まで���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-08-01 05:00:00�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)�2021/7/31 1:59 P.M. (UTC-7)���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-10-01 05:00:00�2021年10月1日5時59分まで�#2021년 10월 1일 5시 59분까지�2021年10月1日5時59分まで�2021年10月1日5時59分まで���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-11-01 05:00:00�2021/10/31 1:59 P.M. (UTC-7)�,2021년 10월 31일 1시 59분까지 (UTC-7)�2021/10/31 1:59 P.M. (UTC-7)�2021/10/31 1:59 P.M. (UTC-7)���头像框-四象战사상을 떠받든 자"Limited Portrait Frame*頭像框-四象戰2头像框-四象战:S1년에 4번 치뤄지는 사상전 우승자 만이 사용할 수 있는 프레임BIA reward for Mahjong Soul official tournament winner. (Expires in 1 year)J頭像框-四象戰R!extendRes/items/headframe_sxz.jpg`hp�   � � �2021-11-03 05:00:00�2021-11-03 05:00:00�2021-11-03 05:00:00�2021-11-03 05:00:00�2021-11-03 05:00:00���头像框-试炼强者$아이콘 프레임-시련의 강자"!Portrait Frame - Expert of Trials*頭像框-試煉強者2-试炼之道上表现出众的强者的证明:?시련의 길에서 우수한 성적을 거둔 강자의 증표B5A certificate of excellent performer on Path of TrialJ-試煉之道上表現出眾的強者的證明R$extendRes/items/headframe_trailC.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���头像框-试炼贤者$아이콘 프레임-시련의 현자"!Portrait Frame - Master of Trials*頭像框-試煉賢者2-试炼之道上表现优异的贤者的证明:B시련의 길에서 유례없는 성적을 거둔 현자의 증표B7A certificate of outstanding performer on Path of TrialJ-試煉之道上表現優異的賢者的證明R$extendRes/items/headframe_trailB.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���头像框-试炼霸者$아이콘 프레임-시련의 패자"$Portrait Frame - Conqueror of Trials*頭像框-試煉霸者2-试炼之道上无与伦比的霸者的证明:@시련의 길 에서 최고의 성적을 거둔 패자의 증표B:A certificate of unparalleled grandmaster on Path of TrialJ-試煉之道上無與倫比的霸者的證明R$extendRes/items/headframe_trailA.jpg`hp�_  � � �2021-02-22 05:00:00�2021-02-22 05:00:00�#2021년 2월 22일 5시 59분까지�2021/2/21 1:59 P.M. (UTC-7)�2021-02-22 05:00:00���立直棒-小恶魔蝙蝠소악마의 리치봉"Riichi - Impish Bat*立直棒-小惡魔蝙蝠2o立直棒，“桀桀——当我立直时，这个牌桌都将感受到恐惧。”(点击寮舍-装扮更换):�큭큭큭, 내가 모습을 드러내면 작탁엔 공포만 남을 것이다.\n장식으로 설정하면 , 리치봉을 변경할 수 있음.B(Tremble before my declaration of Riichi.Jo立直棒，「桀桀——當我立直時，這個牌桌都將感受到恐懼。」(點選宿舍-造型更換)R'extendRes/items/liqi_xiaoemofanbian.jpg`p��� � � ���立直棒-魔法棒마법사의 리치봉"Riichi Bet - Magical Wand*立直棒-魔法棒2�立直棒，魔法少女变身专用手杖，放置于牌桌上时，将会和所有对局玩家签订立直契约。(元旦限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�마법소녀가 쓰는 변신 스틱. 남자가 쓰면 매직…….\n장식으로 설정하면 , 리치봉을 변경할 수 있음.B�A wand used by magical girls during their transformation. When placed on the table, it will enter a pact with all players on the table.J�立直棒，魔法少女變身專用法杖，放置於牌桌上時，將會和所有對局玩家簽訂立直契約。(元旦限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R!extendRes/items/liqi_mofabang.jpg`p��� � � ���立直棒-金龙鱼진룽위 리치봉"Riichi Bet - Gold Arowana*立直棒-金龍魚2�立直棒，1:1:1的金龙鱼， 转(fang)发(zhi)后将会有奇迹发生。(春节限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�멋진 황금 생선. 보면 기적이 일어날 수도?\n장식으로 설정하면 , 리치봉을 변경할 수 있음.（봄 축제 이벤트기간에만 획득 가능）Bn100% Gold Arowana Riichi bet, miracle will happen after you retweet (place) it. (Spring Celebration Exclusive)J�立直棒，1:1:1的金龍魚， 轉發後將會有奇蹟發生。(春節限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R"extendRes/items/liqi_jinlongyu.jpg`p��� � � ���立直棒-绯月荆棘$가시돋힌 크림슨 문 리치봉"Riichi Bet - Crimson Thorns*立直棒-緋月荊棘2�立直棒，吸收了亚伯之血而变成通体血红色的短刃。(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�アベルの血を吸い、真紅に鈍く光る短剣\n장식으로 설정하면 , 리치봉을 변경할 수 있음.（이벤트기간한정。期間종료後は입수できなくなります。）B�This dagger has absorbed the blood of Abel and completely turned into crimson.(Event limited, will be unobtainable after the end of event)J�吸收了亞伯之血而變成通體鮮紅色的短刃。(當期活動限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)RextendRes/items/liqi_xhzy.jpg`p��� � � ���立直棒-乘风破浪파도타기 리치봉"Riichi Bet - Riding the Tide*立直棒-乘風破浪2�踩上我心爱的冲浪板，这个夏天，无惧炎热！(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�가장 좋아하는 보드를 타고 햇빛 아래 테이크 오프다!
 장식으로 설정하면, 리치봉을 변경할 수 있습니다. (이벤트 기간 한정.기간이 종료되면 입수할 수 없습니다.)B�When I step on my favorite surfboard, I fear no more the summer heat!(Event limited, will be unobtainable after the end of event)J�踩上我心愛的衝浪板，這個夏天，無懼炎熱！(當期活動限定，活動結束後將從卡池中下架)(點擊寮舍-裝扮更換)RextendRes/items/liqi_hl.jpg`p��� � � ���牌背-天然呆幽灵유령 깃든 마작패"Tile Back - Bumpkin*牌背-天然呆幽靈2�一种牌背样式，“你、你好，我是新来的牌背，我、我超凶的，啊呜——你看，是不是超可怕的！”(点击寮舍-装扮更换):�아, 안녕하신가요. 신입 마작패입니다. 우와앙-. 어때요? 무섭지 않나요?\n장식으로 설졍하면 작탁을 변경할 수 있다.BIGrrr~ I... I am t-the scariest one! Y-you're supposed to run, aren't you?J�一種牌背樣式，「你、你好，我是新來的牌背，我、我超兇的，啊嗚——你看，是不是超可怕的！」(點選宿舍-造型更換)R)extendRes/items/mjp_tianrandaiyouling.jpg`hp��� � � ���牌背-红包신년의 마작패"Tile Back - Red Packet*牌背-紅包2�一种牌背样式，年轻的雀士哟，你丢的是这个海底摸月的红包呢？还是这个岭上开花的红包呢？还是这个看起来普普通通但是蕴藏着神秘力量的红包呢？(点击寮舍-装扮更换):�젊은 작사여, 당신이 떨어뜨린 건 해저로월인가? 아니면 영상개화인가? 아니면 어떤것인가?\n장식으로 설졍하면 작탁을 변경할 수 있다.（봄 축제 이벤트기간에만 획득 가능）B�Hello, young player. Which of these have you lost? Is it this "Under the Sea" red packet? Or this "After a Kan" red packet? (Spring Celebration Exclusive)J�一種牌背樣式，年輕的雀士喲，你丟的是這個海底摸月的紅包呢？還是這個嶺上開花的紅包呢？還是這個看起來普普通通但是蘊藏著神秘力量的紅包呢？(點選宿舍-造型更換)R!extendRes/items/mjp_20chunjie.jpg`hp��� � � ���牌背-浪花朵朵웨이브 마작패"Tile Back - Flower of Waves*牌背-浪花朵朵2�当无数的浪花汇聚在一起的时候，那一定就是大牌的形状！(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�무수한 파도가 모이면, 그것이 화료의 형태가 될 것이다.
 장식으로 설정하면 , 마작패 모양을 변경할 수 있음. (이벤트 기간 한정. 기간 종료 시 입수할 수 없습니다.)ByIt's got to be a big hand when countless waves come together!(Event limited, will be unobtainable after the end of event)J�當無數的浪花彙聚在一起的時候，那一定就是大牌的形狀！(當期活動限定，活動結束後將從卡池中下架)(點擊寮舍-裝扮更換)RextendRes/items/mjp_hl.jpg`hp��� � � ���桌布-锦鲤游비단잉어 작탁"Tablecloth - Swimming Koi*桌布-錦鯉游2�一种牌桌样式。转发这条二之宫花(划掉)锦鲤，天和国士无双不再是梦想！(春节限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):u이 탁을 쓴다면, 국사무쌍도 나올 것만 같다.
 장식으로 설정하면 작탁을 변경할 수 있음.B�If you retweet this Hana Ninomiya (oops wrong) Koi fish, "Blessing of Heaven" and "Thirteen Orphans" will no longer be just an inaccessible dream!(Spring Celebration Exclusive)J�一種牌桌樣式。轉發這條二之宮花(劃掉)錦鯉，天和國士無雙不再是夢想！(春節限定，活動結束後將從卡池中下架)(點選宿舍-造型更換)R(extendRes/items/tablecloth_20chunjie.jpg`hp��� � � ���桌布-冲鸭！#이걸로 헤엄! …가능? 작탁"Tablecloth - Let's go!*桌布-沖鴨！2�原来千织居然是泳圈派？！好像知道了什么不该知道的秘密？(当期活动限定，活动结束后将从卡池中下架)(点击寮舍-装扮更换):�치오리는 튜브파였구만…어라 누군가 온 것 같다.
@@ -25031,11 +25031,11 @@ Kaguyahime08��@��H��PZ8302009-10,302012-10,303153|303053-5,302002-10,302004
 Mariya Ise�宝石、恶作剧�寶石、惡作劇�보석, 장난�Gems, likes pranking others��自称是神明辉夜姬的兔耳少女，虽然拥有着可爱的外表，但是因为其爱捉弄人的性格，常常让人不禁怀疑她作为神明的真实性。来到魂天神社之后，想要让魂天神社开始供奉自己，从此与一姬开始了水火不容，争夺神社的日子……��自稱是神明輝夜姬的兔耳少女，雖然擁有著可愛的外表，但是因為其愛捉弄人的性格，常常讓人不禁懷疑她作為神明的真實性。來到魂天神社之後，想要讓魂天神社開始供奉自己，從此與一姬開始了水火不容，爭奪神社的日子……��자칭 「신이 보내주신 카구야 히메」라고 하는 신묘한 소녀. 보기에는 귀엽지만 거짓말과 장난을 좋아하는 성격 때문에 신이라는 것이 진짜인지 가짜인지 신빙성이 없다. 혼천신사에 온 이후로는, 이치히메와 신사 소유권을 두고 끊이질 않는 논쟁을 펼치고 있다.��This girl has rabbit ears and calls herself Kaguyahime. She declares that anyone who touches her ears will be cursed by the Moon. Occasionally, she may quote the famous line "On behalf of the Moon, I shall exterminate you" and makes you wonder whether she is really a goddess or not. While her appearance looks like a cute girl, she enjoys pranking others and lying. After her arrival at Mahjong Soul Shrine, she started to battle for the ownership of the shrine and the rivalry between her and Ichihime got really intense...�   �ޚ	如月莲	如月蓮"키사라기 렌*Ren Kisaragi08��@��H��PZ8302007-10,302010-10,303133|303033-5,302002-10,302004-100hp��xK�extendRes/emo/e200030��  �?��	179厘米�	179公分�179cm�179cm�	9月17日�	9月17日�
 9월 17일�17th September�17�17�17�17�B�前野智昭�前野智昭�마에노 토모아키�Tomoaki Maeno�物理、家务、名画�物理、家務、名畫�물리학, 그림감상, 가사�Physics, homework, classic arts��做事认真、为人正经的学生会副会长，在众人心目中话语权似乎要高于会长石原碓海，毕竟在朝叶高校，会长为了不被副会长抓到而四处躲藏这种事，大家已经司空见惯了……听说副会长手上有一份「问题学生」名单，你，在上面吗？��做事認真、為人正經的學生會副會長，在眾人心目中話語權似乎要高於會長石原碓海，畢竟在朝葉高校，會長為了不被副會長抓到而四處躲藏這種事，大家已經司空見慣了……聽說副會長手上有一份「問題學生」名單，你，在上面嗎？��성실하고, 항상 일을 진지하게 처리하는 아사바 고교 학생회 부회장. 일을 게으르게 하는 회장 이시하라 우스미의 멱살을 잡아 질질 끌고 가는 건 아사바고교 내 흔한 풍경이다. 학생들 사이에선 회장보다 더 대단한 사람으로 인식되고 있다. 소문에 의하면 부회장은 「문제의 학생」 리스트를 가지고 있다고 한다.��As the vice president of the student council, Ren Kisaragi is serious, reliable and seems to have more power than the president, Usumi Ishihara. This isn't surprising given that the president is always seen running around, trying to avoid him... It is said that Ren has a list of "problematic students". Do you happen to be on it?�   �ߚ石原碓海石原碓海"이시하라 우스미*Usumi Ishihara08��@��H��PZ8302006-10,302011-10,303113|303013-5,302002-10,302004-100hp��xK�extendRes/emo/e200031��  �?��	176厘米�	176公分�176cm�176cm�
 10月10日�
-10月10日�10월 10일�10th October�17�17�17�17�AB�柿原彻也�柿原徹也�카키하라 테츠야�Tetsuya Kakihara�甜点、动物�甜點、動物�디저트, 동물�Sweets, animals��看似个性散漫不受约束，实际上做事却非常可靠，深受全校师生的喜爱。除了学生会会长的职位外，同时还兼顾着因为长期招收不到部员即将被强制取缔的糕点部。为了挽救糕点部，石原碓海一边躲避着副会长如月莲的“追捕”，一边展开了新部员招揽计划。��看似個性散漫不受約束，實際上做事卻非常可靠，深受全校師生的喜愛。除了學生會會長的職位外，同時還兼顧著因為長期招收不到部員即將被強制取締的糕點部。為了挽救糕點部，石原碓海一邊躲避著副會長如月蓮的“追捕”，一邊展開了新部員招攬計畫。��제멋대로고 게으른 면이 있지만, 학생들과 선생님들에게는 의지가 되는 아사바 고교의 학생회 회장. 부원 부족으로 폐부 직전인 디저트부 부장을 겸임하고 있으며, 디저트부 부원을 구하기 위해서 부회장과 달리 땡땡이치며 부원을 모으는데 열심이다.��Despite his laidback and carefree character, Usumi Ishihara is actually quite reliable and popular amongst the teachers and students. Apart from being the president of the student council, he is also the founder of the pastry club, which often faces the threat of being disbanded due to lack of members. To save his club, Usumi starts to recruit new members while trying to avoid being "hunted" by the vice president of student council, Ren Kisaragi.�   "�
+10月10日�10월 10일�10th October�17�17�17�17�AB�柿原彻也�柿原徹也�카키하라 테츠야�Tetsuya Kakihara�甜点、动物�甜點、動物�디저트, 동물�Sweets, animals��看似个性散漫不受约束，实际上做事却非常可靠，深受全校师生的喜爱。除了学生会会长的职位外，同时还兼顾着因为长期招收不到部员即将被强制取缔的糕点部。为了挽救糕点部，石原碓海一边躲避着副会长如月莲的“追捕”，一边展开了新部员招揽计划。��看似個性散漫不受約束，實際上做事卻非常可靠，深受全校師生的喜愛。除了學生會會長的職位外，同時還兼顧著因為長期招收不到部員即將被強制取締的糕點部。為了挽救糕點部，石原碓海一邊躲避著副會長如月蓮的“追捕”，一邊展開了新部員招攬計畫。��제멋대로고 게으른 면이 있지만, 학생들과 선생님들에게는 의지가 되는 아사바 고교의 학생회 회장. 부원 부족으로 폐부 직전인 디저트부 부장을 겸임하고 있으며, 디저트부 부원을 구하기 위해서 부회장과 달리 땡땡이치며 부원을 모으는데 열심이다.��Despite his laidback and carefree character, Usumi Ishihara is actually quite reliable and popular amongst the teachers and students. Apart from being the president of the student council, he is also the founder of the pastry club, which often faces the threat of being disbanded due to lack of members. To save his club, Usumi starts to recruit new members while trying to avoid being "hunted" by the vice president of student council, Ren Kisaragi.�   "�
 item_definitionview��	liqi_fish   * * * * ��liqi_scallion   * * * * ��	liqi_bone   * * * *  ��liqi_chocolate   * * * * ��	liqi_evil   * * * * ��	liqi_jade   * * * * $��effect_hupai_fire�  * * * * $��effect_hupai_feng�  * * * * &��effect_hupai_sakura�  * * * * %��effect_liqi_bao   *heng* * * !��hand_cat_orange   * * * * "��tablecloth_green   * * * * "��tablecloth_lotus   * * * * #��tablecloth_violet   * * * * ��
 mjp_yellow   * * * * ��	mjp_green   * * * * ��mjp_rosered   * * * * ��liqi_red   * * * * ��liqi_goldbar   * * * * &��tablecloth_christmas   * * * * %��effect_liqi_ice�  *shu* * * '��effect_liqi_fire�  *heng* * * &��effect_hupai_heihuo�  * * * * $��tablecloth_newyear   * * * * ��liqi_bianpao   * * * * ��liqi_jiaozi   * * * * &��effect_hupai_yanhua�  * * * *  ��hand_cat_black   * * * * ��hand_cat_blue   * * * * +��effect_liqi_canying��  *heng* * * (��effect_liqi_feiyu��  *shu* * * #��ron_huolongjuan��  * * * * ��ron_keji��  * * * * !��ron_meiguihua��  * * * * #��tablecloth_chigua   * * * * +��tablecloth_zhongxiahuahuo   * * * * &��tablecloth_quehunji1   * * * * "��beijing_chunying   * * * * "��beijing_zhongxia   * * * * ��beijing_aiai   * * * * '��beijing_xinnianchuzhi   * * * * %��beijing_xiaripaidui   * * * * !��beijing_qiushen   * * * * (��effect_liqi_ding��  *heng* * * +��effect_liqi_longteng��  *shu* * * ��ron_ko��  * * * * ��	ron_nilin��  * * * * ��
-liqi_duane   * * * * ��liqi_xuegao   * * * * $��tablecloth_default   * * * * ��mjp_default   * * * * #��liqi_yijitiantong   * * * * ��ron_youling��  * * * * #��ron_gejumeiying��  * * * * "��ron_mofashaonv��  * * * * !��ron_20chunjie��  * * * * ��ron_szx��  * * * * ��ron_xhzy��  * * * * ��ron_nws��  * * * * ��ron_jd��  * * * * ��ron_hl��  * * * * )��effect_liqi_bianfu��  *shu* * * 1��effect_liqi_feichangshitai��  *shu* * * .��effect_liqi_mofashaonv��  *heng* * * ,��effect_liqi_20chunjie��  *shu* * * &��effect_liqi_szx��  *shu* * * (��effect_liqi_xhzy��  *heng* * * '��effect_liqi_nws��  *heng* * * &��effect_liqi_jd��  *heng* * * &��effect_liqi_hl��  *heng* * * ��douya   * * * * ��default   * * * * ��wanshengjie   * * * * ��sxz   * * * * ��sxz   * * * * ��sxz   * * * * ��sxz   * * * * ��trailC   * * * * ��trailB   * * * * ��trailA   * * * * "��liqi_wanshengjie   * * * * ��liqi_mofabang   * * * *  ��liqi_jinlongyu   * * * * ��	liqi_xhzy   * * * * ��liqi_hl   * * * * ��mjp_youling   * * * * ��mjp_20chunjie   * * * * ��mjp_hl   * * * * ��mpzs_shandian   * * * * &��tablecloth_20chunjie   * * * * ��tablecloth_hl   * * * * ��
-hand_human   * * * * ��hand_man   * * * * ��hand_dog   * * * * ��douya   * * * * "��
+liqi_duane   * * * * ��liqi_xuegao   * * * * $��tablecloth_default   * * * * ��mjp_default   * * * * #��liqi_yijitiantong   * * * * ��ron_youling��  * * * * #��ron_gejumeiying��  * * * * "��ron_mofashaonv��  * * * * !��ron_20chunjie��  * * * * ��ron_szx��  * * * * ��ron_xhzy��  * * * * ��ron_nws��  * * * * ��ron_jd��  * * * * ��ron_hl��  * * * * )��effect_liqi_bianfu��  *shu* * * 1��effect_liqi_feichangshitai��  *shu* * * .��effect_liqi_mofashaonv��  *heng* * * ,��effect_liqi_20chunjie��  *shu* * * &��effect_liqi_szx��  *shu* * * (��effect_liqi_xhzy��  *heng* * * '��effect_liqi_nws��  *heng* * * &��effect_liqi_jd��  *heng* * * &��effect_liqi_hl��  *heng* * * ��douya   * * * * ��default   * * * * ��wanshengjie   * * * * ��sxz   * * * * ��sxz   * * * * ��sxz   * * * * ��sxz   * * * * ��sxz   * * * * ��trailC   * * * * ��trailB   * * * * ��trailA   * * * * "��liqi_wanshengjie   * * * * ��liqi_mofabang   * * * *  ��liqi_jinlongyu   * * * * ��	liqi_xhzy   * * * * ��liqi_hl   * * * * ��mjp_youling   * * * * ��mjp_20chunjie   * * * * ��mjp_hl   * * * * ��mpzs_shandian   * * * * &��tablecloth_20chunjie   * * * * ��tablecloth_hl   * * * * ��
+hand_human   * * * * ��hand_man   * * * * ��hand_dog   * * * * ��douya   * * * * "��
 item_definitionskin���默认皮肤(女)*기본 스킨2Default Look� extendRes/charactor/default_girl����<�   ?�   ?������	��������	�����默认皮肤(男)*기본 스킨2Default Look�extendRes/charactor/default_man����<�   ?�   ?������������������一姬"一姬*이치히메2Ichihime:一姬的初始形象B一姬的原始形象J이치히메의 기본 의상RIchihime’s default lookX���extendRes/charactor/yiji����<��   ?�   ?������	��������	����	����	����������������	��������
 ����契约"契約*계약2Bond:�与角色【一姬】缔结契约后获得\n“喵？喵喵喵~~喵！”\n“都缔结契约了，主人怎么还是听不懂喵？”B�與角色【一姬】締結契約後獲得\n「喵？喵喵喵~~喵！”\n“都締結契約了，主人怎麼還是聽不懂喵？」JC이치히메와 계약을 맺으면 획득할 수 있는 코스튬.ROAvailable after making a Bonding Promise with Ichihime\n"Nyaa? Nyanyanya-nya! "X��b缔结契约j締結契約r계약성립zBond�extendRes/charactor/yiji_0����<��   ?�   ?����������������������	��������
 ����海滩派对"海灘派對*비치파티2Beach Party:�雀魂祭一周年·海滩派对限定\n“看枪！即使是主人，一姬也不会放水的喵~”被一姬用水枪追着跑，其实……也挺凉快？B�雀魂祭一周年·海灘派對限定\n「看槍！即使是主人，一姬也不會放水的喵~」被一姬用水槍追著跑，其實……也挺涼快？JK작혼 여름축제・비치파티에서 구입할 수 있는 한정 의상RiBeach Party Exclusive\n"Take this! Even if it's you, Master, Ichihime won't let you get an easy win-nya!"X��b活动限定j活動限定r기간한정zBeach Party�%extendRes/charactor/yiji_haitanpaidui�   ?�   ?������
@@ -25069,7 +25069,7 @@ Aihara Mai:相原舞的初始形象B相原舞的原始形象J$아이하라 마
 ��������	��������
 �����圣诞嘉年华"聖誕嘉年華*크리스마스 페스티벌2	Christmas:�圣诞嘉年华活动限定\n“圣诞节快乐！没有不快乐，只是不知道该用什么样的表情而已…原来这个时候应该微笑吗？B�聖誕嘉年華活動限定\n「聖誕節快樂！沒有不快樂，只是不知道該用什麼樣的表情而已……原來這個時候應該微笑嗎？」JO크리스마스 페스티벌에서 구입할 수 있는 한정 코스튬 의상RjChristmas Carnival Exclusive\n"You have been staring at my legs. I knew you had a thing for girls' feet. "Xǚb活动限定j活動限定r기간한정z	Christmas�extendRes/charactor/bamuwei_SDJ����?�   ?������	����
 ��	��
-�����魇魔之约"魘魔之約*仮装舞踏会20202Halloween Party:b魇魔之约活动限定\n“飞舞吧，蝴蝶们——去把那个人带到我的面前来。”Bb魘魔之約活動限定\n「飛舞吧，蝴蝶們——去把那個人帶到我的面前來。」J$할로윈 테마의 코스튬 의상RGHalloween Party Exclusive\n "Go, butterflies--Bring that person to me."Xǚb活动限定j活動限定r기간한정zHalloween Party�extendRes/charactor/bamuwei_WSJ�
+�����魇魔之约"魘魔之約*가면무도회 20202Halloween Party:b魇魔之约活动限定\n“飞舞吧，蝴蝶们——去把那个人带到我的面前来。”Bb魘魔之約活動限定\n「飛舞吧，蝴蝶們——去把那個人帶到我的面前來。」J$할로윈 테마의 코스튬 의상RGHalloween Party Exclusive\n "Go, butterflies--Bring that person to me."Xǚb活动限定j活動限定r기간한정zHalloween Party�extendRes/charactor/bamuwei_WSJ�
 �#?��Q8?�����������������2020-10-29 05:00:00+08���九条璃雨"九條璃雨*쿠죠 리우2	Kujou Riu:九条璃雨的初始形象B九條璃雨的原始形象J쿠죠 리우의 기본 의상RKujou Riu’s default lookXȚ�extendRes/charactor/jiutiao����<�   ?�   ?������
 ��������
 ����
@@ -25100,7 +25100,7 @@ Aihara Mai:相原舞的初始形象B相原舞的原始形象J$아이하라 마
 �����契约"契約*계약2Bond:�与角色【一之濑空】缔结契约后获得\n“除了魔方，我还有很多很多的东西想要和你一起分享，可以吗？”B�與角色【一之瀨空】締結契約後獲得\n「除了魔術方塊，我還有很多很多的東西想要和你一起分享，可以嗎？」JJ이치노세 소라와 계약을 맺으면 획득할 수 있는 코스튬.RxAvailable after making a Bonding Promise with Sora Ichinose\n" I have many more things that I want to share with you.  "X͚b缔结契约j締結契約r계약성립zBond�"extendRes/charactor/yizhilaikong_0����<���(�>�ף�>��������������	��������	��������
 �����圣诞嘉年华"聖誕嘉年華*크리스마스 페스티벌2	Christmas:{圣诞嘉年华活动限定\n“是第一次和{name}一起过圣诞节呢~以后的圣诞节，也可以一起过吗？”B{聖誕嘉年華活動限定\n「是第一次和{name}一起過聖誕節呢~以後的聖誕節，也可以一起過嗎？」JO크리스마스 페스티벌에서 구입할 수 있는 한정 코스튬 의상RyChristmas Carnival Exclusive\n "This is my first Christmas with you... Can we celebrate it again in the future together?"X͚b活动限定j活動限定r기간한정z	Christmas�$extendRes/charactor/yizhilaikong_SDJ���?��?������	��������	�����明智英树"明智英樹*아케치 히데키2Hideki Akechi:明智英树的初始形象B明智英樹的原始形象J$아케치 히데키의 기본 의상RHideki Akechi’s default lookXΚ�"extendRes/charactor/mingzhiyingshu����<���G�>����>������������	��������������������������	��������
 �����契约"契約*계약2Bond:�与角色【明智英树】缔结契约后获得\n“要过来坐一会儿吗？什么都不干，就这样静静地陪我坐一会儿，可以吗？”B�與角色【明智英樹】締結契約後獲得\n「要過來坐坐嗎？什麼都不幹，就這樣靜靜地陪我坐一陣子，可以嗎？」JJ아케치 히데키와 계약을 맺으면 획득할 수 있는 코스튬.RAvailable after making a Bonding Promise with Hideki Akechi\n"Could you sit here for a while? Just stay with me for a moment. "XΚb缔结契约j締結契約r계약성립zBond�$extendRes/charactor/mingzhiyingshu_0����<��?��z?������������	����������	��������
-�����魇魔之约"魘魔之約*仮装舞踏会20202Halloween Party:�魇魔之约活动限定\n“晚上好，黑羽的使者明智英树，前来迎接您。与我一同前往那个铺满月光的国度，您不会拒绝的，对吗？”B�魘魔之約活動限定\n「晚上好，黑羽的使者明智英樹，前來迎接您。與我一同前往那個鋪滿月光的國度，您不會拒絕的，對嗎？」J$할로윈 테마의 코스튬 의상R�Halloween Party Exclusive\n"Good evening, Hideki Akechi, the messenger with dark wings, has come to greet you to that moonlit country with me."XΚb活动限定j活動限定r기간한정zHalloween Party�&extendRes/charactor/mingzhiyingshu_WSJ�H��>��(?�����������������2020-10-29 05:00:00+08���	轻库娘"	輕庫娘*케이쿠무스메2Keikumusume:轻库娘的初始形象B輕庫娘的原始形象J#케이쿠무스메의 기본 의상RKeikumusume’s default lookXϚ�extendRes/charactor/qingku������p�>��p�>��
+�����魇魔之约"魘魔之約*가면무도회 20202Halloween Party:�魇魔之约活动限定\n“晚上好，黑羽的使者明智英树，前来迎接您。与我一同前往那个铺满月光的国度，您不会拒绝的，对吗？”B�魘魔之約活動限定\n「晚上好，黑羽的使者明智英樹，前來迎接您。與我一同前往那個鋪滿月光的國度，您不會拒絕的，對嗎？」J$할로윈 테마의 코스튬 의상R�Halloween Party Exclusive\n"Good evening, Hideki Akechi, the messenger with dark wings, has come to greet you to that moonlit country with me."XΚb活动限定j活動限定r기간한정zHalloween Party�&extendRes/charactor/mingzhiyingshu_WSJ�H��>��(?�����������������2020-10-29 05:00:00+08���	轻库娘"	輕庫娘*케이쿠무스메2Keikumusume:轻库娘的初始形象B輕庫娘的原始形象J#케이쿠무스메의 기본 의상RKeikumusume’s default lookXϚ�extendRes/charactor/qingku������p�>��p�>��
 ��������
 ��	�������契约"契約*계약2Bond:�与角色【轻库娘】缔结契约后获得\n“你也喜欢轻小说吗？”撑着油纸伞的少女自异界而来，仿佛带来了一袭清风。B�與角色【輕庫娘】締結契約後獲得\n「你也喜歡輕小說嗎？」撐著油紙傘的少女自異界而來，仿佛帶來了一襲清風。JH케이쿠무스메와 계약을 맺으면 획득할 수 있는 코스튬RdAvailable after making a Bonding Promise with Keikumusume\n "Do you also like to read light novels?"XϚb缔结契约j締結契約r계약성립zBond�extendRes/charactor/qingku_0����<����>��(�>������������
 ��
@@ -25446,9 +25446,9 @@ p��128元���1980服饰券1980 Outfit Voucher"1980코스튬권*198
 1first_charge_reset2020-08-20 05:00+08,
 2first_charge_reset2020-04-25 05:00+08,
 3first_charge_reset2020-04-25 05:00+08"�
-mallmonth_ticket�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<H"PX`hrextendRes/items/monthcard.jpgz辉玉(340立即+60每天)�輝玉(340立即+60每天)��购买后立即获得340辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 340 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석340個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得340輝玉且每日獲得60輝玉��购买后立即获得340辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 340 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석340個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得340輝玉且每日獲得60輝玉�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<H$PX`hrextendRes/items/monthcard.jpg��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<HPX`hrextendRes/items/monthcard.jpg��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉"�	
-mallchannel_config=d2100001-101005"101002*100004-10200521020028BalipayCe2-5100001-101005"101003*100004-1020052102002-10200383Biap��2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108HBmycardS�1-9100001-101005"101002-101001*100004-1020052102002-1020018
-Bgoogle_play�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108PBsteam�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108PBsteamz�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108 B B�5100001-101005"101002-101003*100004-102005210200383Biap@�1-9100001"101001-101008*1000042102001-1020088>Byostar@�5-9100001"101003-101008*1000042102003-1020088=Byostar:�2-9100001"101002-101008*1000042102002-1020088 B @�1-9100001"101001-101008*1000042102001-1020088>Byostar@�5-9100001"101003-101008*1000042102003-1020088=Byostar*�2100001"101002*10000421020028 B :�2-7100001"101002-101006*1000042102002-1020068 B "B
+mallmonth_ticket�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<H"PX`hrextendRes/items/monthcard.jpgz辉玉(340立即+60每天)�輝玉(340立即+60每天)��购买后立即获得340辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 340 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석340個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得340輝玉且每日獲得60輝玉��购买后立即获得340辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 340 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석340個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得340輝玉且每日獲得60輝玉�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<H$PX`hrextendRes/items/monthcard.jpg��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉�	�月势御守（30天）Fortune Charm (30d)"운수대통 부적 (30일)*月勢御守（30日）0��8�@<HPX`hrextendRes/items/monthcard.jpg��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉��购买后立即获得300辉玉\n30天内每天可领取60辉玉\n30天内每天额外获得一个悬赏任务\n30天内悬赏任务储存数量上限+3�~Obtain 300 Jade immediately\nObtain 60 Jade per day for 30(d)\nCan accept an extra Daily Quest \nCan store upto 6 Daily Quests��受領時に휘석300個が입수できる\n30日間毎日휘석60個が受取できる\n30日間毎日クエスト受注数+1\n30日間クエストの저장数+3�5購買後立即獲得300輝玉且每日獲得60輝玉"�	
+mallchannel_config=d2100001-101005"101002*100004-10200521020028Balipay<e2-5100001-101005"101003*100004-102005210200383Biap��2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108HBmycardS�1-2100001-101005"101002-101001*100004-1020052102002-1020018
+Bgoogle_play�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108PBsteam�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108PBsteamz�2-6-8-10-11100001-101005""101002-101004-101007-101009-101010*100004-1020052"102002-102004-102007-102009-1020108 B I�5100001-101005"101002-101003*100004-1020052102002-10200383Biap@�1-9100001"101001-101008*1000042102001-1020088>Byostar@�5-9100001"101003-101008*1000042102003-1020088=Byostar:�2-9100001"101002-101008*1000042102002-1020088 B 0�1100001"101001*10000421020018>Byostar0�5100001"101003*10000421020038=Byostar*�2100001"101002*10000421020028 B :�2-7100001"101002-101006*1000042102002-1020068 B "B
 match_shilianshilian(试炼之道� ��(�N0 8 @ H�NP��"�
 match_shilianshilian_reward����2����2����2����2����2".
 match_shilianshilian_time0:0023:59"d
@@ -25600,7 +25600,7 @@ Teddy Bear8տ@H��P�uXptextendRes/items/comic0.jpg同人小册子"�
 shopszhp_refresh_group   "�
 shopszhp_refresh_price
 (2ddd	d
-dddddddddddddddd"�s
+dddddddddddddddd"�s
 shopsgoods��"extendRes/items/biscuit2.jpg*香喷喷曲奇2香噴噴餅乾:고소한 쿠키BDelicious Cookieh��p��x��������������1,2,3��"extendRes/items/console2.jpg*次世代游戏机2次世代遊戲機:차세대 게임기BPowerful Consoleh��p��x��������������1,2,3��"extendRes/items/art2.jpg*经典名画2經典名畫:불후의 명화BClassic Paintingh��p��x��������������1,2,3��"extendRes/items/wine2.jpg*82年的拉菲282年的拉菲:고급 와인잔BValuable Goblethÿp��x��������������1,2,3��"extendRes/items/diamond2.jpg*海洋之心2海洋之心:호프 다이아BHeart of the OceanhͿp��x��������������1,2,3��"extendRes/items/toy2.jpg*熊公仔XXL2熊公仔XXL:테디베어XXLBTeddy Bear XXLh׿p��x��������������1,2,3��"extendRes/items/comic2.jpg*精美同人志2精美同人志:대형 동인지BDelicate Fanzineh�p��x��������������1,2,3��"extendRes/items/dress2.jpg*华丽的小裙子2華麗的小裙子:화려한 원피스BGorgeous Dressh�p��x��������������1,2,3��" extendRes/items/jade_courage.jpg*勇气宝玉2勇氣寶玉:용기의 보옥BSphere of Courageh��p��x
 �������������	�1,2,3��"extendRes/items/jade_will.jpg*意志宝玉2意志寶玉:의지의 보옥BSphere of Willh��p��x
 �������������
@@ -25626,8 +25626,8 @@ Teddy Bear8տ@H��P�uXptextendRes/items/comic0.jpg同人小册子"�
 Backgroundh��p��x����2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��"$extendRes/items/beijing_zhongxia.jpg*神社庭院·仲夏2神社庭院‧仲夏:신사의 정원・여름중BShrine Yard · MidsummerJ首页庭院背景R首頁庭院背景Z배경b
 Backgroundh��p��x�����2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��"extendRes/items/fudai_lvren.jpg*旅人福袋2旅人福袋:낭인의 복주머니BTraveler's Bagh��p��x������������1,2,3��" extendRes/items/fudai_guiren.jpg*贵人福袋2贵人福袋:귀족의 복주머니BFortune Bagh��p��x
 ������������1,2,3��"!extendRes/items/fudai_xianren.jpg*贤人福袋2贤人福袋:현자의 복주머니B
-Sage's Bagh��p��x2������������1,2,3��"(extendRes/items/tablecloth_christmas.jpg*圣夜桌布2聖夜桌面:성스러운 밤의 작탁BTablecloth - Christmash��p��x���2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��"extendRes/items/coupon.jpg*寻觅卷轴2尋覓卷軸:기원의 두루마리BSummon Scrollh��p��x2�����1,2,3��"extendRes/items/gaimingka.jpg*更名卷轴2更名卷軸:개명의 두루마리BRename Scrollh��p��x�����1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ一姬服饰（无背景）R一姬服飾（無背景）Z이치히메의 의상bIchihime's outfith�p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ相原舞服饰（无背景）R相原舞服飾（無背景）Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ抚子服饰（无背景）R撫子服飾（無背景）Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ璃雨服饰（无背景）R璃雨服飾（無背景）Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'")extendRes/skin_shop/erjietangWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ二阶堂美树服饰R二階堂美樹服飾Z니카이도 미키의 의상bNikaido Miki's outfith˶p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"&extendRes/skin_shop/zeniyaWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ泽尼亚服饰R澤尼亞服飾Z지니아의 의상bXenia's outfith��p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"(extendRes/skin_shop/xiashengWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ四宫夏生服饰R四宮夏生服飾Z 시노미야 나츠키의 의상bNatsuki Shinomiya's outfithϽp��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"%extendRes/skin_shop/wangcilangWSJ.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ汪次郎服饰R汪次郎服飾Z왕지로의 의상bWanjirou's outfith��p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"&extendRes/skin_shop/jianaiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ藤田佳奈服饰R藤田佳奈服飾Z후지타 카나의 의상bFujita Kana's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"'extendRes/skin_shop/qianzhiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ三上千织服饰R三上千織服飾Z미카미 치오리의 의상bChiori Mikami's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"'extendRes/skin_shop/bamuweiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ八木唯服饰R八木唯服飾Z야기 유이의 의상bYui Yagi's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"$extendRes/skin_shop/kongSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ一之濑空服饰R一之瀨空服飾Z이치노세 소라의 의상bSora Ichinose's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"2extendRes/skin_shop/beijing_shengdanjianianhua.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ首页背景R首頁背景Z배경bBackground's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"#extendRes/skin_shop/yijiYD_shop.jpg*新年初诣2新春參拜:신년참배BNew Year's First VisitJ一姬服饰R一姬服飾Z 이치히메의 코스튬 의상bIchihime's outfith�p��x������N�2019-12-30 05:00:00+08�2020-01-09 05:00:00+08�1,2,3��'"$extendRes/skin_shop/shalaYD_shop.jpg*新年初诣2新春參拜:신년참배BNew Year's First VisitJ莎拉服饰R莎拉服飾Z사라의 코스튬 의상bSara's outfith��p��x������N�2019-12-30 05:00:00+08�2020-01-09 05:00:00+08�1,2,3��'"(extendRes/skin_shop/erjietangCJ_shop.jpg*万象沐春2萬象沐春:춘용만상BSpring CelebrationJ美树服饰R美樹服飾Z미키의 코스튬 의상bMiki Nikaidou's outfithζp��x������N�2020-01-20 05:00:00+08�2020-02-03 04:59:00+08�1,2,3��'"+extendRes/skin_shop/erzhigonghuaCJ_shop.jpg*万象沐春2萬象沐春:춘용만상BSpring CelebrationJ二之宫花服饰R二之宮花服飾Z'니노미야 하나의 코스튬 의상bHana Ninomiya's outfith��p��x������N�2020-01-20 05:00:00+08�2020-02-03 04:59:00+08�1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ一姬服饰（无背景）R一姬服飾（無背景）Z이치히메의 의상bIchihime's outfith�p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ相原舞服饰（无背景）R相原舞服飾（無背景）Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ抚子服饰（无背景）R撫子服飾（無背景）Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ璃雨服饰（无背景）R璃雨服飾（無背景）Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"'extendRes/skin_shop/qianzhi_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ三上千织服饰R三上千織服飾Z미카미 치오리의 의상bChiori Mikami's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"&extendRes/skin_shop/zeniya_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ泽尼娅服饰R澤尼婭服飾Z지니아의 의상bXenia's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'",extendRes/skin_shop/baishinainai_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ白石奈奈服饰R白石奈奈服飾Z 시라이시 나나의 코스튬bNana Shiraishi's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"/extendRes/skin_shop/wushilanyangcai_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ五十岚阳菜服饰R五十嵐陽菜服飾Z 이가라시 하루나의 의상bHaruna Igarashi's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ一姬服饰R一姬服飾Z이치히메의 의상bIchihime's outfith�p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ相原舞服饰R相原舞服飾Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ抚子服饰R撫子服飾Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ璃雨服饰R璃雨服飾Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"'extendRes/skin_shop/bamuweiWSJ_shop.jpg*魇魔之约2魘魔之約:仮装舞踏会2020BHalloween PartyJ八木唯服饰R八木唯服飾Z八木唯の着せ替え衣装bYui Yagi's outfith��p��x������N�2020-10-29 05:00:00+08�2020-11-08 05:00:00+08�1,2,3��'".extendRes/skin_shop/mingzhiyingshuWSJ_shop.jpg*魇魔之约2魘魔之約:仮装舞踏会2020BHalloween PartyJ明智英树服饰R明智英樹服飾Z!明智英樹の着せ替え衣装bHideki Akechi’s outfith��p��x������N�2020-10-29 05:00:00+08�2020-11-08 05:00:00+08�1,2,3��.d".extendRes/skin_shop/haitanpaiduilibao_shop.jpg*海滩派对大礼包2海灘派對大禮包:비치파티 스페셜 백BBeach Party Special PackJ全服饰+首页海滩背景R全服飾+首頁背景Z4인 세트＋배경bBackground + all outfitsh��*p��x� �����B�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3"M
-shopsgoods_package	��*�'	��*�'	��*�'	��*�'	��*�"��
+Sage's Bagh��p��x2������������1,2,3��"(extendRes/items/tablecloth_christmas.jpg*圣夜桌布2聖夜桌面:성스러운 밤의 작탁BTablecloth - Christmash��p��x���2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��"extendRes/items/coupon.jpg*寻觅卷轴2尋覓卷軸:기원의 두루마리BSummon Scrollh��p��x2�����1,2,3��"extendRes/items/gaimingka.jpg*更名卷轴2更名卷軸:개명의 두루마리BRename Scrollh��p��x�����1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ一姬服饰（无背景）R一姬服飾（無背景）Z이치히메의 의상bIchihime's outfith�p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ相原舞服饰（无背景）R相原舞服飾（無背景）Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ抚子服饰（无背景）R撫子服飾（無背景）Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ璃雨服饰（无背景）R璃雨服飾（無背景）Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3��'")extendRes/skin_shop/erjietangWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ二阶堂美树服饰R二階堂美樹服飾Z니카이도 미키의 의상bNikaido Miki's outfith˶p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"&extendRes/skin_shop/zeniyaWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ泽尼亚服饰R澤尼亞服飾Z지니아의 의상bXenia's outfith��p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"(extendRes/skin_shop/xiashengWSJ_shop.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ四宫夏生服饰R四宮夏生服飾Z 시노미야 나츠키의 의상bNatsuki Shinomiya's outfithϽp��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"%extendRes/skin_shop/wangcilangWSJ.jpg*化妆舞会2化妝舞會:가면 무도회BHalloween PartyJ汪次郎服饰R汪次郎服飾Z왕지로의 의상bWanjirou's outfith��p��x������N�2019-10-15 05:00:00+08�2019-11-11 05:00:00+08�1,2,3��'"&extendRes/skin_shop/jianaiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ藤田佳奈服饰R藤田佳奈服飾Z후지타 카나의 의상bFujita Kana's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"'extendRes/skin_shop/qianzhiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ三上千织服饰R三上千織服飾Z미카미 치오리의 의상bChiori Mikami's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"'extendRes/skin_shop/bamuweiSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ八木唯服饰R八木唯服飾Z야기 유이의 의상bYui Yagi's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"$extendRes/skin_shop/kongSDJ_shop.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ一之濑空服饰R一之瀨空服飾Z이치노세 소라의 의상bSora Ichinose's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"2extendRes/skin_shop/beijing_shengdanjianianhua.jpg*圣诞嘉年华2聖誕嘉年華:크리스마스 페스티벌BChristmas CarnivalJ首页背景R首頁背景Z배경bBackground's outfith��p��x������N�2019-12-12 05:00:00+08�2019-12-27 05:00:00+08�1,2,3��'"#extendRes/skin_shop/yijiYD_shop.jpg*新年初诣2新春參拜:신년참배BNew Year's First VisitJ一姬服饰R一姬服飾Z 이치히메의 코스튬 의상bIchihime's outfith�p��x������N�2019-12-30 05:00:00+08�2020-01-09 05:00:00+08�1,2,3��'"$extendRes/skin_shop/shalaYD_shop.jpg*新年初诣2新春參拜:신년참배BNew Year's First VisitJ莎拉服饰R莎拉服飾Z사라의 코스튬 의상bSara's outfith��p��x������N�2019-12-30 05:00:00+08�2020-01-09 05:00:00+08�1,2,3��'"(extendRes/skin_shop/erjietangCJ_shop.jpg*万象沐春2萬象沐春:춘용만상BSpring CelebrationJ美树服饰R美樹服飾Z미키의 코스튬 의상bMiki Nikaidou's outfithζp��x������N�2020-01-20 05:00:00+08�2020-02-03 04:59:00+08�1,2,3��'"+extendRes/skin_shop/erzhigonghuaCJ_shop.jpg*万象沐春2萬象沐春:춘용만상BSpring CelebrationJ二之宫花服饰R二之宮花服飾Z'니노미야 하나의 코스튬 의상bHana Ninomiya's outfith��p��x������N�2020-01-20 05:00:00+08�2020-02-03 04:59:00+08�1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ一姬服饰（无背景）R一姬服飾（無背景）Z이치히메의 의상bIchihime's outfith�p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ相原舞服饰（无背景）R相原舞服飾（無背景）Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ抚子服饰（无背景）R撫子服飾（無背景）Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티BBeach PartyJ璃雨服饰（无背景）R璃雨服飾（無背景）Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2020-04-25 05:00:00+08�2020-05-09 05:00:00+08�1,2,3��'"'extendRes/skin_shop/qianzhi_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ三上千织服饰R三上千織服飾Z미카미 치오리의 의상bChiori Mikami's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"&extendRes/skin_shop/zeniya_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ泽尼娅服饰R澤尼婭服飾Z지니아의 의상bXenia's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'",extendRes/skin_shop/baishinainai_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ白石奈奈服饰R白石奈奈服飾Z 시라이시 나나의 코스튬bNana Shiraishi's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"/extendRes/skin_shop/wushilanyangcai_YZ_shop.jpg*清凉夏日2清涼夏日:비치파티 2020BBeach PartyJ五十岚阳菜服饰R五十嵐陽菜服飾Z 이가라시 하루나의 의상bHaruna Igarashi's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1,2,3��'"-extendRes/skin_shop/yijihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ一姬服饰R一姬服飾Z이치히메의 의상bIchihime's outfith�p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"+extendRes/skin_shop/wuhaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ相原舞服饰R相原舞服飾Z아이하라 마이의 의상bMai Aihara's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"-extendRes/skin_shop/fuzihaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ抚子服饰R撫子服飾Z나데시코의 의상bNadeshiko's outfith۹p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"0extendRes/skin_shop/jiutiaohaitanpaidui_shop.jpg*海滩派对2海灘派對:비치파티 2020BBeach PartyJ璃雨服饰R璃雨服飾Z쿠죠 리우의 의상bRiu Kujou's outfith��p��x������N�2020-08-20 05:00:00+08�2020-09-03 05:00:00+08�1��'"'extendRes/skin_shop/bamuweiWSJ_shop.jpg*魇魔之约2魘魔之約:가면무도회 2020BHalloween PartyJ八木唯服饰R八木唯服飾Z!야기 유이의 코스튬 의상bYui Yagi's outfith��p��x������N�2020-10-29 05:00:00+08�2020-11-08 05:00:00+08�1,2,3��'".extendRes/skin_shop/mingzhiyingshuWSJ_shop.jpg*魇魔之约2魘魔之約:가면무도회 2020BHalloween PartyJ明智英树服饰R明智英樹服飾Z'아케치 히데키의 코스튬 의상bHideki Akechi’s outfith��p��x������N�2020-10-29 05:00:00+08�2020-11-08 05:00:00+08�1,2,3��.d".extendRes/skin_shop/haitanpaiduilibao_shop.jpg*海滩派对大礼包2海灘派對大禮包:비치파티 스페셜 백BBeach Party Special PackJ全服饰+首页海滩背景R全服飾+首頁背景Z4인 세트＋배경bBackground + all outfitsh��*p��x� �����B�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�2019-08-15 05:00:00+08�2019-08-30 05:00:00+08�1,2,3"M
+shopsgoods_package	��*�'	��*�'	��*�'	��*�'	��*�"��
 spotspot�a����"猫又·谣*貓又‧謠2「고양이 요괴 소문」:Nekomata - Rumor@R羁绊LV1解锁Z羈絆LV1解鎖b친밀 LV1 필요jUnlock at Bond Lv1pz�“附近的树林里有喜欢吃人肉的妖怪作祟。”
 不知道从什么时候开始，这句话就在村民的口中传开了，而且莫名其妙就有了很多个版本。
 年轻的旅行者端着一杯清茶轻轻地吹着杯口的热气，安静地听着眼前的少男少女在为谁的版本才是正确的而争执不下。
@@ -25971,7 +25971,7 @@ Many years later, she finally understands what the "color" was. It's the color o
 She cannot give a firm definition of such "color", because she knows she will never become one like them.
 And she prefers the life as is now: one shop, a few Mahjong friends.
 Life is always ordinary. All one needs to know is how to find happiness in the ordinary.�    �Ě"晚餐*晚餐2저녁식사:Dinner@R羁绊LV4解锁Z羈絆LV4解鎖b친밀 LV4 필요jUnlock at Bond Lv4p�erjietang/200004���z��z  �Ś"约会*約會2	데이트:Date@R羁绊LV5解锁Z羈絆LV5解鎖b친밀 LV5 필요jUnlock at Bond Lv5p�erjietang/200005���z��z  �ƚ"经验*經驗2경험:
-Experience@HR缔结契约解锁Z締結契約解鎖b계약 필요jBond to unlockp�erjietang/200006���z��z  �?՚��"28号档案*28號檔案2ファイル No.28:
+Experience@HR缔结契约解锁Z締結契約解鎖b계약 필요jBond to unlockp�erjietang/200006���z��z  �?՚��"28号档案*28號檔案2파일 No.28:
 File No.28@R羁绊LV1解锁Z羈絆LV1解鎖b친밀 LV1 필요jUnlock at Bond Lv1pz�C:＼Users＼KR-976＞28号档案
 系统检索到一份匹配记录
 
@@ -26184,7 +26184,7 @@ Unable to continue recording
 Recording system shutting down soon
 
 End of record
-Backed up to folder <Low-level File>�    �-՚��"33号档案*33號檔案2ファイル No.33:
+Backed up to folder <Low-level File>�    �-՚��"33号档案*33號檔案2파일 No.33:
 File No.33@R羁绊LV2解锁Z羈絆LV2解鎖b친밀 LV2 필요jUnlock at Bond Lv2pz�	C:＼Users＼KR-976＞33号档案
 系统检索到一份匹配记录
 
@@ -26321,7 +26321,7 @@ Reaction plan activating...: Run away from the scene
 
 Record interrupted
 End of record
-Backed up to folder <High-level File>�    �,՚��"37号档案*37號檔案2ファイル No.37:
+Backed up to folder <High-level File>�    �,՚��"37号档案*37號檔案2파일 No.37:
 File No.37@R羁绊LV3解锁Z羈絆LV3解鎖b친밀 LV3 필요jUnlock at Bond Lv3pz�
 C:＼Users＼KR-976＞37号档案
 系统检索到一份匹配记录
@@ -26457,10 +26457,10 @@ Re-arranging memories
 Memories have been finalized
 End of record
 Backed up to folder <High-level File>
-Encryption: Only accessible by self�    �՚��"月团物语*月團物語2月見物語:Mooncake Tale@R羁绊LV4解锁Z羈絆LV4解鎖b친밀 LV4 필요jUnlock at Bond Lv4p�lianggong/210004�
-ɖ�ʖ�  �՚��"*“社交型人工智能”的社交障碍**「社交型人工智能」的社交障礙2*「社交的人工知能」のコミュ力:7The Social Disorder of "Social Artificial Intelligence"@R羁绊LV5解锁Z羈絆LV5解鎖b친밀 LV5 필요jUnlock at Bond Lv5p�lianggong/210005�
-Ӗ�Ԗ�  �՚��"游园之旅*遊園之旅2遊園地の旅:Amusement Park Tour@HR缔结契约解锁Z締結契約解鎖b계약 필요jBond to unlockp�lianggong/210006�ݖ�ޖ�ߖ� "�
-spotrewards��=!解锁结局【一姬的心意】"!解鎖結局【一姬的心意】*End1. 이치히메의 생각2'Unlock the Ending - Ichihime's thoughts:302010-1��='解锁结局【毫无所获的一天】"'解鎖結局【毫無所獲的一天】*End2. 헛되이2 Unlock the Ending - A day wasted:100002-8000��=解锁结局【得与失？】"解鎖結局【得與失？】*End3. 잃는 것과 얻는 것2 Unlock the Ending - Gain & loss?:304005-1��=-解锁结局【解除危机的正确姿势】"-解鎖結局【解除危機的正確姿勢】*End4. 올바른 해결 방법24Unlock the Ending - How to resolve a crisis properly:100002-8000,304005-1��=+解锁结局【新的挑战&守护巫女】"+解鎖結局【新的挑戰&守護巫女】*End5 .수호자 무녀2;Unlock the Ending - A new challenge & protect the priestess:100002-8000,304006-1���='解锁结局【无法忘却的回忆】"'解鎖結局【無法忘卻的回憶】*End6. 잊지 못할 추억2*Unlock the Ending - Unforgettable memories:302001-1���=解锁结局【以毒攻毒】"解鎖結局【以毒攻毒】*End7. 독은 독으로2+Unlock the Ending - Fighting fire with fire:302007-1���z*解锁结局【为了你，我可以！】"*解鎖結局【為了你，我可以！】*End1. 당신을 위해서라면2+Unlock Ending - I will do anything for you!:302005-1���z*解锁结局【饭里……有毒……】"*解鎖結局【飯裡……有毒……】*$End2. 예쁜 꽃엔 가시가 있다2(Unlock Ending - The meal was... toxic...:100002-8000���z0解锁结局【好像失去了些什么……】"0解鎖結局【好像失去了些什麼……】*End3. 무언가를 잃은 듯22Unlock Ending - I feel like I've lost something...:100002-12000���z!解锁结局【夕阳与蜜糖】"!解鎖結局【夕陽與蜜糖】*End4. 석양의 달콤함2,Unlock Ending - The sunset and the sweetness:304005-1���z解锁结局【喜欢你】"解鎖結局【喜歡你】*End5. 당신을 사랑합니다2Unlock Ending - I like you:304006-1���z$解锁结局【两个人的秘密】"$解鎖結局【兩個人的秘密】*End6. 두 사람 만의 비밀23Unlock Ending - A secret between just the two of us:302001-1�ɖ�$解锁结局【中秋节的礼物】"$解鎖結局【中秋節的禮物】* End1.中秋節のプレゼント2#Unlock the Ending - Mid-Autumn Gift:302012-1�ʖ�$解锁结局【月饼里的心意】"$解鎖結局【月餅裡的心意】* End2.愛のこもった月餅を2'Unlock the Ending - Mooncakes with Love:100002-8000�Ӗ�'解锁结局【心意相通的朋友】"'解鎖結局【心意相通的朋友】*End3.以心伝心2#Unlock the Ending - Friends in Sync:304005-1�Ԗ�'解锁结局【志同道合的朋友】"'解鎖結局【志同道合的朋友】*End4.意気投合2'Unlock the Ending - Like-minded Friends:100002-8000�ݖ�!解锁结局【旋转的幸福】"!解鎖結局【旋轉的幸福】*End5.幸せの回転2&Unlock the Ending - Happiness-go-round:304006-1�ޖ�$解锁结局【“生死”之交】"$解鎖結局【“生死”之交】* End6.「生と死」をこえて2.Unlock the Ending - Through "Life" and "Death":100002-8000�ߖ�$解锁结局【斗恶龙的公主】"$解鎖結局【鬥惡龍的公主】*End7.勇者のお姫様2$Unlock the Ending - Princess Heroine:302001-1"��
+Encryption: Only accessible by self�    �՚��"月团物语*月團物語2달맞이 이야기:Mooncake Tale@R羁绊LV4解锁Z羈絆LV4解鎖b친밀 LV4 필요jUnlock at Bond Lv4p�lianggong/210004�
+ɖ�ʖ�  �՚��"*“社交型人工智能”的社交障碍**「社交型人工智能」的社交障礙2)「인공지능」의 의사소통 능력:7The Social Disorder of "Social Artificial Intelligence"@R羁绊LV5解锁Z羈絆LV5解鎖b친밀 LV5 필요jUnlock at Bond Lv5p�lianggong/210005�
+Ӗ�Ԗ�  �՚��"游园之旅*遊園之旅2유원지 여행:Amusement Park Tour@HR缔结契约解锁Z締結契約解鎖b계약 필요jBond to unlockp�lianggong/210006�ݖ�ޖ�ߖ� "�
+spotrewards��=!解锁结局【一姬的心意】"!解鎖結局【一姬的心意】*End1. 이치히메의 생각2'Unlock the Ending - Ichihime's thoughts:302010-1��='解锁结局【毫无所获的一天】"'解鎖結局【毫無所獲的一天】*End2. 헛되이2 Unlock the Ending - A day wasted:100002-8000��=解锁结局【得与失？】"解鎖結局【得與失？】*End3. 잃는 것과 얻는 것2 Unlock the Ending - Gain & loss?:304005-1��=-解锁结局【解除危机的正确姿势】"-解鎖結局【解除危機的正確姿勢】*End4. 올바른 해결 방법24Unlock the Ending - How to resolve a crisis properly:100002-8000,304005-1��=+解锁结局【新的挑战&守护巫女】"+解鎖結局【新的挑戰&守護巫女】*End5 .수호자 무녀2;Unlock the Ending - A new challenge & protect the priestess:100002-8000,304006-1���='解锁结局【无法忘却的回忆】"'解鎖結局【無法忘卻的回憶】*End6. 잊지 못할 추억2*Unlock the Ending - Unforgettable memories:302001-1���=解锁结局【以毒攻毒】"解鎖結局【以毒攻毒】*End7. 독은 독으로2+Unlock the Ending - Fighting fire with fire:302007-1���z*解锁结局【为了你，我可以！】"*解鎖結局【為了你，我可以！】*End1. 당신을 위해서라면2+Unlock Ending - I will do anything for you!:302005-1���z*解锁结局【饭里……有毒……】"*解鎖結局【飯裡……有毒……】*$End2. 예쁜 꽃엔 가시가 있다2(Unlock Ending - The meal was... toxic...:100002-8000���z0解锁结局【好像失去了些什么……】"0解鎖結局【好像失去了些什麼……】*End3. 무언가를 잃은 듯22Unlock Ending - I feel like I've lost something...:100002-12000���z!解锁结局【夕阳与蜜糖】"!解鎖結局【夕陽與蜜糖】*End4. 석양의 달콤함2,Unlock Ending - The sunset and the sweetness:304005-1���z解锁结局【喜欢你】"解鎖結局【喜歡你】*End5. 당신을 사랑합니다2Unlock Ending - I like you:304006-1���z$解锁结局【两个人的秘密】"$解鎖結局【兩個人的秘密】*End6. 두 사람 만의 비밀23Unlock Ending - A secret between just the two of us:302001-1�ɖ�$解锁结局【中秋节的礼物】"$解鎖結局【中秋節的禮物】*End1.중추절의 선물2#Unlock the Ending - Mid-Autumn Gift:302012-1�ʖ�$解锁结局【月饼里的心意】"$解鎖結局【月餅裡的心意】*End2.사랑이 담긴 월병을2'Unlock the Ending - Mooncakes with Love:100002-8000�Ӗ�'解锁结局【心意相通的朋友】"'解鎖結局【心意相通的朋友】*End3.이심전심2#Unlock the Ending - Friends in Sync:304005-1�Ԗ�'解锁结局【志同道合的朋友】"'解鎖結局【志同道合的朋友】*End4.의기투합2'Unlock the Ending - Like-minded Friends:100002-8000�ݖ�!解锁结局【旋转的幸福】"!解鎖結局【旋轉的幸福】*End5.행복 회전2&Unlock the Ending - Happiness-go-round:304006-1�ޖ�$解锁结局【“生死”之交】"$解鎖結局【“生死”之交】*"End6.「生과 死」를 넘어서2.Unlock the Ending - Through "Life" and "Death":100002-8000�ߖ�$解锁结局【斗恶龙的公主】"$解鎖結局【鬥惡龍的公主】*End7.용자의 공주님2$Unlock the Ending - Princess Heroine:302001-1"��
 strstr�g起点：25000\n返点：30000\n场次：东一局\n赤宝牌：3张\n食断：有\n等待时间：5+20"g起點：25000\n返點：30000\n場次：東一局\n赤寶牌：3張\n食斷：有\n等待時間：5+20*시작 점수：25000\n반환 점수：30000\n대국 수：단기전\n적도라：3개\n쿠이탕：있음\n장고시간：5+202{Starting Points: 25,000\nBase Points: 30,000\nLength: East (1 Game) Match\nRed Five: 3\nOpen Tanyao: On\nWaiting Time: 5+20��起点：25000\n南入：东四局结束1位不足30000点南入\n场次：东风庄\n赤宝牌：3张\n食断：有\n等待时间：5+20"�起點：25000\n南入：東四局結束1位不足30000點南入\n場次：東風莊\n赤寶牌：3張\n食斷：有\n等待時間：5+20*�시작 점수：25000\n납장 진입：동장 종료 시、1위의 점수가 30000점 미만일 때、남장에 진입\n대국 수：동풍전\n적도라：3개\n쿠이탕：있음\n장고시간：5+202�Starting Points: 25,000\nExtension into South: At the end of 4th East game, if 1st place has less than 30,000 points\nLength: East Round Match\nRed Five: 3\nOpen Tanyao: On\nWaiting Time: 5+20��起点：25000\n西入：南四局结束1位不足30000点西入\n场次：半庄\n赤宝牌：3张\n食断：有\n等待时间：5+20"�起點：25000\n西入：南四局結束1位不足30000點西入\n場次：半莊\n赤寶牌：3張\n食斷：有\n等待時間：5+20*�시작 점수：25000\n서장 진입：남장 종료 시、1위의 점수가 30000점 미만일 때、서장에 진입\n대국 수：반장전\n적도라：3개\n쿠이탕：있음\n장고시간：5+202�Starting Points: 25,000\nExtension into West: At the end of 4th South game, if 1st place has less than 30,000 points\nLength: Two-Wind Match\nRed Five: 3\nOpen Tanyao: On\nWaiting Time: 5+20��段位限制：初心-雀士\n四麻马点：1位+15，2位+5，3位-5，4位-15\n三麻马点：1位+15，2位+0，3位-15\n\n东风场：\n入场料：无\n四麻额外段位分：1位+10，2位+5，3位+0，4位根据当前段位额外扣分\n三麻额外段位分：1位+15，2位+0，3位根据当前段位额外扣分\n\n南风场：\n入场料：无\n四麻额外段位分：1位+20，2位+10，3位+0，4位根据当前段位扣分\n三麻额外段位分：1位+30，2位+0，3位根据当前段位扣分"�段位限制：初心-雀士\n四麻馬點：1位+15,2位+5,3位-5,4位-15\n\n東風場：\n入場料：無\n額外段位分：1位+10，2位+5，3位+0，4位根據目前段位額外扣分\n\n南風場：\n入場料：無\n段位分：1位+20，2位+10，3位+0，4位根據目前段位扣分*�등급제한：초심자-작사\n4인전 우마：1위+15,2위+5,3위-5,4위-15\n3인전 우마：1위+15,2위+0,3위-15\n\n동풍전：\n입장료：무료\n4인전 등급점수：1위+10，2위+5，3위+0，4위 등급에 따라 마이너스 점수\n3인전 등급점수：1위+15，2위+0，3위 등급에 따라 마이너스 점수\n\n반장：\n입장료：무료\n4인전 등급점수：1위+20，2위+10，3위+0，4위 등급에 따라 마이너스 점수\n3인전 등급점수：1위+30，2위+0，3위 등급에 따라 마이너스 점수2�Rank Limit: Novice - Intermediate
 \n4-player Order Bonus: 1st +15, 2nd +5, 3rd -5, 4th -15
 \n3-player Order Bonus: 1st +15, 2nd +0, 3rd -15
@@ -26816,7 +26816,7 @@ Bond Lv1: No effect\nBond Lv2: Earn 5% more coppers on the map\nBond Lv3: Earn 1
 Mysterious chests are appearing on the map!\nItems that can be inside the mysterious chest: random number of copper, random sphere, Fortune Bag, Sage's Bag.\n
 All the types of blocks:
 Shopping mall: Get random number of copper when stopping on it.\nPresent shop: Get a random green gift when stopping on it.\nBoard game shop: Get a dice when stopping on it.\nJewelry shop: Get a random sphere when stopping on it.
-Mahjong Soul bank: After using a dice or finish a lap on the map, copper will be deposited in the bank. \n- All the copper will be withdrew when stopping on Mahjong Soul bank. \nKaavi's fortune dial: Randomly select one of the following 6 effects.\n- Earn double coppers in the next move\n- Earn half coppers in the next move\n- Double the number of steps in the next move\n- Halve the number of steps in the next move\n- Move on 1 step\n- Refresh the location of mysterious chest��*陪千织逛商场，千织心情不太好"*陪千織逛商場，千織心情不太好*X치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…나쁜듯…?2GWalking in the shopping mall with Chiori. She's not having a good mood.��'陪千织逛商场，千织心情普通"'陪千織逛商場，千織心情普通*_～치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…그냥 그런듯?2?Walking in the shopping mall with Chiori. She's feeling normal.��'陪千织逛商场，千织心情不错"'陪千織逛商場，千織心情不錯*f치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…아마도 좋은 것 같다2=Walking in the shopping mall with Chiori. She's feeling good.��'陪千织逛商场，千织心情绝赞"'陪千織逛商場，千織心情絕贊*b치오리와 함께 한가로이 둘러보았다. 치오리의 기분은 매우 좋은 듯 하다.2BWalking in the shopping mall with Chiori. She's feeling fantastic.��*被千织要求处理拿不下的小礼物"*被千織要求處理拿不下的小禮物*5치오리가 사둔 물품들을 열심히 옮겼다.2LChiori asked you to put away the small gifts that she couldn't carry anymore��0千织似乎对闪闪发光的东西没有兴趣"0千織似乎對閃閃發光的東西沒有興趣*<치오리는 빛나는 물건에 관심이 없는 듯 하다22Chiori seemed to be not interested in shiny things��3陪千织在桌游店玩，捡到了奇怪的骰子"3陪千織在桌遊店玩，撿到了奇怪的骰子*K치오리와 게임매장에서 놀다가 의문의 주사위를 주웠다.2FHaving fun in a board game shop with Chiori. Picked up a strange dice.��9陪千织在来到了魂天银行，取了一些零花钱"9陪千織在來到了魂天銀行，取了一些零花錢*:치오리와 혼천은행에 용돈을 출금하러 갔다2IArrived at Mahjong Soul Bank with Chiori. She withdrew some pocket money.��6打开了路上的神秘宝箱，这，这是……！"6打開了路上的神秘寶箱，這，這是……！*�우연히 찾은 신비의 보물상자를 열어보았다. 이, 이건…!우연히 찾은 신비의 보물상자를 열어보았다. 이, 이건…!2;Opened a mysterious chest on the road. Wow, what's this...!��!千织的好感度Lv1生效了！"!千織的好感度Lv1生效了！*$치오리의 호감도 Lv1 적용중2Chiori's Bond Lv1 is in effect!��!千织的好感度Lv2生效了！"!千織的好感度Lv2生效了！*$치오리의 호감도 Lv2 적용중2Chiori's Bond Lv2 is in effect!��!千织的好感度Lv3生效了！"!千織的好感度Lv3生效了！*$치오리의 호감도 Lv3 적용중2Chiori's Bond Lv3 is in effect!��!千织的好感度Lv4生效了！"!千織的好感度Lv4生效了！*$치오리의 호감도 Lv4 적용중2Chiori's Bond Lv4 is in effect!��#千织的好感度LvMax生效了！"#千織的好感度LvMax生效了！*&치오리의 호감도 LvMAX 적용중2!Chiori's Bond LvMax is in effect!��-第{0}次经过起点！获得圈数奖励！"-第{0}次經過起點！獲得圈數獎勵！*6{0}번째 완주! 완주 보상을 획득했습니다.2?Passed the starting point for {0} time(s)! Earned a lap reward!D�兑换成功"兌換成功*교환성공2Successfully redeemede�道具数量不足哦"道具數量不足哦*아이템이 부족합니다.2Insufficient items.��取消收藏此牌谱？"取消收藏此牌譜？*)북마크에서 제외하시겠습니까?26Do you want to remove this game log from Collection？Y�本期活动已结束"本期活動已結束*시련 기간 초과2Season has ended?�历史排名"歷史排名*순위이력2All-time Ranking,�	第{0}名"	第{0}名*	제{0}위2No.{0}�名"名C�我的排名："我的排名：*최종순위：2My Ranking:I�已获奖励："已獲獎勵：*보상 획득：2Received Reward:��已发放至仓库"已發放至倉庫**보상이 창고에 지급되었습니다.24The reward has been sent to your Items - Decoration.��雀士的资料被神隐了"雀士的資料被神隱了*3雀士のプロファイルが見つかりません2BOh! Careless Ichihime has lost the information about this Jyanshi.��4�>*/{0}PT를 사용해서 구입하시겠습니까?�>*OK�>*취소"�>*구입을 성공했습니다.�>*구입하시겠습니까?�>*기원 하시겠습니까?�>*고객센터：�>*문의��>"�請確認重啟後的語言版本所顯示的時間皆為UTC+8時區時間。\nPlease confirm that the time displays in-game will be in (UTC+8) after restarting.2�請確認重啟後的語言版本所顯示的時間皆為UTC+8時區時間。\nPlease confirm that the time displays in-game will be in (UTC+8) after restarting.��>"�Please confirm that the time displays in-game will be in (UTC-7) after restarting.\n請確認重啟後的語言版本所顯示的時間皆為UTC-7時區時間。2�Please confirm that the time displays in-game will be in (UTC-7) after restarting.\n請確認重啟後的語言版本所顯示的時間皆為UTC-7時區時間。"2
+Mahjong Soul bank: After using a dice or finish a lap on the map, copper will be deposited in the bank. \n- All the copper will be withdrew when stopping on Mahjong Soul bank. \nKaavi's fortune dial: Randomly select one of the following 6 effects.\n- Earn double coppers in the next move\n- Earn half coppers in the next move\n- Double the number of steps in the next move\n- Halve the number of steps in the next move\n- Move on 1 step\n- Refresh the location of mysterious chest��*陪千织逛商场，千织心情不太好"*陪千織逛商場，千織心情不太好*X치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…나쁜듯…?2GWalking in the shopping mall with Chiori. She's not having a good mood.��'陪千织逛商场，千织心情普通"'陪千織逛商場，千織心情普通*_～치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…그냥 그런듯?2?Walking in the shopping mall with Chiori. She's feeling normal.��'陪千织逛商场，千织心情不错"'陪千織逛商場，千織心情不錯*f치오리와 함께 한가로이 둘러보았다. 치오리의 기분은…아마도 좋은 것 같다2=Walking in the shopping mall with Chiori. She's feeling good.��'陪千织逛商场，千织心情绝赞"'陪千織逛商場，千織心情絕贊*b치오리와 함께 한가로이 둘러보았다. 치오리의 기분은 매우 좋은 듯 하다.2BWalking in the shopping mall with Chiori. She's feeling fantastic.��*被千织要求处理拿不下的小礼物"*被千織要求處理拿不下的小禮物*5치오리가 사둔 물품들을 열심히 옮겼다.2LChiori asked you to put away the small gifts that she couldn't carry anymore��0千织似乎对闪闪发光的东西没有兴趣"0千織似乎對閃閃發光的東西沒有興趣*<치오리는 빛나는 물건에 관심이 없는 듯 하다22Chiori seemed to be not interested in shiny things��3陪千织在桌游店玩，捡到了奇怪的骰子"3陪千織在桌遊店玩，撿到了奇怪的骰子*K치오리와 게임매장에서 놀다가 의문의 주사위를 주웠다.2FHaving fun in a board game shop with Chiori. Picked up a strange dice.��9陪千织在来到了魂天银行，取了一些零花钱"9陪千織在來到了魂天銀行，取了一些零花錢*:치오리와 혼천은행에 용돈을 출금하러 갔다2IArrived at Mahjong Soul Bank with Chiori. She withdrew some pocket money.��6打开了路上的神秘宝箱，这，这是……！"6打開了路上的神秘寶箱，這，這是……！*�우연히 찾은 신비의 보물상자를 열어보았다. 이, 이건…!우연히 찾은 신비의 보물상자를 열어보았다. 이, 이건…!2;Opened a mysterious chest on the road. Wow, what's this...!��!千织的好感度Lv1生效了！"!千織的好感度Lv1生效了！*$치오리의 호감도 Lv1 적용중2Chiori's Bond Lv1 is in effect!��!千织的好感度Lv2生效了！"!千織的好感度Lv2生效了！*$치오리의 호감도 Lv2 적용중2Chiori's Bond Lv2 is in effect!��!千织的好感度Lv3生效了！"!千織的好感度Lv3生效了！*$치오리의 호감도 Lv3 적용중2Chiori's Bond Lv3 is in effect!��!千织的好感度Lv4生效了！"!千織的好感度Lv4生效了！*$치오리의 호감도 Lv4 적용중2Chiori's Bond Lv4 is in effect!��#千织的好感度LvMax生效了！"#千織的好感度LvMax生效了！*&치오리의 호감도 LvMAX 적용중2!Chiori's Bond LvMax is in effect!��-第{0}次经过起点！获得圈数奖励！"-第{0}次經過起點！獲得圈數獎勵！*6{0}번째 완주! 완주 보상을 획득했습니다.2?Passed the starting point for {0} time(s)! Earned a lap reward!D�兑换成功"兌換成功*교환성공2Successfully redeemede�道具数量不足哦"道具數量不足哦*아이템이 부족합니다.2Insufficient items.��取消收藏此牌谱？"取消收藏此牌譜？*)북마크에서 제외하시겠습니까?26Do you want to remove this game log from Collection？Y�本期活动已结束"本期活動已結束*시련 기간 초과2Season has ended?�历史排名"歷史排名*순위이력2All-time Ranking,�	第{0}名"	第{0}名*	제{0}위2No.{0}�名"名C�我的排名："我的排名：*최종순위：2My Ranking:I�已获奖励："已獲獎勵：*보상 획득：2Received Reward:��已发放至仓库"已發放至倉庫**보상이 창고에 지급되었습니다.24The reward has been sent to your Items - Decoration.��雀士的资料被神隐了"雀士的資料被神隱了*,작사 프로필을 찾을 수 없습니다.2BOh! Careless Ichihime has lost the information about this Jyanshi.��4�>*/{0}PT를 사용해서 구입하시겠습니까?�>*OK�>*취소"�>*구입을 성공했습니다.�>*구입하시겠습니까?�>*기원 하시겠습니까?�>*고객센터：�>*문의��>"�請確認重啟後的語言版本所顯示的時間皆為UTC+8時區時間。\nPlease confirm that the time displays in-game will be in (UTC+8) after restarting.2�請確認重啟後的語言版本所顯示的時間皆為UTC+8時區時間。\nPlease confirm that the time displays in-game will be in (UTC+8) after restarting.��>"�Please confirm that the time displays in-game will be in (UTC-7) after restarting.\n請確認重啟後的語言版本所顯示的時間皆為UTC-7時區時間。2�Please confirm that the time displays in-game will be in (UTC-7) after restarting.\n請確認重啟後的語言版本所顯示的時間皆為UTC-7時區時間。"2
 
 tournamenttournaments绿宫慧太杯ɯ"�Z
 vipvip�无無"혼의 계약자：초급*No2extendRes/title/notitle.png:�每日送礼次数：2\n好友数量上限+0\n杂货屋刷新次数：5\n杂货屋免费刷新次数：0\n对局好感度加成+0%\n牌谱收藏上限:20B�매일 선물 가능 횟수：2\\n최대 친구 수+0\\n잡화점 갱신 횟수：5\\n잡화점 무료 갱신 횟수：0\\n등급전 친밀 보너스+0%\\n패보 즐겨찾기 수：20J�Daily Gift Attempts: 2 \n Max No. of Friends +0 \n Misc Shop Refresh Attempts: 5 \n Misc Shop Free Refresh: 0 \n Bond Bonus from Matches +0%\n Log Collection Limit: 20R�每日送禮次數：2\n好友數量上限+0\n雜貨店重新整理次數：5\n雜貨店免費重新整理次數：0\n對局好感度加成+0%`x����$� � � � � � � � �魂之契约者·初阶魂の契約者·初階"혼의 계약자 : 초급*Soul Contractor - Beginner2#extendRes/title/hunzhiqiyuezhe1.png:�每日送礼次数：4\n好友数量上限+0\n杂货屋刷新次数：6\n杂货屋免费刷新次数：1\n对局好感度加成+50%\n牌谱收藏上限:25B�매일 선물 가능 횟수：4\\n최대 친구 수+0\\n잡화점 갱신 횟수：6\\n잡화점 무료 갱신 횟수：1\\n등급전 친밀 보너스+50%\\n패보 즐겨찾기 수：25J�Daily Gift Attempts: 4 \n Max No. of Friends +0 \n Misc Shop Refresh Attempts: 6 \n Misc Shop Free Refresh: 1 \n Bond Bonus from Matches +50%\n Log Collection Limit: 25R�每日送禮次數：4\n好友數量上限+0\n雜貨店重新整理次數：6\n雜貨店免費重新整理次數：1\n對局好感度加成+50%X`px�   ?����$�303012-5�303052-5�100002-20000� � � � � �魂之契约者·中阶魂の契約者·中階"혼의 계약자 : 중급*Soul Contractor - Intermediate2#extendRes/title/hunzhiqiyuezhe2.png:�每日送礼次数：6\n好友数量上限+10\n杂货屋刷新次数：7\n杂货屋免费刷新次数：1\n对局好感度加成+75%\n牌谱收藏上限:30B�매일 선물 가능 횟수：6\\n최대 친구 수+10\\n잡화점 갱신 횟수：7\\n잡화점 무료 갱신 횟수：1\\n등급전 친밀 보너스+75%\\n패보 즐겨찾기 수：30J�Daily Gift Attempts: 6 \nMax No. of Friends +10\n Misc Shop Refresh Attempts: 7 \n Misc Shop Free Refresh: 1 \n Bond Bonus from Matches +75%\n Log Collection Limit: 30R�每日送禮次數：6\n好友數量上限+10\n雜貨店重新整理次數：7\n雜貨店免費重新整理次數：1\n對局好感度加成+75%X`h
