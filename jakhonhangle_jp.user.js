@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.4
+// @version      0.0.5
 // @description  Apply majsoul-plus-korean using UserScript!
 // @author       YF-DEV, SHINJJANGGU
 // @license      MIT
@@ -48,9 +48,10 @@
             });
         });
         const config = {
-            childList: true
+            childList: true,
+            subtree: true
         };
-        observer.observe(document.body, config);
+        observer.observe(document, config);
     }
 
     function updateUrl(url) {
