@@ -5,7 +5,7 @@
     <pages>
         <page id="0" file="jp_haolong_0.png"/>
     </pages>
-    <chars count="2567">
+    <chars count="2566">
         <char id="10" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15"/>
         <char id="13" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15"/>
         <char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15"/>
@@ -511,7 +511,6 @@
         <char id="21697" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
         <char id="21729" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
         <char id="21746" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
-        <char id="21807" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
         <char id="21809" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
         <char id="21830" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
         <char id="21839" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="38" page="0" chnl="15"/>
