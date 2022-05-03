@@ -9,7 +9,6 @@
     "majsoul_plus": "^2.0.0"
   },
   "replace": [
-    "announce.json",
     "bitmapfont/en/en_hanyi.fnt",
     "bitmapfont/en/en_haolong.fnt",
     "bitmapfont/en/en_shuhun.fnt",
