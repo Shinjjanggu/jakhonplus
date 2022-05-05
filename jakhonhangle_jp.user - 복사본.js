@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.8
+// @version      0.0.5
 // @description  Apply majsoul-plus-korean using UserScript!
-// @author       YF-DEV, SHINJJANGGU, Yudong
+// @author       YF-DEV, SHINJJANGGU
 // @license      MIT
 // @icon         https://shinjjanggu.github.io/jakhonplus/sample/nya1.png
 // @supportURL   https://github.com/Shinjjanggu/MajakPlusKorean/issues
@@ -12,20 +12,19 @@
 // @updateURL    https://shinjjanggu.github.io/jakhonplus/jakhonhangle_jp.user.js
 // @include      https://game.mahjongsoul.com/*
 // @grant        unsafeWindow
+// @grant        GM_getResourceText
 // @run-at       document-start
+// @resource resourcepack https://shinjjanggu.github.io/jakhonplus/korean/resourcepack.json
 // ==/UserScript==
 
-(async function () {
+(function () {
     'use strict';
     const GAME_BASE_URL = 'https://game.mahjongsoul.com/';
-    const RESOURCEPACK_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/resourcepack.json';
     const RES_BASE_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/';
-    const ANNOUNCE_FILE_URL = RES_BASE_URL + 'announce.json';
 
     const version_re = /v\d+\.\d+\.\d+\.w\//i;
+    const resourcepack = JSON.parse(GM_getResourceText('resourcepack'));
 
-    const resourcepack = await(await fetch(RESOURCEPACK_URL)).json()
-    const announce = await(await fetch(ANNOUNCE_FILE_URL)).json()
 
     replaceXhrOpen();
     replaceCodeScript();
@@ -42,7 +41,6 @@
                             replaceLayaLoadImage();
                             replaceLayaLoadSound();
                             replaceLayaLoadTtf();
-                            replaceAnnounce();
                         };
                         observer.disconnect();
                     }
@@ -96,19 +94,6 @@
         const original_function = Laya.Loader.prototype._loadTTF;
         Laya.Loader.prototype._loadTTF = function (url) {
             return original_function.call(this, updateUrl(url));
-        }
-    }
-
-    function replaceAnnounce() {
-        const original_function = uiscript.UI_Info._refreshAnnouncements
-        uiscript.UI_Info._refreshAnnouncements = function (t) {
-            t.announcements.forEach((a)=> {
-                if (announce[a.id]) {
-                    a.title = announce[a.id].title
-                    a.content = announce[a.id].content
-                }
-            })
-            return original_function.call(this, t)
         }
     }
 
