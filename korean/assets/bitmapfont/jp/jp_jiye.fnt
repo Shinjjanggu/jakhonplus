@@ -1124,12 +1124,13 @@
         <char id="51109" x="313" y="204" width="32" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51110" x="346" y="204" width="32" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51116" x="319" y="608" width="30" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
+        <char id="51117" x="904" y="662" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51124" x="1" y="955" width="30" height="32" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51132" x="959" y="1023" width="29" height="32" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
-        <char id="51137" x="904" y="662" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
+        <char id="51137" x="872" y="695" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51144" x="420" y="1" width="33" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51165" x="412" y="173" width="32" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
-        <char id="51200" x="872" y="695" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
+        <char id="51200" x="839" y="727" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51201" x="272" y="1016" width="28" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51204" x="989" y="1053" width="29" height="32" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51208" x="626" y="832" width="29" height="32" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
@@ -1139,7 +1140,6 @@
         <char id="51221" x="240" y="1041" width="28" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51222" x="287" y="609" width="30" height="33" xoffset="1" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51228" x="255" y="610" width="30" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
-        <char id="51229" x="839" y="727" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51232" x="442" y="739" width="30" height="32" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51247" x="877" y="628" width="30" height="32" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
         <char id="51256" x="807" y="729" width="29" height="33" xoffset="0" yoffset="7" xadvance="33" page="0" chnl="15"/>
