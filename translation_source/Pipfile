@@ -9,7 +9,7 @@ pyinstaller = "~=3.6"
 pywin32 = { markers = "sys_platform == 'win32'", version = ">=227" }
 
 [packages]
-protobuf = "~=3.12.1"
+protobuf = "~=3.18.3"
 pillow = "~=7.1.2"
 rectpack = "~=0.2.1"
 aiohttp = "*"
