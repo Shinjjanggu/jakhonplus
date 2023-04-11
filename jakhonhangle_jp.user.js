@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.8
+// @version      0.0.9
 // @description  Apply majsoul-plus-korean using UserScript!
 // @author       YF-DEV, SHINJJANGGU, Yudong
 // @license      MIT
@@ -18,14 +18,14 @@
 (async function () {
     'use strict';
     const GAME_BASE_URL = 'https://game.mahjongsoul.com/';
-    const RESOURCEPACK_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/resourcepack.json';
-    const RES_BASE_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/';
+    const RESOURCEPACK_URL = 'https://cdn.jsdelivr.net/gh/shinjjanggu/jakhonplus/korean/resourcepack.json';
+    const RES_BASE_URL = 'https://cdn.jsdelivr.net/gh/shinjjanggu/jakhonplus/korean/';
     const ANNOUNCE_FILE_URL = RES_BASE_URL + 'announce.json';
 
     const version_re = /v\d+\.\d+\.\d+\.w\//i;
 
-    const resourcepack = await(await fetch(RESOURCEPACK_URL)).json()
-    const announce = await(await fetch(ANNOUNCE_FILE_URL)).json()
+    const resourcepack = await(await fetch(RESOURCEPACK_URL)).json();
+    const announce = await(await fetch(ANNOUNCE_FILE_URL)).json();
 
     replaceXhrOpen();
     replaceCodeScript();
