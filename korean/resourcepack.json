@@ -12,8 +12,6 @@
     "bitmapfont/en/en_hanyi.fnt",
     "bitmapfont/en/en_haolong.fnt",
     "bitmapfont/en/en_shuhun.fnt",
-    "bitmapfont/jp/jp_haolong.fnt",
-    "bitmapfont/jp/jp_jiye.fnt",
     "docs/spot/erjietang/200004_jp.bytes",
     "docs/spot/erjietang/200005_jp.bytes",
     "docs/spot/erjietang/200006_jp.bytes",
@@ -455,10 +453,6 @@
     "res/atlas/jp/tanfang3.png",
     "res/atlas/jp/tanfang4.png",
     "res/atlas/jp/tanfang5.png",
-    "res/config/lqc.lqbin",
-    "res/config.proto",
-    "res/liqi.json",
-    "res/proto/config.proto",
     "scene/Assets/Resource/effect/texture/baopai_jp01.png",
     "scene/Assets/Resource/effect/texture/baopai_jp02.png",
     "scene/Assets/Resource/effect/texture/baopai_jp03.png",
@@ -487,6 +481,5 @@
     "scene/Assets/Resource/table/tablemid/chang.png",
     "scene/Assets/Resource/table/tablemid/feng.png",
     "scene/Assets/Resource/table/tablemid/left.png",
-    "uiconfig/ui_jp.json"
   ]
 }
