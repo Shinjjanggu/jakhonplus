@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         JakhonHangle_JP_SERVER
 // @namespace    majsoul-plus-korean3
-// @version      0.0.9
+// @version      1.0.0
 // @description  Apply majsoul-plus-korean using UserScript!
-// @author       YF-DEV, SHINJJANGGU, Yudong
+// @author       YF-DEV, ChatGPT
 // @license      MIT
 // @icon         https://shinjjanggu.github.io/jakhonplus/sample/nya1.png
 // @supportURL   https://github.com/Shinjjanggu/MajakPlusKorean/issues
@@ -17,15 +17,64 @@
 
 (async function () {
     'use strict';
+
     const GAME_BASE_URL = 'https://game.mahjongsoul.com/';
-    const RESOURCEPACK_URL = 'https://cdn.jsdelivr.net/gh/shinjjanggu/jakhonplus/korean/resourcepack.json';
-    const RES_BASE_URL = 'https://cdn.jsdelivr.net/gh/shinjjanggu/jakhonplus/korean/';
-    const ANNOUNCE_FILE_URL = RES_BASE_URL + 'announce.json';
+    const RES_BASE_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/';
+    const RESOURCEPACK_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/resourcepack.json';
+    const SERVER_VERSION_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/version.txt';
+    const ANNOUNCE_FILE_URL = 'https://shinjjanggu.github.io/jakhonplus/korean/announce.json';
+    const LOCAL_VERSION = '1.0.0';
 
     const version_re = /v\d+\.\d+\.\d+\.w\//i;
 
-    const resourcepack = await(await fetch(RESOURCEPACK_URL)).json();
-    const announce = await(await fetch(ANNOUNCE_FILE_URL)).json();
+    let resourcepack = null;
+    let announce = null;
+
+    async function fetchResourcePack() {
+        try {
+            const response = await fetch(RESOURCEPACK_URL);
+            if (!response.ok) {
+                throw new Error('Failed to fetch resourcepack');
+            }
+            resourcepack = await response.json();
+        } catch (error) {
+            console.error('Error fetching resourcepack:', error);
+        }
+    }
+
+    async function fetchServerVersion() {
+        try {
+            const response = await fetch(SERVER_VERSION_URL, { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error('Failed to fetch server version');
+            }
+            const serverVersion = await response.text();
+            if (serverVersion !== LOCAL_VERSION) {
+                const confirmUpdate = confirm("작혼 비공식 한글패치가 새로운 버전 (" + serverVersion + ")으로 업데이트 되었습니다. 업데이트 하시겠습니까? (현재 버전: " + LOCAL_VERSION + ")");
+                if (confirmUpdate) {
+                    window.open('https://shinjjanggu.github.io/jakhonplus/jakhonhangle_jp.user.js', '_blank');
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching server version:', error);
+        }
+    }
+
+    async function fetchAnnounce() {
+        try {
+            const response = await fetch(ANNOUNCE_FILE_URL);
+            if (!response.ok) {
+                throw new Error('Failed to fetch announce data');
+            }
+            announce = await response.json();
+        } catch (error) {
+            console.error('Error fetching announce data:', error);
+        }
+    }
+
+    fetchResourcePack();
+    fetchServerVersion();
+    fetchAnnounce();
 
     replaceXhrOpen();
     replaceCodeScript();
@@ -62,7 +111,7 @@
             url = url.substring(GAME_BASE_URL.length);
         }
         url = url.replace(version_re, '');
-        if (resourcepack.replace.includes(url)) {
+        if (resourcepack && resourcepack.replace.includes(url)) {
             url = RES_BASE_URL + 'assets/' + url;
             console.log(url);
             return url;
@@ -100,16 +149,16 @@
     }
 
     function replaceAnnounce() {
-        const original_function = uiscript.UI_Info._refreshAnnouncements
+        const original_function = uiscript.UI_Info._refreshAnnouncements;
         uiscript.UI_Info._refreshAnnouncements = function (t) {
-            t.announcements.forEach((a)=> {
+            t.announcements.forEach((a) => {
                 if (announce[a.id]) {
-                    a.title = announce[a.id].title
-                    a.content = announce[a.id].content
+                    a.title = announce[a.id].title;
+                    a.content = announce[a.id].content;
                 }
-            })
-            return original_function.call(this, t)
-        }
+            });
+            return original_function.call(this, t);
+        };
     }
 
 })();
