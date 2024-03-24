@@ -3,6 +3,7 @@
 ========================
 
 ![리소스 팩 썸네일](/sample/nya1.png)
+
 작혼 플러스 일본서버 한글패치는 [작혼 Plus](https://github.com/MajsoulPlus/majsoul-plus)에서 사용할 수 있는 리소스 팩입니다. 원제작자의 [글로벌 서버 한글패치](https://github.com/yf-dev/majsoul-plus-korean)를 일본서버에서도 적용할 수 있도록 바꿔놓은 것입니다.
 
 본 내용에선 웹버전의 한글패치만 다룹니다.
